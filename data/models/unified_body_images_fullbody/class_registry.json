@@ -1,0 +1,214 @@
+{
+  "schema_version": 2,
+  "model_id": "unified_body_images_fullbody_cnn",
+  "version": "v2_five_head_shared_backbone_untrained",
+  "model_identity_count": 1,
+  "checkpoint_identity": "unified_shared_cnn_five_heads_v2",
+  "checkpoint_path": null,
+  "checkpoint_status": "architecture_defined_training_required",
+  "source_checkpoint": "models/asset_classifier/asset_classifier.pth",
+  "source_checkpoint_sha256": "EB1251DADE9293098E327F3E708BF92F0C5FC09C272C6CDDB0F4F04F210AE6D2",
+  "architecture": "one shared ResNet-18 backbone with five independent task-specific output heads; one model identity, separate labels and training targets per head",
+  "backbone_reuse": [
+    "conv1",
+    "bn1",
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4"
+  ],
+  "output_heads": {
+    "body_images": {
+      "input_features": 512,
+      "class_count": 2,
+      "classes": [
+        {"class_id": 0, "class_name": "bodypart_cum", "task": "body_images_features", "human_review_required": true},
+        {"class_id": 1, "class_name": "bodypart_acc", "task": "body_images_features", "human_review_required": true}
+      ],
+      "target_semantics": "Broad evidence prediction only; human-confirmed exact filename tags are stored separately."
+    },
+    "fullbody": {
+      "input_features": 512,
+      "class_count": 5,
+      "classes": [
+        {"class_id": 0, "class_name": "clothed"},
+        {"class_id": 1, "class_name": "topless"},
+        {"class_id": 2, "class_name": "bottomless"},
+        {"class_id": 3, "class_name": "bra"},
+        {"class_id": 4, "class_name": "panty"}
+      ]
+    },
+    "portrait": {
+      "input_features": 512,
+      "class_count": 2,
+      "classes": [
+        {"class_id": 0, "class_name": "portrait"},
+        {"class_id": 1, "class_name": "tportrait"}
+      ],
+      "input_region": "portrait_frame"
+    },
+    "arousal": {
+      "input_features": 512,
+      "class_count": 2,
+      "classes": [
+        {"class_id": 0, "class_name": "aroused"},
+        {"class_id": 1, "class_name": "edging"}
+      ],
+      "input_regions": ["person", "face", "boobs", "ass", "pussy", "legs", "portrait_frame"]
+    },
+    "corruption": {
+      "input_features": 512,
+      "class_count": 4,
+      "classes": [
+        {"class_id": 0, "class_name": "slut"},
+        {"class_id": 1, "class_name": "conservative"},
+        {"class_id": 2, "class_name": "whore"},
+        {"class_id": 3, "class_name": "u_whore"}
+      ],
+      "input_regions": ["person", "face", "portrait_frame", "boobs", "ass", "pussy", "legs",
+                        "pussy_cover_item", "ass_cover_item", "boobs_cover_item",
+                        "leg_cover_item", "accessory_footwear", "fullbody_*"]
+    }
+  },
+  "output_groups": {
+    "body_images": {"class_count": 2, "classes": [
+      {"class_id": 0, "class_name": "bodypart_cum", "task": "body_images_features"},
+      {"class_id": 1, "class_name": "bodypart_acc", "task": "body_images_features"}
+    ]},
+    "fullbody": {"class_count": 5, "classes": [
+      {"class_id": 0, "class_name": "clothed"}, {"class_id": 1, "class_name": "topless"},
+      {"class_id": 2, "class_name": "bottomless"}, {"class_id": 3, "class_name": "bra"},
+      {"class_id": 4, "class_name": "panty"}
+    ]},
+    "portrait": {"class_count": 2, "classes": [
+      {"class_id": 0, "class_name": "portrait"}, {"class_id": 1, "class_name": "tportrait"}
+    ]},
+    "arousal": {"class_count": 2, "classes": [
+      {"class_id": 0, "class_name": "aroused"}, {"class_id": 1, "class_name": "edging"}
+    ]},
+    "corruption": {"class_count": 4, "classes": [
+      {"class_id": 0, "class_name": "slut"}, {"class_id": 1, "class_name": "conservative"},
+      {"class_id": 2, "class_name": "whore"}, {"class_id": 3, "class_name": "u_whore"}
+    ]}
+  },
+  "total_grouped_output_logits": 15,
+  "historical_output_groups": {
+    "body_images": ["portrait", "tportrait", "bodypart_cum", "bodypart_acc"],
+    "fullbody_state": ["clothed", "topless", "bottomless"]
+  },
+  "training_target_policy": "Only a human-confirmed task head label is eligible. Body Images exact filename tags are separate metadata and never become head classes implicitly.",
+  "original_asset_class_registry_count": 26,
+  "legacy_source_output_groups": {
+    "body_images": {
+      "class_count": 4,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "portrait",
+          "original_class_id": 4,
+          "original_class_name": "bodypart_portrait_clothed",
+          "canonical_application_mapping": "portrait",
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "explicit_source_class_mapping"
+        },
+        {
+          "class_id": 1,
+          "class_name": "tportrait",
+          "original_class_id": 5,
+          "original_class_name": "bodypart_portrait_topless",
+          "canonical_application_mapping": "tportrait",
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "explicit_source_class_mapping"
+        },
+        {
+          "class_id": 2,
+          "class_name": "bodypart_cum",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": null,
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "added_evidence_class_requires_labels"
+        },
+        {
+          "class_id": 3,
+          "class_name": "bodypart_acc",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": null,
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "added_evidence_class_requires_labels"
+        }
+      ],
+      "class_names_file": "train_data/unified_body_images_fullbody/classes/body_images_classes.txt"
+    },
+    "fullbody_state": {
+      "class_count": 3,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "clothed",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": "clothed",
+          "task": "fullbody_state",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "new_state_class_not_mapped_from_legacy_asset_cnn"
+        },
+        {
+          "class_id": 1,
+          "class_name": "topless",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": "topless",
+          "task": "fullbody_state",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "new_state_class_not_mapped_from_legacy_asset_cnn"
+        },
+        {
+          "class_id": 2,
+          "class_name": "bottomless",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": "bottomless",
+          "task": "fullbody_state",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "new_state_class_not_mapped_from_legacy_asset_cnn"
+        }
+      ],
+      "class_names_file": "train_data/unified_body_images_fullbody/classes/fullbody_state_classes.txt"
+    }
+  },
+  "legacy_fullbody_classes": [
+    {
+      "original_class_id": 10,
+      "original_class_name": "fullbody_clothed_states",
+      "revised_mapping": null,
+      "status": "provenance_only_no_equivalence_to_three_state_head"
+    },
+    {
+      "original_class_id": 11,
+      "original_class_name": "fullbody_costume_states",
+      "revised_mapping": null,
+      "status": "provenance_only_no_equivalence_to_three_state_head"
+    },
+    {
+      "original_class_id": 12,
+      "original_class_name": "fullbody_nude_states",
+      "revised_mapping": null,
+      "status": "provenance_only_no_equivalence_to_three_state_head"
+    }
+  ],
+  "training_performed": false,
+  "review_policy": "AI outputs are proposals; human confirmation required; Body Images and Fullbody examples remain task-labeled within one dataset."
+}

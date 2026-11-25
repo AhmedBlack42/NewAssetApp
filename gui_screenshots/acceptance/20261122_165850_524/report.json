@@ -1,0 +1,21 @@
+{
+  "run_id": "20261122_165850_524",
+  "suite": "smoke",
+  "app": "both",
+  "headless": true,
+  "status": "PASS",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_165850_524",
+  "scenarios": [
+    {
+      "application": "both",
+      "scenario": "phase3",
+      "status": "PASS",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 3.049442,
+      "failure_reason": null
+    }
+  ]
+}

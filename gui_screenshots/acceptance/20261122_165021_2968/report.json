@@ -1,0 +1,21 @@
+{
+  "run_id": "20261122_165021_2968",
+  "suite": "smoke",
+  "app": "both",
+  "headless": true,
+  "status": "FAIL",
+  "temporary_workspace": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_nk8c86r_",
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_165021_2968",
+  "scenarios": [
+    {
+      "application": "both",
+      "scenario": "phase3",
+      "status": "FAIL",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 1.146212,
+      "failure_reason": "AssertionError: Cum target did not persist as explicitly positive."
+    }
+  ]
+}

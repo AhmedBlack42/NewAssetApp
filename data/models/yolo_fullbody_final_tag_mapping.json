@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "registry_id": "newassetapp_yolo_detector_v1",
+  "description": "Human-facing Fullbody Final Tag candidates are separate from YOLO detection classes.",
+  "mappings": [
+    {"class_id": 12, "class_name": "fullbody_shower", "final_tag": "shower", "status": "resolved"},
+    {"class_id": 13, "class_name": "fullbody_maid", "final_tag": "maid", "status": "resolved"},
+    {"class_id": 14, "class_name": "fullbody_nurse", "final_tag": "nurse", "status": "resolved"},
+    {"class_id": 15, "class_name": "fullbody_uniform", "final_tag": "uniform", "status": "resolved"},
+    {
+      "class_id": 16,
+      "class_name": "fullbody_athletic",
+      "final_tag": "athletic",
+      "status": "resolved"
+    },
+    {"class_id": 17, "class_name": "fullbody_swimsuit", "final_tag": "swimsuit", "status": "resolved"},
+    {"class_id": 18, "class_name": "fullbody_bikini", "final_tag": "bikini", "status": "resolved"},
+    {"class_id": 19, "class_name": "fullbody_work", "final_tag": "work", "status": "resolved"},
+    {"class_id": 20, "class_name": "fullbody_clothed", "final_tag": "clothed", "status": "resolved"},
+    {"class_id": 21, "class_name": "fullbody_bare", "final_tag": "bare", "status": "resolved"},
+    {"class_id": 22, "class_name": "fullbody_underwear", "final_tag": "underwear", "status": "resolved"}
+  ]
+}

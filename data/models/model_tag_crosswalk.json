@@ -1,0 +1,806 @@
+{
+  "schema_version": 1,
+  "description": "Read-only model-label crosswalk; it never renames model classes or prediction evidence.",
+  "source_registries": {
+    "yolo": "TrainingDatasetStudio/registries/yolo_detector_v1.json",
+    "asset_classifier": "models/asset_classifier/asset_class_map.json"
+  },
+  "models": {
+    "yolo": [
+      {
+        "class_id": 0,
+        "model_label": "person",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "person_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 1,
+        "model_label": "face",
+        "policy_status": "active",
+        "application_candidate": "face",
+        "mapping_type": "body_image_main_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Same token is a candidate only; the user must select and confirm the human-facing tag."
+      },
+      {
+        "class_id": 2,
+        "model_label": "portrait_frame",
+        "policy_status": "active",
+        "application_candidate": "portrait",
+        "mapping_type": "review_required_region_candidate",
+        "human_confirmation_required": true,
+        "note": "A detector region is not identical to a human-confirmed Portrait or Topless Portrait decision."
+      },
+      {
+        "class_id": 3,
+        "model_label": "boobs",
+        "policy_status": "active",
+        "application_candidate": "boobs",
+        "mapping_type": "body_image_main_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Same token is a candidate only; the user must select and confirm the human-facing tag."
+      },
+      {
+        "class_id": 4,
+        "model_label": "ass",
+        "policy_status": "active",
+        "application_candidate": "ass",
+        "mapping_type": "body_image_main_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Same token is a candidate only; the user must select and confirm the human-facing tag."
+      },
+      {
+        "class_id": 5,
+        "model_label": "pussy",
+        "policy_status": "active",
+        "application_candidate": "pussy",
+        "mapping_type": "body_image_main_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Same token is a candidate only; the user must select and confirm the human-facing tag."
+      },
+      {
+        "class_id": 6,
+        "model_label": "legs",
+        "policy_status": "active",
+        "application_candidate": "legs",
+        "mapping_type": "body_image_main_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Same token is a candidate only; the user must select and confirm the human-facing tag."
+      },
+      {
+        "class_id": 7,
+        "model_label": "boobs_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "clothing_region_detection",
+        "human_confirmation_required": true,
+        "note": "Detection identifies a coverage/footwear region; it does not assert a human Clothing Final Tag."
+      },
+      {
+        "class_id": 8,
+        "model_label": "pussy_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "clothing_region_detection",
+        "human_confirmation_required": true,
+        "note": "Detection identifies a coverage/footwear region; it does not assert a human Clothing Final Tag."
+      },
+      {
+        "class_id": 9,
+        "model_label": "ass_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "clothing_region_detection",
+        "human_confirmation_required": true,
+        "note": "Detection identifies a coverage/footwear region; it does not assert a human Clothing Final Tag."
+      },
+      {
+        "class_id": 10,
+        "model_label": "leg_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "clothing_region_detection",
+        "human_confirmation_required": true,
+        "note": "Detection identifies a coverage/footwear region; it does not assert a human Clothing Final Tag."
+      },
+      {
+        "class_id": 11,
+        "model_label": "accessory_footwear",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "clothing_region_detection",
+        "human_confirmation_required": true,
+        "note": "Detection identifies a coverage/footwear region; it does not assert a human Clothing Final Tag."
+      },
+      {
+        "class_id": 12,
+        "model_label": "fullbody_shower",
+        "policy_status": "active",
+        "application_candidate": "shower",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 13,
+        "model_label": "fullbody_maid",
+        "policy_status": "active",
+        "application_candidate": "maid",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 14,
+        "model_label": "fullbody_nurse",
+        "policy_status": "active",
+        "application_candidate": "nurse",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 15,
+        "model_label": "fullbody_uniform",
+        "policy_status": "active",
+        "application_candidate": "uniform",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 16,
+        "model_label": "fullbody_athletic",
+        "policy_status": "active",
+        "application_candidate": "athletic",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Approved human-facing Final Tag is athletic; retain fullbody_athletic as the distinct YOLO class."
+      },
+      {
+        "class_id": 17,
+        "model_label": "fullbody_swimsuit",
+        "policy_status": "active",
+        "application_candidate": "swimsuit",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 18,
+        "model_label": "fullbody_bikini",
+        "policy_status": "active",
+        "application_candidate": "bikini",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 19,
+        "model_label": "fullbody_work",
+        "policy_status": "active",
+        "application_candidate": "work",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 20,
+        "model_label": "fullbody_clothed",
+        "policy_status": "active",
+        "application_candidate": "clothed",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 21,
+        "model_label": "fullbody_bare",
+        "policy_status": "active",
+        "application_candidate": "bare",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 22,
+        "model_label": "fullbody_underwear",
+        "policy_status": "active",
+        "application_candidate": "underwear",
+        "mapping_type": "fullbody_final_tag_candidate",
+        "human_confirmation_required": true,
+        "note": "Human-facing Final Tag candidate is separate from the YOLO class and still requires user confirmation."
+      },
+      {
+        "class_id": 23,
+        "model_label": "location_class",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 24,
+        "model_label": "location_office",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 25,
+        "model_label": "location_bathroom",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 26,
+        "model_label": "location_bar",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 27,
+        "model_label": "location_park",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 28,
+        "model_label": "location_beach",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 29,
+        "model_label": "location_clinic",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      },
+      {
+        "class_id": 30,
+        "model_label": "location_home",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "context_evidence_only",
+        "human_confirmation_required": true,
+        "note": "Retain the exact approved detector class; no human-facing Final Tag is implied."
+      }
+    ],
+    "asset_classifier": [
+      {
+        "class_id": 0,
+        "model_label": "bodypart_ass",
+        "application_candidate": "ass",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 1,
+        "model_label": "bodypart_boobs",
+        "application_candidate": "boobs",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 2,
+        "model_label": "bodypart_face",
+        "application_candidate": "face",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 3,
+        "model_label": "bodypart_legs",
+        "application_candidate": "legs",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 4,
+        "model_label": "bodypart_portrait_clothed",
+        "application_candidate": "portrait",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 5,
+        "model_label": "bodypart_portrait_topless",
+        "application_candidate": "tportrait",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 6,
+        "model_label": "bodypart_pussy",
+        "application_candidate": "pussy",
+        "mapping_type": "body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Explicit NewAssetApp crosswalk; suggestion only, with original label retained."
+      },
+      {
+        "class_id": 7,
+        "model_label": "bra",
+        "application_candidate": "bra",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 8,
+        "model_label": "dress",
+        "application_candidate": "upper",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 9,
+        "model_label": "footwear",
+        "application_candidate": "shoes",
+        "mapping_type": "source_defined_spelling_or_family_alias_review_required",
+        "human_confirmation_required": true,
+        "note": "Explicit original Girl Packer category bridge; raw CNN class is preserved and this remains a review suggestion."
+      },
+      {
+        "class_id": 10,
+        "model_label": "fullbody_clothed_states",
+        "application_candidate": null,
+        "mapping_type": "unmapped_legacy_cnn_class",
+        "human_confirmation_required": true,
+        "note": "Keep original CNN class and confidence as evidence; no verified final-tag mapping."
+      },
+      {
+        "class_id": 11,
+        "model_label": "fullbody_costume_states",
+        "application_candidate": null,
+        "mapping_type": "unmapped_legacy_cnn_class",
+        "human_confirmation_required": true,
+        "note": "Keep original CNN class and confidence as evidence; no verified final-tag mapping."
+      },
+      {
+        "class_id": 12,
+        "model_label": "fullbody_nude_states",
+        "application_candidate": null,
+        "mapping_type": "unmapped_legacy_cnn_class",
+        "human_confirmation_required": true,
+        "note": "Keep original CNN class and confidence as evidence; no verified final-tag mapping."
+      },
+      {
+        "class_id": 13,
+        "model_label": "outerwear",
+        "application_candidate": "outer",
+        "mapping_type": "source_defined_spelling_or_family_alias_review_required",
+        "human_confirmation_required": true,
+        "note": "Explicit original Girl Packer category bridge; raw CNN class is preserved and this remains a review suggestion."
+      },
+      {
+        "class_id": 14,
+        "model_label": "pants",
+        "application_candidate": "lower",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 15,
+        "model_label": "panty",
+        "application_candidate": "panties",
+        "mapping_type": "source_defined_spelling_or_family_alias_review_required",
+        "human_confirmation_required": true,
+        "note": "Explicit original Girl Packer category bridge; raw CNN class is preserved and this remains a review suggestion."
+      },
+      {
+        "class_id": 16,
+        "model_label": "pantyhose",
+        "application_candidate": "socks",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 17,
+        "model_label": "shirt",
+        "application_candidate": "upper",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 18,
+        "model_label": "shorts",
+        "application_candidate": "lower",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 19,
+        "model_label": "skirt",
+        "application_candidate": "lower",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 20,
+        "model_label": "socks",
+        "application_candidate": "socks",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 21,
+        "model_label": "special_wear",
+        "application_candidate": null,
+        "mapping_type": "unmapped_legacy_cnn_class",
+        "human_confirmation_required": true,
+        "note": "Keep original CNN class and confidence as evidence; no verified final-tag mapping."
+      },
+      {
+        "class_id": 22,
+        "model_label": "stockings",
+        "application_candidate": "socks",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 23,
+        "model_label": "sweater",
+        "application_candidate": "upper",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      },
+      {
+        "class_id": 24,
+        "model_label": "utility_cover",
+        "application_candidate": null,
+        "mapping_type": "unmapped_legacy_cnn_class",
+        "human_confirmation_required": true,
+        "note": "Keep original CNN class and confidence as evidence; no verified final-tag mapping."
+      },
+      {
+        "class_id": 25,
+        "model_label": "vest",
+        "application_candidate": "upper",
+        "mapping_type": "source_defined_clothing_category_candidate",
+        "human_confirmation_required": true,
+        "note": "Source-defined broad category crosswalk; reviewer must select a specific garment tag."
+      }
+    ],
+    "historical_legacy_yolo": [
+      {
+        "class_id": 0,
+        "model_label": "person",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 1,
+        "model_label": "face",
+        "policy_status": "active",
+        "application_candidate": "face",
+        "mapping_type": "exact_body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Exact token candidate; bounding-box detection remains human-review evidence."
+      },
+      {
+        "class_id": 2,
+        "model_label": "portrait_frame",
+        "policy_status": "active",
+        "application_candidate": "portrait",
+        "mapping_type": "review_required_region_to_asset_candidate",
+        "human_confirmation_required": true,
+        "note": "A portrait-frame detector is not identical to the Body Images portrait asset decision."
+      },
+      {
+        "class_id": 3,
+        "model_label": "boobs",
+        "policy_status": "active",
+        "application_candidate": "boobs",
+        "mapping_type": "exact_body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Exact token candidate; bounding-box detection remains human-review evidence."
+      },
+      {
+        "class_id": 4,
+        "model_label": "ass",
+        "policy_status": "active",
+        "application_candidate": "ass",
+        "mapping_type": "exact_body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Exact token candidate; bounding-box detection remains human-review evidence."
+      },
+      {
+        "class_id": 5,
+        "model_label": "pussy",
+        "policy_status": "active",
+        "application_candidate": "pussy",
+        "mapping_type": "exact_body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Exact token candidate; bounding-box detection remains human-review evidence."
+      },
+      {
+        "class_id": 6,
+        "model_label": "legs",
+        "policy_status": "active",
+        "application_candidate": "legs",
+        "mapping_type": "exact_body_image_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Exact token candidate; bounding-box detection remains human-review evidence."
+      },
+      {
+        "class_id": 7,
+        "model_label": "action_event",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 8,
+        "model_label": "pussy_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 9,
+        "model_label": "ass_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 10,
+        "model_label": "boobs_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 11,
+        "model_label": "leg_cover_item",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 12,
+        "model_label": "location_home",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 13,
+        "model_label": "location_class",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 14,
+        "model_label": "location_office",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 15,
+        "model_label": "location_bathroom",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 16,
+        "model_label": "location_bar",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 17,
+        "model_label": "location_outdoor",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 18,
+        "model_label": "location_bed",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 19,
+        "model_label": "fullbody_shower",
+        "policy_status": "active",
+        "application_candidate": "shower",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      },
+      {
+        "class_id": 20,
+        "model_label": "fullbody_maid",
+        "policy_status": "active",
+        "application_candidate": "maid",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      },
+      {
+        "class_id": 21,
+        "model_label": "fullbody_nurse",
+        "policy_status": "active",
+        "application_candidate": "nurse",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      },
+      {
+        "class_id": 22,
+        "model_label": "fullbody_uniform",
+        "policy_status": "active",
+        "application_candidate": "uniform",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      },
+      {
+        "class_id": 23,
+        "model_label": "fullbody_athletic",
+        "policy_status": "active",
+        "application_candidate": "atheletic",
+        "mapping_type": "source_spelling_discrepancy_review_required",
+        "human_confirmation_required": true,
+        "note": "Model says athletic; source-derived application row is review-flagged atheletic. No silent spelling rewrite."
+      },
+      {
+        "class_id": 24,
+        "model_label": "fullbody_swim",
+        "policy_status": "active",
+        "application_candidate": "swimsuit",
+        "mapping_type": "abbreviation_to_source_candidate_review_required",
+        "human_confirmation_required": true,
+        "note": "Model abbreviation swim maps to source token swimsuit as a review candidate."
+      },
+      {
+        "class_id": 25,
+        "model_label": "fullbody_lingerie",
+        "policy_status": "active",
+        "application_candidate": "lingerie",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      },
+      {
+        "class_id": 26,
+        "model_label": "fullbody_work",
+        "policy_status": "active",
+        "application_candidate": "work",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      },
+      {
+        "class_id": 27,
+        "model_label": "fullbody_casual",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 28,
+        "model_label": "accessory_footwear",
+        "policy_status": "active",
+        "application_candidate": null,
+        "mapping_type": "unmapped_detection_or_context_class",
+        "human_confirmation_required": true,
+        "note": "Original detection class is retained; a person or context/coverage label does not itself confirm an application tag."
+      },
+      {
+        "class_id": 29,
+        "model_label": "fullbody_topless",
+        "policy_status": "active",
+        "application_candidate": "topless",
+        "mapping_type": "state_candidate_not_main_tag",
+        "human_confirmation_required": true,
+        "note": "Candidate state only; never a main tag and never auto-confirmed."
+      },
+      {
+        "class_id": 30,
+        "model_label": "fullbody_bottomless",
+        "policy_status": "active",
+        "application_candidate": "bottomless",
+        "mapping_type": "state_candidate_not_main_tag",
+        "human_confirmation_required": true,
+        "note": "Candidate state only; never a main tag and never auto-confirmed."
+      },
+      {
+        "class_id": 31,
+        "model_label": "fullbody_bare",
+        "policy_status": "active",
+        "application_candidate": "bare",
+        "mapping_type": "fullbody_main_candidate",
+        "human_confirmation_required": true,
+        "note": "Human must confirm this candidate and independently choose one allowed Fullbody state."
+      }
+    ]
+  },
+  "future_models": {
+    "fullbody_state": {
+      "classes": [
+        "clothed",
+        "topless",
+        "bottomless"
+      ],
+      "checkpoint": null,
+      "training_performed": false
+    },
+    "corruption": {
+      "classes": [],
+      "status": "not specified; manual labels only"
+    }
+  }
+}

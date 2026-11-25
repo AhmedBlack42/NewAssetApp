@@ -1,0 +1,2756 @@
+""" --------Outfits-------- """
+
+
+""" Cheerleader """
+
+cheerleader_skirt = Clothing(
+    id="cheerleader skirt",
+    name="Cheerleader Skirt",
+    lewdness=5,
+    revealingness=5,
+    protection=6,
+    outfit_tag="cheerleader",
+    clothing_type="lower",
+    clothing_tags=("skirt", "cheer_skirt", "uniform"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="cheerleader_skirt",
+    base_value=25,
+    can_be_damaged=False,
+)
+database_clothing_items["lower"]["cheerleader_skirt"] = cheerleader_skirt
+
+
+scheerleader_skirt = Clothing(
+    id="scheerleader skirt",
+    name="Cheerleader Skirt",
+    lewdness=75,
+    revealingness=75,
+    protection=4,
+    outfit_tag="scheerleader",
+    clothing_type="lower",
+    clothing_tags=("skirt", "cheer_skirt", "uniform"),
+    base_image_name="cheerleader_skirt",
+    base_value=25,
+    can_be_damaged=False,
+)
+database_clothing_items["lower"]["scheerleader_skirt"] = scheerleader_skirt
+
+
+cheerleader_top = Clothing(
+    id="cheerleader_top",
+    name="Cheerleader Top",
+    lewdness=5,
+    revealingness=5,
+    protection=6,
+    outfit_tag="cheerleader",
+    clothing_type="upper",
+    clothing_tags=("uniform_top", "cheer_top", "uniform"),
+    covered_parts=("boobs", "bra"),
+    blocked_layers=("outer",),
+    base_image_name="cheerleader_top",
+    base_value=25,
+    can_be_damaged=False,
+)
+database_clothing_items["upper"]["cheerleader_top"] = cheerleader_top
+
+
+scheerleader_top = Clothing(
+    id="scheerleader_top",
+    name="Cheerleader Top",
+    lewdness=25,
+    revealingness=35,
+    protection=4,
+    outfit_tag="scheerleader",
+    clothing_type="upper",
+    clothing_tags=("uniform_top", "cheer_top", "uniform"),
+    covered_parts=("boobs",),
+    blocked_layers=("outer", "bra"),
+    base_image_name="cheerleader_top",
+    base_value=25,
+    can_be_damaged=False,
+)
+database_clothing_items["upper"]["scheerleader_top"] = scheerleader_top
+
+
+cheer_bloomers = Clothing(
+    id="cheer_bloomers",
+    name="Cheerleader Bloomers",
+    lewdness=0,
+    revealingness=0,
+    protection=12,
+    outfit_tag="cheerleader",
+    clothing_type="panties",
+    clothing_tags=("uniform_panties", "bloomers", "uniform"),
+    covered_parts=("pussy", "ass"),
+    base_image_name="cheer_bloomers",
+    base_value=10,
+)
+database_clothing_items["panties"]["cheer_bloomers"] = cheer_bloomers
+
+
+"""Slutty Student"""
+
+school_shirt_slut = Clothing(
+    id="school_shirt_slut",
+    name="Slutty Schoolgirl Shirt",
+    lewdness=25,
+    revealingness=35,
+    protection=4,
+    outfit_tag="slut_student",
+    clothing_type="upper",
+    clothing_tags=("uniform_top", "schoolshirt_slut", "uniform", "rule_skimpy"),
+    covered_parts=("boobs",),
+    blocked_layers=("bra",),
+    base_image_name="school_shirt_slut",
+    base_value=15,
+)
+database_clothing_items["upper"]["school_shirt_slut"] = school_shirt_slut
+
+
+school_skirt_slut = Clothing(
+    id="school_skirt_slut",
+    name="Slutty Schoolgirl Skirt",
+    lewdness=75,
+    revealingness=75,
+    protection=4,
+    outfit_tag="slut_student",
+    clothing_type="lower",
+    clothing_tags=("skirt", "schoolskirt_slut", "uniform", "rule_skimpy"),
+    base_image_name="school_skirt_slut",
+    base_value=15,
+)
+database_clothing_items["lower"]["school_skirt_slut"] = school_skirt_slut
+
+
+# """ Bikini"""
+
+# bikini_top = Clothing(
+#     id="bikini_top",
+#     name="Bikini Top",
+#     lewdness=25,
+#     protection=5,
+#     outfit_tag="bikini",
+#     clothing_type="upper",
+#     clothing_tags=("bikini","bikini_top","lingerie","rule_skimpy"),
+#     covered_parts=("boobs",),
+#     blocked_layers=("outer","bra"),
+#     base_image_name="bikini_top",
+#     base_value=22
+# )
+# database_clothing_items["upper"]["bikini_top"] = bikini_top
+
+
+# bikini_bottom = Clothing(
+#     id="bikini_bottom",
+#     name="Bikini Bottoms",
+#     lewdness=25,
+#     protection=5,
+#     outfit_tag="bikini",
+#     clothing_type="lower",
+#     clothing_tags=("bikini","bikini_bottom","lingerie","rule_skimpy"),
+#     covered_parts=("pussy","ass"),
+#     blocked_layers=("panties","socks"),
+#     base_image_name="bikini_bottom",
+#     base_value=22
+# )
+# database_clothing_items["lower"]["bikini_bottom"] = bikini_bottom
+
+
+""" Two Piece Lingerie """
+
+lingerie_topsp = Clothing(
+    id="lingerie_topsp",
+    name="Sexy Lingerie Bra",
+    lewdness=25,
+    revealingness=35,
+    protection=4,
+    outfit_tag="lingeriesp",
+    clothing_type="bra",
+    clothing_tags=("sexy_bra", "lingerie_bra", "lingerie", "rule_skimpy"),
+    covered_parts=("boobs",),
+    base_image_name="lingerie_topsp",
+    base_value=15,
+)
+database_clothing_items["bra"]["lingerie_topsp"] = lingerie_topsp
+
+lingerie_legsp = Clothing(
+    id="lingerie_legsp",
+    name="Lingerie Stockings",
+    lewdness=35,
+    revealingness=0,
+    protection=5,
+    outfit_tag="lingeriesp",
+    clothing_type="socks",
+    clothing_tags=("long_socks", "stockings", "lingerie", "rule_skimpy"),
+    covered_parts=("legs", "feet"),
+    base_image_name="lingerie_legsp",
+    base_value=15,
+)
+database_clothing_items["socks"]["lingerie_legsp"] = lingerie_legsp
+
+
+lingerie_botsp = Clothing(
+    id="lingerie_botsp",
+    name="Sexy Lingerie Panties",
+    lewdness=25,
+    revealingness=25,
+    protection=8,
+    outfit_tag="lingeriesp",
+    clothing_type="panties",
+    clothing_tags=("sexy_panties", "lingerie_panties", "lingerie", "rule_skimpy"),
+    covered_parts=("pussy", "ass"),
+    base_image_name="lingerie_botsp",
+    base_value=15,
+)
+database_clothing_items["panties"]["lingerie_botsp"] = lingerie_botsp
+
+
+""" Babydoll Lingerie """
+
+lingerie_bd = Clothing(
+    id="lingerie_bd",
+    name="Sexy Lingerie Babydoll",
+    lewdness=65,
+    revealingness=85,
+    protection=3,
+    outfit_tag="lingeriebd",
+    clothing_type="upper",
+    clothing_tags=("dress", "babydoll", "lingerie", "rule_skimpy", "transparent"),
+    covered_parts=("boobs", "bra", "panties"),
+    blocked_layers=("outer", "lower"),
+    base_image_name="lingerie_bd",
+    base_value=25,
+)
+database_clothing_items["upper"]["lingerie_bd"] = lingerie_bd
+
+
+lingerie_legbd = Clothing(
+    id="lingerie_legbd",
+    name="Lingerie Stockings",
+    lewdness=35,
+    revealingness=0,
+    protection=5,
+    outfit_tag="lingeriebd",
+    clothing_type="socks",
+    clothing_tags=("long_socks", "stockings", "lingerie", "rule_skimpy", "transparent"),
+    covered_parts=("legs", "feet"),
+    base_image_name="lingerie_legbd",
+    base_value=15,
+)
+database_clothing_items["socks"]["lingerie_legbd"] = lingerie_legbd
+
+
+""" --------Gifts-------- """
+
+
+""" Dresses """
+
+sexy_princess = Clothing(
+    id="sexy_princess",
+    name="Sexy Princess Cosplay",
+    lewdness=65,
+    revealingness=65,
+    protection=15,
+    clothing_type="upper",
+    clothing_tags=("dress", "princess", "lingerie", "rule_skimpy"),
+    covered_parts=("boobs", "bra", "panties"),
+    blocked_layers=("outer", "bra", "lower"),
+    can_be_purchased=False,
+    base_image_name="sexy_princess",
+    base_value=35,
+    can_be_damaged=False,
+)
+database_clothing_items["upper"]["sexy_princess"] = sexy_princess
+
+database_shop_items["clothing"]["sexy_princess"] = ClothingGift(
+    id="sexy_princess",
+    name="Sexy Princess Cosplay",
+    icon="_mods/clothing/davemanster_clothing/clothing/sexy_princess.webp",
+    price=125,
+    gift_type="clothing",
+    lewdness=4,
+    clothing_item_names=["sexy_princess"],
+    description="A pack of fun cosplay dresses to relive popular movie scenes... wink wink. \n{color=#CCCCCC}Affection:{/color} {color=#00FF00}+{/color}\n{color=#CCCCCC}Corruption:{/color} {color=#00FF00}++{/color}\n{color=#CCCCCC}Fear:{/color} {color=#00FF00}-{/color}",
+    accept_impacts={
+        "affection": (2000, 3000),
+        "fear": (-1500, -750),
+        "corruption": (2000, 3000),
+    },
+)
+
+
+""" Stockings """
+
+leather_stockings = Clothing(
+    id="leather_stockings",
+    name="Fetish Leather Stockings",
+    lewdness=30,
+    revealingness=0,
+    protection=10,
+    clothing_type="socks",
+    clothing_tags=("leather_stockings", "stockings", "long_socks"),
+    covered_parts=("legs", "feet"),
+    can_be_purchased=False,
+    base_image_name="leather_stockings",
+    base_value=15,
+)
+database_clothing_items["socks"]["leather_stockings"] = leather_stockings
+
+database_shop_items["clothing"]["leather_stockings"] = ClothingGift(
+    id="leather_stockings",
+    name="Fetish Leather Stockings",
+    icon="_mods/clothing/davemanster_clothing/clothing/leather_stockings.webp",
+    price=150,
+    gift_type="clothing",
+    lewdness=3,
+    clothing_item_names=["leather_stockings"],
+    description="Gift your lady a few pairs of fetish leather stockings \n{color=#CCCCCC}Affection:{/color} {color=#00FF00}+{/color}\n{color=#CCCCCC}Corruption:{/color} {color=#00FF00}++{/color}\n{color=#CCCCCC}Fear:{/color} {color=#00FF00}-{/color}",
+    accept_impacts={
+        "affection": (2000, 3000),
+        "fear": (-1500, -750),
+        "corruption": (2000, 3000),
+    },
+)
+
+
+latex_stockings = Clothing(
+    id="latex_stockings",
+    name="Fetish Latex Stockings",
+    lewdness=30,
+    revealingness=0,
+    protection=15,
+    clothing_type="socks",
+    clothing_tags=("latex_stockings", "stockings", "long_socks"),
+    covered_parts=("legs", "feet"),
+    can_be_purchased=False,
+    base_image_name="latex_stockings",
+    base_value=15,
+)
+database_clothing_items["socks"]["latex_stockings"] = latex_stockings
+
+database_shop_items["clothing"]["latex_stockings"] = ClothingGift(
+    id="latex_stockings",
+    name="Fetish Latex Stockings",
+    icon="_mods/clothing/davemanster_clothing/clothing/latex_stockings.webp",
+    price=200,
+    gift_type="clothing",
+    lewdness=4,
+    clothing_item_names=["latex_stockings"],
+    description="Gift your lady a few pairs of fetish letex stockings \n{color=#CCCCCC}Affection:{/color} {color=#00FF00}+{/color}\n{color=#CCCCCC}Corruption:{/color} {color=#00FF00}++{/color}\n{color=#CCCCCC}Fear:{/color} {color=#00FF00}-{/color}",
+    accept_impacts={
+        "affection": (2000, 3000),
+        "fear": (-1500, -750),
+        "corruption": (2000, 3000),
+    },
+)
+
+
+""" --------General Clothing Items-------- """
+
+
+""" Outer """
+
+uniform_sweater = Clothing(
+    id="uniform_sweater",
+    name="Uniform Sweater",
+    lewdness=2,
+    revealingness=0,
+    protection=15,
+    clothing_type="outer",
+    clothing_tags=("generic_outer", "sweater"),
+    covered_parts=("upper", "boobs", "bra"),
+    base_image_name="uniform_sweater",
+    base_value=20,
+)
+database_clothing_items["outer"]["uniform_sweater"] = uniform_sweater
+
+
+# casual_hoodie = Clothing(
+#     id="casual_hoodie",
+#     name="Casual Hoodie",
+#     lewdness=2,
+#     protection=15,
+#     clothing_type="outer",
+#     clothing_tags=("outer","sweater","hoodie"),
+#     covered_parts=("upper","boobs","bra"),
+#     base_image_name="casual_hoodie",
+#     base_value=20
+# )
+# database_clothing_items["outer"]["casual_hoodie"] = casual_hoodie
+
+
+""" Dresses """
+
+sundress = Clothing(
+    id="sundress",
+    name="Casual Sundress",
+    lewdness=3,
+    revealingness=5,
+    protection=10,
+    clothing_type="upper",
+    clothing_tags=("dress", "generic_dress"),
+    covered_parts=("boobs", "bra", "panties"),
+    blocked_layers=("outer", "lower"),
+    base_image_name="sundress",
+    base_value=20,
+)
+database_clothing_items["upper"]["sundress"] = sundress
+
+
+short_dress = Clothing(
+    id="short_dress",
+    name="Short Dress",
+    lewdness=15,
+    revealingness=15,
+    protection=7,
+    clothing_type="upper",
+    clothing_tags=("dress", "generic_dress", "rule_skimpy"),
+    covered_parts=("boobs", "bra", "panties"),
+    blocked_layers=("outer", "lower"),
+    base_image_name="short_dress",
+    base_value=25,
+)
+database_clothing_items["upper"]["short_dress"] = short_dress
+
+
+sheer_dress = Clothing(
+    id="sheer_dress",
+    name="See Through Dress",
+    lewdness=75,
+    revealingness=100,
+    protection=3,
+    clothing_type="upper",
+    clothing_tags=("dress", "generic_dress", "transparent", "tdress", "rule_skimpy"),
+    covered_parts=("boobs", "bra", "panties"),
+    blocked_layers=("outer", "lower"),
+    base_image_name="sheer_dress",
+    base_value=20,
+)
+database_clothing_items["upper"]["sheer_dress"] = sheer_dress
+
+
+""" Tops  """
+
+school_shirt = Clothing(
+    id="school_shirt",
+    name="School Shirt",
+    lewdness=2,
+    revealingness=0,
+    protection=12,
+    clothing_type="upper",
+    clothing_tags=("uniform_top", "schoolshirt", "uniform"),
+    covered_parts=("boobs", "bra"),
+    base_image_name="school_shirt",
+    base_value=20,
+)
+database_clothing_items["upper"]["school_shirt"] = school_shirt
+
+
+blouse = Clothing(
+    id="blouse",
+    name="Everyday Blouse",
+    lewdness=5,
+    revealingness=5,
+    protection=7,
+    clothing_type="upper",
+    clothing_tags=("generic_top", "shirt"),
+    covered_parts=("boobs", "bra"),
+    base_image_name="blouse",
+    base_value=20,
+)
+database_clothing_items["upper"]["blouse"] = blouse
+
+
+sleeveless_shirt = Clothing(
+    id="sleeveless_shirt",
+    name="Sleeveless Shirt",
+    lewdness=8,
+    revealingness=15,
+    protection=8,
+    clothing_type="upper",
+    clothing_tags=("generic_top", "shirt"),
+    covered_parts=("boobs", "bra"),
+    base_image_name="sleeveless_shirt",
+    base_value=15,
+)
+database_clothing_items["upper"]["sleeveless_shirt"] = sleeveless_shirt
+
+
+halter_top = Clothing(
+    id="halter_top",
+    name="Halter Top",
+    lewdness=15,
+    revealingness=30,
+    protection=5,
+    clothing_type="upper",
+    clothing_tags=("generic_top", "shirt"),
+    covered_parts=("boobs", "bra"),
+    base_image_name="halter_top",
+    base_value=15,
+)
+database_clothing_items["upper"]["halter_top"] = halter_top
+
+
+strapless_top = Clothing(
+    id="strapless_top",
+    name="Strapless Shirt",
+    lewdness=25,
+    revealingness=35,
+    protection=4,
+    clothing_type="upper",
+    clothing_tags=("generic_top", "shirt"),
+    covered_parts=("boobs",),
+    blocked_layers=("bra",),
+    base_image_name="strapless_top",
+    base_value=15,
+)
+database_clothing_items["upper"]["strapless_top"] = strapless_top
+
+
+sexy_corset = Clothing(
+    id="sexy_corset",
+    name="Sexy Corset",
+    lewdness=65,
+    revealingness=45,
+    protection=15,
+    clothing_type="upper",
+    clothing_tags=("corset", "sexy_top", "rule_skimpy"),
+    covered_parts=("boobs",),
+    blocked_layers=("outer", "bra"),
+    base_image_name="sexy_corset",
+    base_value=25,
+)
+database_clothing_items["upper"]["sexy_corset"] = sexy_corset
+
+
+sheer_top = Clothing(
+    id="sheer_top",
+    name="See Through Top",
+    lewdness=65,
+    revealingness=85,
+    protection=3,
+    clothing_type="upper",
+    clothing_tags=("sexy_top", "shirt", "transparent", "t_upper", "rule_skimpy"),
+    covered_parts=("boobs", "bra"),
+    base_image_name="sheer_top",
+    base_value=20,
+)
+database_clothing_items["upper"]["sheer_top"] = sheer_top
+
+
+sheer_corset = Clothing(
+    id="sheer_corset",
+    name="See Through Corset",
+    lewdness=65,
+    revealingness=85,
+    protection=3,
+    clothing_type="upper",
+    clothing_tags=("corset", "sexy_top", "transparent", "t_upper", "rule_skimpy"),
+    covered_parts=("boobs",),
+    blocked_layers=("outer", "bra"),
+    base_image_name="sheer_corset",
+    base_value=25,
+)
+database_clothing_items["upper"]["sheer_corset"] = sheer_corset
+
+
+""" Pants """
+
+casual_leggings = Clothing(
+    id="casual_leggings",
+    name="Casual Leggings",
+    lewdness=5,
+    revealingness=3,
+    protection=8,
+    clothing_type="lower",
+    clothing_tags=("pants", "leggings", "athletic", "legs"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="casual_leggings",
+    base_value=20,
+)
+database_clothing_items["lower"]["casual_leggings"] = casual_leggings
+
+
+skinny_jeans = Clothing(
+    id="skinny_jeans",
+    name="Skinny Jeans",
+    lewdness=8,
+    revealingness=0,
+    protection=12,
+    clothing_type="lower",
+    clothing_tags=("pants", "jeans", "legs"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="skinny_jeans",
+    base_value=30,
+    can_be_damaged=False,
+)
+database_clothing_items["lower"]["skinny_jeans"] = skinny_jeans
+
+
+""" Skirts """
+
+casual_skirt = Clothing(
+    id="casual_skirt",
+    name="Casual Skirt",
+    lewdness=3,
+    revealingness=5,
+    protection=5,
+    clothing_type="lower",
+    clothing_tags=("skirt", "generic_skirt"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="casual_skirt",
+    base_value=15,
+)
+database_clothing_items["lower"]["casual_skirt"] = casual_skirt
+
+
+school_skirt = Clothing(
+    id="school_skirt",
+    name="School Skirt",
+    lewdness=3,
+    revealingness=5,
+    protection=5,
+    clothing_type="lower",
+    clothing_tags=("skirt", "schoolskirt", "uniform"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="school_skirt",
+    base_value=10,
+)
+database_clothing_items["lower"]["school_skirt"] = school_skirt
+
+
+denim_skirt = Clothing(
+    id="denim_skirt",
+    name="Jean Skirt",
+    lewdness=10,
+    revealingness=10,
+    protection=9,
+    clothing_type="lower",
+    clothing_tags=("skirt", "denim_bottom"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="denim_skirt",
+    base_value=30,
+    can_be_damaged=False,
+)
+database_clothing_items["lower"]["denim_skirt"] = denim_skirt
+
+
+leather_skirt = Clothing(
+    id="leather_skirt",
+    name="Leather Skirt",
+    lewdness=10,
+    revealingness=15,
+    protection=5,
+    clothing_type="lower",
+    clothing_tags=("skirt", "leather_bottom"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="leather_skirt",
+    base_value=30,
+    can_be_damaged=False,
+)
+database_clothing_items["lower"]["leather_skirt"] = leather_skirt
+
+
+mini_skirt = Clothing(
+    id="mini_skirt",
+    name="Mini Skirt",
+    lewdness=75,
+    revealingness=75,
+    protection=2,
+    clothing_type="lower",
+    clothing_tags=("skirt", "generic_skirt"),
+    base_image_name="mini_skirt",
+    base_value=18,
+)
+database_clothing_items["lower"]["mini_skirt"] = mini_skirt
+
+
+short_skirt = Clothing(
+    id="short_skirt",
+    name="Short Skirt",
+    lewdness=75,
+    revealingness=75,
+    protection=2,
+    clothing_type="lower",
+    clothing_tags=("skirt", "generic_skirt", "rule_skimpy"),
+    base_image_name="short_skirt",
+    base_value=20,
+)
+database_clothing_items["lower"]["short_skirt"] = short_skirt
+
+
+""" Shorts """
+
+athletic_shorts = Clothing(
+    id="athletic_shorts",
+    name="Athletic Shorts",
+    lewdness=5,
+    revealingness=5,
+    protection=5,
+    clothing_type="lower",
+    clothing_tags=("shorts", "athletic_bottom", "athletic"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="athletic_shorts",
+    base_value=15,
+)
+database_clothing_items["lower"]["athletic_shorts"] = athletic_shorts
+
+
+jean_shorts = Clothing(
+    id="jean_shorts",
+    name="Jean Shorts",
+    lewdness=5,
+    revealingness=5,
+    protection=6,
+    clothing_type="lower",
+    clothing_tags=("shorts", "denim_bottom"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="jean_shorts",
+    base_value=20,
+    can_be_damaged=False,
+)
+database_clothing_items["lower"]["jean_shorts"] = jean_shorts
+
+
+short_shorts = Clothing(
+    id="short_shorts",
+    name="Short Shorts",
+    lewdness=20,
+    revealingness=30,
+    protection=4,
+    clothing_type="lower",
+    clothing_tags=("shorts", "generic_shorts", "rule_skimpy"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="short_shorts",
+    base_value=12,
+)
+database_clothing_items["lower"]["short_shorts"] = short_shorts
+
+
+sheer_shorts = Clothing(
+    id="sheer_shorts",
+    name="See Through Shorts",
+    lewdness=75,
+    revealingness=100,
+    protection=2,
+    clothing_type="lower",
+    clothing_tags=("shorts", "generic_shorts", "transparent", "t_lower", "rule_skimpy"),
+    covered_parts=("panties", "pussy", "ass"),
+    base_image_name="sheer_shorts",
+    base_value=10,
+)
+database_clothing_items["lower"]["sheer_shorts"] = sheer_shorts
+
+
+""" BRA """
+
+ordinary_bra = Clothing(
+    id="ordinary_bra",
+    name="Ordinary Bra",
+    lewdness=4,
+    revealingness=5,
+    protection=8,
+    clothing_type="bra",
+    clothing_tags=("generic_bra", "uniform"),
+    covered_parts=("boobs",),
+    base_image_name="ordinary_bra",
+    base_value=12,
+)
+database_clothing_items["bra"]["ordinary_bra"] = ordinary_bra
+
+
+athletic_bra = Clothing(
+    id="athletic_bra",
+    name="Athletic Bra",
+    lewdness=4,
+    revealingness=0,
+    protection=8,
+    clothing_type="bra",
+    clothing_tags=("generic_bra", "athletic_bra", "athletic"),
+    covered_parts=("boobs",),
+    base_image_name="athletic_bra",
+    base_value=10,
+)
+database_clothing_items["bra"]["athletic_bra"] = athletic_bra
+
+
+lacy_bra = Clothing(
+    id="lacy_bra",
+    name="Lace Bra",
+    lewdness=25,
+    revealingness=25,
+    protection=5,
+    clothing_type="bra",
+    clothing_tags=("sexy_bra", "lace_bra", "lingerie"),
+    covered_parts=("boobs",),
+    base_image_name="lacy_bra",
+    base_value=15,
+)
+database_clothing_items["bra"]["lacy_bra"] = lacy_bra
+
+
+sheer_bra = Clothing(
+    id="sheer_bra",
+    name="Sheer Bra",
+    lewdness=50,
+    revealingness=85,
+    protection=2,
+    clothing_type="bra",
+    clothing_tags=("sexy_bra", "transparent", "t_bra", "lingerie", "rule_skimpy"),
+    covered_parts=("boobs",),
+    base_image_name="sheer_bra",
+    base_value=15,
+)
+database_clothing_items["bra"]["sheer_bra"] = sheer_bra
+
+
+""" Panties """
+
+lacy_panties = Clothing(
+    id="lacy_panties",
+    name="Lacy Panties",
+    lewdness=25,
+    revealingness=25,
+    protection=8,
+    clothing_type="panties",
+    clothing_tags=("sexy_panties", "lace_panties", "lingerie"),
+    covered_parts=("pussy", "ass"),
+    base_image_name="lacy_panties",
+    base_value=5,
+)
+database_clothing_items["panties"]["lacy_panties"] = lacy_panties
+
+
+sheer_panties = Clothing(
+    id="sheer_panties",
+    name="Sheer Panties",
+    lewdness=40,
+    protection=4,
+    clothing_type="panties",
+    clothing_tags=("sexy_panties", "t_panty", "transparent", "lingerie", "rule_skimpy"),
+    covered_parts=("pussy", "ass"),
+    base_image_name="sheer_panties",
+    base_value=8,
+)
+database_clothing_items["panties"]["sheer_panties"] = sheer_panties
+
+
+""" Socks """
+
+ankle_socks = Clothing(
+    id="ankle_socks",
+    name="Ankle Socks",
+    lewdness=1,
+    revealingness=0,
+    protection=2,
+    clothing_type="socks",
+    clothing_tags=("socks", "ankle_socks", "uniform", "athletic"),
+    covered_parts=("feet",),
+    base_image_name="ankle_socks",
+    base_value=5,
+)
+database_clothing_items["socks"]["ankle_socks"] = ankle_socks
+
+
+knee_socks = Clothing(
+    id="knee_socks",
+    name="Knee High Socks",
+    lewdness=5,
+    revealingness=0,
+    protection=4,
+    clothing_type="socks",
+    clothing_tags=("knee_socks", "long_socks"),
+    covered_parts=("legs", "feet"),
+    base_image_name="knee_socks",
+    base_value=5,
+)
+database_clothing_items["socks"]["knee_socks"] = knee_socks
+
+
+""" Stockings """
+
+thigh_stockings = Clothing(
+    id="thigh_stockings",
+    name="Thigh High Stockings",
+    lewdness=15,
+    revealingness=0,
+    protection=2,
+    clothing_type="socks",
+    clothing_tags=("long_socks", "stockings"),
+    covered_parts=("legs", "feet"),
+    base_image_name="thigh_stockings",
+    base_value=5,
+)
+database_clothing_items["socks"]["thigh_stockings"] = thigh_stockings
+
+
+# tights = Clothing(
+#     id="Sheer Tights",
+#     name="tights",
+#     lewdness=15,
+#     protection=5,
+#     clothing_type="socks",
+#     clothing_tags=("pantyhose","feet","transparent_socks","tights"),
+#     base_image_name="tights",
+#     base_value=5
+# )
+# database_clothing_items["socks"]["tights"] = tights
+
+
+""" Shoes """
+
+uniform_flats = Clothing(
+    id="uniform_flats",
+    name="Uniform Flats",
+    lewdness=2,
+    revealingness=0,
+    protection=5,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "flats", "uniform_shoes", "uniform"),
+    covered_parts=("socks", "feet"),
+    base_image_name="uniform_flats",
+    base_value=15,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["uniform_flats"] = uniform_flats
+
+
+tennis_shoe = Clothing(
+    id="tennis_shoe",
+    name="Tennis Shoes",
+    lewdness=2,
+    revealingness=0,
+    protection=8,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "sneakers", "uniform_shoes", "uniform"),
+    covered_parts=("socks", "feet"),
+    base_image_name="tennis_shoe",
+    base_value=15,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["tennis_shoe"] = tennis_shoe
+
+
+high_heel_pump = Clothing(
+    id="high_heel_pump",
+    name="Pump High Heels",
+    lewdness=10,
+    revealingness=0,
+    protection=5,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "heels", "sexy_shoes"),
+    base_image_name="high_heel_pump",
+    base_value=35,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["high_heel_pump"] = high_heel_pump
+
+
+high_heel_anklestrap = Clothing(
+    id="high_heel_anklestrap",
+    name="Ankle Strap High Heels",
+    lewdness=12,
+    revealingness=0,
+    protection=5,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "heels", "sexy_shoes"),
+    base_image_name="high_heel_anklestrap",
+    base_value=35,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["high_heel_anklestrap"] = high_heel_anklestrap
+
+
+high_heel_opentoe = Clothing(
+    id="high_heel_opentoe",
+    name="Open Toe High Heels",
+    lewdness=12,
+    revealingness=0,
+    protection=5,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "heels", "sexy_shoes"),
+    base_image_name="high_heel_opentoe",
+    base_value=35,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["high_heel_opentoe"] = high_heel_opentoe
+
+
+high_heel_laceup = Clothing(
+    id="high_heel_laceup",
+    name="Lace Up High Heels",
+    lewdness=15,
+    revealingness=0,
+    protection=7,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "heels", "sexy_shoes"),
+    base_image_name="high_heel_laceup",
+    base_value=35,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["high_heel_laceup"] = high_heel_laceup
+
+
+high_heel_platform = Clothing(
+    id="high_heel_platform",
+    name="Platform High Heels",
+    lewdness=25,
+    revealingness=0,
+    protection=5,
+    clothing_type="shoes",
+    clothing_tags=("shoes", "heels", "sexy_shoes", "rule_skimpy"),
+    base_image_name="high_heel_platform",
+    base_value=35,
+    can_be_damaged=False,
+)
+database_clothing_items["shoes"]["high_heel_platform"] = high_heel_platform
+
+# Clothing Subtags:
+# jacket, hoodie, uniform, shirt, dress, onepiece, t_upper, lingerie
+# skirt, leggings, jeans, shorts, microskirt, t_panty, assless, crotchless
+# t_socks, stockings, fishnet, pantyhose
+
+# TODO - Protection needs to be rescaled, it is very low.
+database_clothing_items = {
+    "outer": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=0,
+            revealingness=0,
+            protection=0,
+            clothing_type="outer",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_outer.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "hoodie": Clothing(
+            id="hoodie",
+            name="Hoodie",
+            lewdness=0,
+            revealingness=0,
+            protection=20,
+            clothing_type="outer",
+            clothing_tags=("outer", "hoodie"),
+            covered_parts=("upper", "boobs", "bra"),
+            base_image_name="hoodie",
+            base_value=35,
+        ),
+        "jacket": Clothing(
+            id="jacket",
+            name="Jacket",
+            lewdness=0,
+            revealingness=0,
+            protection=20,
+            clothing_type="outer",
+            clothing_tags=("outer", "jacket"),
+            covered_parts=("upper", "boobs", "bra"),
+            base_image_name="jacket",
+            base_value=45,
+        ),
+        "leather_jacket": Clothing(
+            id="leather_jacket",
+            name="Leather Jacket",
+            lewdness=10,
+            revealingness=0,
+            protection=20,
+            clothing_type="outer",
+            clothing_tags=("outer", "jacket"),
+            covered_parts=("upper", "boobs", "bra"),
+            base_image_name="leather_jacket",
+            base_value=55,
+        ),
+        # Blazer
+    },
+    "upper": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="upper",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_upper.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "uniform_shirt": Clothing(
+            id="uniform_shirt",
+            name="Uniform Shirt",
+            lewdness=0,
+            revealingness=0,
+            protection=12,
+            clothing_type="upper",
+            clothing_tags=("uniform", "shirt"),
+            covered_parts=("boobs", "bra"),
+            base_image_name="uniform_shirt",
+            base_value=25,
+        ),
+        "t_shirt": Clothing(
+            id="t_shirt",
+            name="T-Shirt",
+            lewdness=5,
+            revealingness=5,
+            protection=10,
+            clothing_type="upper",
+            clothing_tags=("shirt",),
+            covered_parts=("boobs", "bra"),
+            base_image_name="tshirt",
+            base_value=25,
+        ),
+        "tank_top": Clothing(
+            id="tank_top",
+            name="Tank Top",
+            lewdness=5,
+            revealingness=10,
+            protection=6,
+            clothing_type="upper",
+            clothing_tags=("tank_top", "athletic"),
+            covered_parts=("boobs", "bra"),
+            base_image_name="tank_top",
+            base_value=25,
+        ),
+        "dress": Clothing(
+            id="dress",
+            name="Dress",
+            lewdness=5,
+            revealingness=5,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("dress",),
+            covered_parts=("boobs", "bra", "panties"),
+            blocked_layers=("lower", "outer"),
+            base_image_name="dress",
+            base_value=50,
+        ),
+        "crop_top": Clothing(
+            id="crop_top",
+            name="Crop Top",
+            lewdness=10,
+            revealingness=10,
+            protection=6,
+            clothing_type="upper",
+            clothing_tags=("crop_top",),
+            covered_parts=("boobs", "bra"),
+            base_image_name="crop_top",
+            base_value=35,
+        ),
+        "onepiece_swimsuit": Clothing(
+            id="onepiece_swimsuit",
+            name="Onepiece Swimsuit",
+            lewdness=10,
+            revealingness=10,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("onepiece", "swimsuit", "athletic"),
+            covered_parts=("boobs", "bra", "panties", "pussy", "ass"),
+            blocked_layers=("bra", "panties"),
+            base_image_name="onepiece_swimsuit",
+            base_value=35,
+        ),
+        "leotard": Clothing(
+            id="leotard",
+            name="Leotard",
+            lewdness=15,
+            revealingness=15,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("onepiece", "athletic"),
+            covered_parts=("boobs", "bra", "panties", "pussy", "ass"),
+            base_image_name="leotard",
+            base_value=35,
+        ),
+        "mini_dress": Clothing(
+            id="mini_dress",
+            name="Mini Dress",
+            lewdness=25,
+            revealingness=25,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("dress", "mini_dress", "club", "bar", "non_school"),
+            covered_parts=("boobs", "bra", "panties"),
+            blocked_layers=("lower", "outer"),
+            base_image_name="mini_dress",
+            base_value=45,
+        ),
+        "tube_top": Clothing(
+            id="tube_top",
+            name="Tube Top",
+            lewdness=25,
+            revealingness=35,
+            protection=4,
+            clothing_type="upper",
+            covered_parts=("boobs", "bra"),
+            base_image_name="tube_top",
+            base_value=35,
+        ),
+        "corset_top": Clothing(
+            id="corset_top",
+            name="Corset Top",
+            lewdness=35,
+            revealingness=25,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("corset", "club", "bar"),
+            covered_parts=("boobs", "bra"),
+            base_image_name="corset_top",
+            base_value=45,
+        ),
+        "leather_corset_top": Clothing(
+            id="leather_corset_top",
+            name="Leather Corset Top",
+            lewdness=65,
+            revealingness=45,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("corset",),
+            covered_parts=("boobs", "bra"),
+            base_image_name="leather_corset_top",
+            base_value=55,
+        ),
+        "transparent_top": Clothing(
+            id="transparent_top",
+            name="Transparent Top",
+            lewdness=65,
+            revealingness=85,
+            protection=3,
+            clothing_type="upper",
+            clothing_tags=("transparent", "t_upper"),
+            covered_parts=("boobs", "bra"),
+            base_image_name="transparent_top",
+            base_value=55,
+        ),
+        "sexy_maid_top": Clothing(
+            id="sexy_maid_top",
+            name="Sexy Maid Top",
+            lewdness=80,
+            revealingness=55,
+            protection=4,
+            clothing_type="upper",
+            clothing_tags=(
+                "sexy_maid_top",
+                "sexy_maid",
+                "non_gen",
+                "non_school",
+                "non_work",
+            ),
+            outfit_tag="sexy_maid",
+            covered_parts=("boobs", "bra"),
+            base_image_name="sexy_maid_top",
+            icon_name="sexy_maid_outfit",
+            base_value=45,
+            can_be_purchased=False,
+        ),
+        "latex_dress": Clothing(
+            id="latex_dress",
+            name="Latex Dress",
+            lewdness=100,
+            revealingness=45,
+            protection=8,
+            clothing_type="upper",
+            clothing_tags=("dress", "latex_dress", "club", "bar", "non_school"),
+            covered_parts=("boobs", "bra"),
+            blocked_layers=("lower", "outer"),
+            base_image_name="latex_dress",
+            base_value=70,
+        ),
+        "sexy_nurse_dress": Clothing(
+            id="sexy_nurse_dress",
+            name="Sexy Nurse Dress",
+            lewdness=100,
+            revealingness=65,
+            protection=4,
+            clothing_type="upper",
+            clothing_tags=("sexy_nurse", "non_gen", "non_school", "non_work"),
+            outfit_tag="sexy_nurse",
+            covered_parts=("boobs", "bra", "panties"),
+            blocked_layers=("lower", "outer"),
+            base_image_name="sexy_nurse_dress",
+            icon_name="sexy_nurse_dress",
+            base_value=45,
+            can_be_purchased=False,
+        ),
+        # Clothing(name="Transparent Dress", lewdness=32, revealingness=0, protection=5, clothing_type="upper", clothing_tags=("transparent", "dress", "tdress"), covered_parts=("boobs", "bra", "panties"), blocked_layers=("lower",), base_image_name="transparent_dress", base_value=65),
+        # Clothing(name="Mini Dress", lewdness=32, revealingness=0, protection=5, clothing_type="upper", clothing_tags=("dress", "mini_dress"), covered_parts=("boobs", "bra"), blocked_layers=("lower",), base_image_name="mini_dress", base_value=55),
+    },
+    "bra": {
+        # NOTE - "bikini" Blocked layers are ignored for uniform generation.
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="bra",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_bra.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "plain_bra": Clothing(
+            id="plain_bra",
+            name="Plain Bra",
+            lewdness=0,
+            revealingness=0,
+            protection=5,
+            clothing_type="bra",
+            clothing_tags=("uniform",),
+            covered_parts=("boobs",),
+            base_image_name="plain_bra",
+            base_value=25,
+        ),
+        "sports_bra": Clothing(
+            id="sports_bra",
+            name="Sports Bra",
+            lewdness=0,
+            revealingness=0,
+            protection=8,
+            clothing_type="bra",
+            covered_parts=("boobs", "athletic"),
+            base_image_name="sports_bra",
+            base_value=25,
+        ),
+        "strapless_bra": Clothing(
+            id="strapless_bra",
+            name="Strapless Bra",
+            lewdness=5,
+            revealingness=10,
+            protection=2,
+            clothing_type="bra",
+            covered_parts=("boobs",),
+            base_image_name="strapless_bra",
+            base_value=35,
+        ),
+        "bikini_top": Clothing(
+            id="bikini_top",
+            name="Bikini Top",
+            lewdness=15,
+            revealingness=15,
+            protection=5,
+            clothing_type="bra",
+            outfit_tag="bikini",
+            clothing_tags=("non_gen", "bikini", "bikini_top", "non_school", "non_work"),
+            covered_parts=("boobs",),
+            blocked_layers=("outer", "upper"),
+            base_image_name="bikini_top",
+            base_value=35,
+        ),
+        "lace_bra": Clothing(
+            id="lace_bra",
+            name="Lace Bra",
+            lewdness=25,
+            revealingness=25,
+            protection=5,
+            clothing_type="bra",
+            clothing_tags=("lingerie",),
+            covered_parts=("boobs",),
+            base_image_name="lace_bra",
+            base_value=35,
+        ),
+        "transparent_bra": Clothing(
+            id="transparent_bra",
+            name="Transparent Bra",
+            lewdness=50,
+            revealingness=85,
+            protection=2,
+            clothing_type="bra",
+            clothing_tags=("transparent", "lingerie", "t_bra"),
+            covered_parts=("boobs",),
+            base_image_name="transparent_bra",
+            base_value=45,
+        ),
+        "micro_bikini_top": Clothing(
+            id="micro_bikini_top",
+            name="Micro Bikini Top",
+            lewdness=85,
+            revealingness=85,
+            protection=2,
+            clothing_type="bra",
+            outfit_tag="micro_bikini",
+            clothing_tags=(
+                "non_gen",
+                "bikini",
+                "bikini_top",
+                "micro_bikini",
+                "micro_bikini_top",
+                "non_school",
+                "non_work",
+            ),
+            covered_parts=("boobs",),
+            blocked_layers=("outer", "upper"),
+            base_image_name="micro_bikini_top",
+            base_value=45,
+        ),
+        "open_cup_bra": Clothing(
+            id="open_cup_bra",
+            name="Open Cup Bra",
+            lewdness=85,
+            revealingness=100,
+            protection=0,
+            clothing_type="bra",
+            clothing_tags=("lingerie", "open_cup_bra"),
+            base_image_name="open_cup",
+            base_value=55,
+        ),
+        "peekaboo_bikini_top": Clothing(
+            id="peekaboo_bikini_top",
+            name="Peekaboo Bikini Top",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="bra",
+            outfit_tag="peekaboo_bikini",
+            clothing_tags=(
+                "non_gen",
+                "bikini",
+                "bikini_top",
+                "peekaboo_bikini",
+                "peekaboo_bikini_top",
+                "open_cup_bra",
+                "non_school",
+            ),
+            blocked_layers=("outer", "upper"),
+            base_image_name="peekaboo_bikini_top",
+            base_value=55,
+        ),
+        "sexy_nurse_bra": Clothing(
+            id="sexy_nurse_bra",
+            name="Sexy Nurse Bra",
+            lewdness=100,
+            revealingness=65,
+            protection=2,
+            clothing_type="bra",
+            outfit_tag="sexy_nurse",
+            clothing_tags=("sexy_nurse", "non_gen", "non_school", "non_work"),
+            covered_parts=("boobs",),
+            base_image_name="sexy_nurse_bra",
+            base_value=35,
+            can_be_purchased=False,
+        ),
+    },
+    "lower": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="lower",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_lower.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "jeans": Clothing(
+            id="jeans",
+            name="Jeans",
+            lewdness=0,
+            revealingness=0,
+            protection=15,
+            clothing_type="lower",
+            clothing_tags=("jeans",),
+            covered_parts=("panties", "pussy", "ass", "legs"),
+            base_image_name="jeans",
+            base_value=25,
+        ),
+        "uniform_skirt": Clothing(
+            id="uniform_skirt",
+            name="Uniform Skirt",
+            lewdness=5,
+            revealingness=5,
+            protection=6,
+            clothing_type="lower",
+            clothing_tags=("uniform", "skirt"),
+            covered_parts=("panties", "pussy", "ass"),
+            base_image_name="uniform_skirt",
+            base_value=25,
+        ),
+        "leggings": Clothing(
+            id="leggings",
+            name="Leggings",
+            lewdness=5,
+            revealingness=3,
+            protection=8,
+            clothing_type="lower",
+            clothing_tags=("leggings", "athletic"),
+            covered_parts=("panties", "pussy", "ass", "legs"),
+            base_image_name="leggings",
+            base_value=25,
+        ),
+        "casual_shorts": Clothing(
+            id="casual_shorts",
+            name="Casual Shorts",
+            lewdness=5,
+            revealingness=10,
+            protection=3,
+            clothing_type="lower",
+            clothing_tags=("shorts", "athletic"),
+            covered_parts=("panties", "pussy", "ass"),
+            base_image_name="casual_shorts",
+            base_value=25,
+        ),
+        "denim_shorts": Clothing(
+            id="denim_shorts",
+            name="Denim Shorts",
+            lewdness=15,
+            revealingness=15,
+            protection=6,
+            clothing_type="lower",
+            clothing_tags=("shorts",),
+            covered_parts=("panties", "pussy", "ass"),
+            base_image_name="denim_shorts",
+            base_value=25,
+        ),
+        "denim_micro_shorts": Clothing(
+            id="denim_micro_shorts",
+            name="Denim Micro Shorts",
+            lewdness=45,
+            revealingness=60,
+            protection=2,
+            clothing_type="lower",
+            clothing_tags=("shorts",),
+            covered_parts=("panties", "pussy", "ass"),
+            base_image_name="denim_micro_shorts",
+            base_value=35,
+        ),
+        "booty_shorts": Clothing(
+            id="booty_shorts",
+            name="Booty Shorts",
+            lewdness=50,
+            revealingness=60,
+            protection=2,
+            clothing_type="lower",
+            clothing_tags=("shorts",),
+            covered_parts=("panties", "pussy", "ass"),
+            base_image_name="booty_shorts",
+            base_value=35,
+        ),
+        "micro_uniform_skirt": Clothing(
+            id="micro_uniform_skirt",
+            name="Micro Uniform Skirt",
+            lewdness=75,
+            revealingness=75,
+            protection=4,
+            clothing_type="lower",
+            clothing_tags=("uniform", "skirt", "microskirt"),
+            base_image_name="micro_uniform_skirt",
+            base_value=45,
+        ),
+        "micro_skirt": Clothing(
+            id="micro_skirt",
+            name="Micro Skirt",
+            lewdness=75,
+            revealingness=75,
+            protection=2,
+            clothing_type="lower",
+            clothing_tags=("skirt", "microskirt", "club", "bar"),
+            base_image_name="micro_skirt",
+            base_value=45,
+        ),
+        "sexy_maid_skirt": Clothing(
+            id="sexy_maid_skirt",
+            name="Sexy Maid Skirt",
+            lewdness=80,
+            revealingness=55,
+            protection=2,
+            clothing_type="lower",
+            outfit_tag="sexy_maid",
+            clothing_tags=(
+                "sexy_maid_skirt",
+                "sexy_maid",
+                "skirt",
+                "microskirt",
+                "non_gen",
+                "non_school",
+                "non_work",
+            ),
+            base_image_name="sexy_maid_skirt",
+            icon_name="sexy_maid_outfit",
+            base_value=35,
+            can_be_purchased=False,
+        ),
+    },
+    "panties": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="panties",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_panties.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "brief_panties": Clothing(
+            id="brief_panties",
+            name="Brief Panties",
+            lewdness=0,
+            revealingness=0,
+            protection=12,
+            clothing_type="panties",
+            clothing_tags=("uniform", "brief_panties"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="brief_panties",
+            base_value=20,
+        ),
+        "plain_panties": Clothing(
+            id="plain_panties",
+            name="Plain Panties",
+            lewdness=0,
+            revealingness=0,
+            protection=10,
+            clothing_type="panties",
+            clothing_tags=("uniform", "plain_panties"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="plain_panties",
+            base_value=20,
+        ),
+        "high_cut_panties": Clothing(
+            id="high_cut_panties",
+            name="High Cut Panties",
+            lewdness=5,
+            revealingness=5,
+            protection=6,
+            clothing_type="panties",
+            clothing_tags=("uniform", "high_cut_panties"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="highcut_panties",
+            base_value=30,
+        ),
+        "high_leg_panties": Clothing(
+            id="high_leg_panties",
+            name="High Leg Panties",
+            lewdness=10,
+            revealingness=10,
+            protection=6,
+            clothing_type="panties",
+            clothing_tags=("uniform", "high_leg_panties"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="highleg_panties",
+            base_value=30,
+        ),
+        "bikini_bottom": Clothing(
+            id="bikini_bottom",
+            name="Bikini Bottoms",
+            lewdness=15,
+            revealingness=15,
+            protection=6,
+            clothing_type="panties",
+            outfit_tag="bikini",
+            clothing_tags=(
+                "non_gen",
+                "bikini",
+                "bikini_bottom",
+                "non_school",
+                "non_work",
+            ),
+            covered_parts=("pussy", "ass"),
+            blocked_layers=("lower",),
+            base_image_name="bikini_bottom",
+            base_value=30,
+        ),
+        "lace_panties": Clothing(
+            id="lace_panties",
+            name="Lace Panties",
+            lewdness=25,
+            revealingness=25,
+            protection=8,
+            clothing_type="panties",
+            clothing_tags=("lingerie", "lace_panties"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="lace_panties",
+            base_value=35,
+        ),
+        "thong": Clothing(
+            id="thong",
+            name="Thong",
+            lewdness=40,
+            revealingness=50,
+            protection=4,
+            clothing_type="panties",
+            clothing_tags=("lingerie", "thong"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="thong",
+            base_value=35,
+        ),
+        "g_string": Clothing(
+            id="g_string",
+            name="G-String",
+            lewdness=50,
+            revealingness=60,
+            protection=4,
+            clothing_type="panties",
+            clothing_tags=("lingerie", "g_string"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="gstring",
+            base_value=35,
+        ),
+        "micro_bikini_bottom": Clothing(
+            id="micro_bikini_bottom",
+            name="Micro Bikini Bottoms",
+            lewdness=85,
+            revealingness=85,
+            protection=4,
+            clothing_type="panties",
+            outfit_tag="micro_bikini",
+            clothing_tags=(
+                "non_gen",
+                "bikini",
+                "bikini_bottom",
+                "micro_bikini",
+                "micro_bikini_bottom",
+                "non_school",
+                "non_work",
+            ),
+            covered_parts=("pussy", "ass"),
+            blocked_layers=("lower",),
+            base_image_name="micro_bikini_bottom",
+            base_value=35,
+        ),
+        "transparent_panties": Clothing(
+            id="transparent_panties",
+            name="Transparent Panties",
+            lewdness=50,
+            revealingness=85,
+            protection=5,
+            clothing_type="panties",
+            clothing_tags=("transparent", "lingerie", "t_panty"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="transparent_panties",
+            base_value=45,
+        ),
+        "assless_panties": Clothing(
+            id="assless_panties",
+            name="Assless Panties",
+            lewdness=85,
+            revealingness=85,
+            protection=2,
+            clothing_type="panties",
+            clothing_tags=("lingerie", "assless", "assless_panties"),
+            covered_parts=("pussy",),
+            base_image_name="assless_panties",
+            base_value=55,
+        ),
+        "crotchless_panties": Clothing(
+            id="crotchless_panties",
+            name="Crotchless Panties",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="panties",
+            clothing_tags=("lingerie", "crotchless", "crotchless_panties"),
+            covered_parts=("ass",),
+            base_image_name="crotchless_panties",
+            base_value=55,
+        ),
+        "crotchless_butterfly_panties": Clothing(
+            id="crotchless_butterfly_panties",
+            name="Crotchless Butterfly Panties",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="panties",
+            clothing_tags=("lingerie", "crotchless", "crotchless_panties"),
+            covered_parts=("ass",),
+            base_image_name="crotchless_butterfly_panties",
+            base_value=65,
+        ),
+        "peekaboo_bikini_bottom": Clothing(
+            id="peekaboo_bikini_bottom",
+            name="Peekaboo Bikini Bottoms",
+            lewdness=100,
+            revealingness=100,
+            protection=0,
+            clothing_type="panties",
+            outfit_tag="peekaboo_bikini",
+            clothing_tags=(
+                "non_gen",
+                "bikini",
+                "bikini_bottom",
+                "peekaboo_bikini",
+                "peekaboo_bikini_bottom",
+                "crotchless",
+                "crotchless_panties",
+                "assless",
+                "assless_panties",
+                "non_school",
+            ),
+            blocked_layers=("lower",),
+            base_image_name="peekaboo_bikini_bottom",
+            base_value=75,
+        ),
+        "sexy_nurse_thong": Clothing(
+            id="sexy_nurse_thong",
+            name="Sexy Nurse Thong",
+            lewdness=65,
+            revealingness=50,
+            protection=4,
+            clothing_type="panties",
+            outfit_tag="sexy_nurse",
+            clothing_tags=("sexy_nurse", "non_gen", "non_school", "non_work", "thong"),
+            covered_parts=("pussy", "ass"),
+            base_image_name="sexy_nurse_thong",
+            base_value=45,
+            can_be_purchased=False,
+        ),
+    },
+    "socks": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=0,
+            revealingness=0,
+            protection=0,
+            clothing_type="socks",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_socks.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "short_socks": Clothing(
+            id="short_socks",
+            name="Short Socks",
+            lewdness=0,
+            revealingness=5,
+            protection=0,
+            clothing_type="socks",
+            clothing_tags=("socks", "uniform", "athletic"),
+            covered_parts=("feet",),
+            base_image_name="short_socks",
+            base_value=15,
+        ),
+        "calf_socks": Clothing(
+            id="calf_socks",
+            name="Calf Socks",
+            lewdness=0,
+            revealingness=0,
+            protection=3,
+            clothing_type="socks",
+            clothing_tags=("socks", "uniform"),
+            covered_parts=("feet",),
+            base_image_name="calf_socks",
+            base_value=15,
+        ),
+        "uniform_stockings": Clothing(
+            id="uniform_stockings",
+            name="Uniform Stockings",
+            lewdness=5,
+            revealingness=0,
+            protection=4,
+            clothing_type="socks",
+            clothing_tags=("uniform", "stockings", "long_socks"),
+            covered_parts=("legs", "feet"),
+            base_image_name="uniform_stockings",
+            base_value=20,
+        ),
+        "pantyhose": Clothing(
+            id="pantyhose",
+            name="Pantyhose",
+            lewdness=10,
+            revealingness=0,
+            protection=8,
+            clothing_type="socks",
+            clothing_tags=(
+                "transparent",
+                "transparent_socks",
+                "pantyhose",
+                "long_socks",
+            ),
+            covered_parts=("panties", "pussy", "ass", "legs", "feet"),
+            base_image_name="pantyhose",
+            base_value=25,
+        ),
+        "transparent_stockings": Clothing(
+            id="transparent_stockings",
+            name="Transparent Stockings",
+            lewdness=35,
+            revealingness=0,
+            protection=5,
+            clothing_type="socks",
+            clothing_tags=(
+                "transparent",
+                "t_socks",
+                "stockings",
+                "long_socks",
+                "club",
+                "bar",
+            ),
+            covered_parts=("legs", "feet"),
+            base_image_name="transparent_stockings",
+            base_value=35,
+        ),
+        "fishnet_stockings": Clothing(
+            id="fishnet_stockings",
+            name="Fishnet Stockings",
+            lewdness=50,
+            revealingness=0,
+            protection=2,
+            clothing_type="socks",
+            clothing_tags=(
+                "transparent",
+                "t_socks",
+                "fishnet",
+                "long_socks",
+                "club",
+                "bar",
+            ),
+            covered_parts=("legs", "feet"),
+            base_image_name="fishnet_stockings",
+            base_value=35,
+        ),
+    },
+    "shoes": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=0,
+            revealingness=0,
+            protection=0,
+            clothing_type="shoes",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_shoes.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "sneakers": Clothing(
+            id="sneakers",
+            name="Sneakers",
+            lewdness=0,
+            revealingness=0,
+            protection=5,
+            clothing_type="shoes",
+            clothing_tags=("shoes", "sneakers"),
+            covered_parts=("socks", "feet"),
+            base_image_name="sneakers",
+            base_value=15,
+            can_be_damaged=False,
+        ),
+        "clogs": Clothing(
+            id="clogs",
+            name="Clogs",
+            lewdness=0,
+            revealingness=0,
+            protection=4,
+            clothing_type="shoes",
+            clothing_tags=("shoes", "uniform"),
+            covered_parts=("socks", "feet"),
+            base_image_name="clogs",
+            base_value=35,
+            can_be_damaged=False,
+        ),
+        "flip_flops": Clothing(
+            id="flip_flops",
+            name="Flip Flops",
+            lewdness=3,
+            revealingness=0,
+            protection=0,
+            clothing_type="shoes",
+            clothing_tags=("shoes",),
+            covered_parts=("socks",),
+            blocked_layers=("socks",),
+            base_image_name="flip_flops",
+            base_value=15,
+            can_be_damaged=False,
+        ),
+        "heels": Clothing(
+            id="heels",
+            name="Heels",
+            lewdness=10,
+            revealingness=0,
+            protection=2,
+            clothing_type="shoes",
+            clothing_tags=("shoes", "heels", "club", "bar"),
+            covered_parts=("socks", "feet"),
+            base_image_name="heels",
+            base_value=35,
+            can_be_damaged=False,
+        ),
+    },
+    "buttplug": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=0,
+            revealingness=0,
+            protection=0,
+            clothing_type="buttplug",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_buttplug.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "buttplug": Clothing(
+            id="buttplug",
+            name="Buttplug",
+            lewdness=60,
+            revealingness=0,
+            protection=0,
+            clothing_type="buttplug",
+            clothing_tags=("buttplug",),
+            covered_parts=("asshole",),
+            base_image_name="buttplug",
+            base_value=35,
+            can_be_damaged=False,
+        ),
+        "tail_buttplug": Clothing(
+            id="tail_buttplug",
+            name="Buttplug with Tail",
+            lewdness=75,
+            revealingness=0,
+            protection=0,
+            clothing_type="buttplug",
+            clothing_tags=(
+                "buttplug",
+                "tail_buttplug",
+            ),
+            covered_parts=("asshole",),
+            base_image_name="tail_buttplug",
+            base_value=45,
+            can_be_damaged=False,
+        ),
+        "vibrating_buttplug": Clothing(
+            id="vibrating_buttplug",
+            name="Vibrating Buttplug",
+            lewdness=100,
+            revealingness=0,
+            protection=0,
+            clothing_type="buttplug",
+            clothing_tags=(
+                "buttplug",
+                "vibrator",
+            ),
+            covered_parts=("asshole",),
+            base_image_name="vibrating_buttplug",
+            base_value=55,
+            can_be_damaged=False,
+        ),
+    },
+    "pussy_acc": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=0,
+            revealingness=0,
+            protection=0,
+            clothing_type="pussy_acc",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_pussy_acc.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "pussyplug": Clothing(
+            id="pussyplug",
+            name="Pussy Plug",
+            lewdness=75,
+            revealingness=0,
+            protection=0,
+            clothing_type="pussy_acc",
+            clothing_tags=("pussyplug",),
+            covered_parts=("pussyhole",),
+            base_image_name="pussyplug",
+            base_value=35,
+            can_be_damaged=False,
+        ),
+        "pussyweights": Clothing(
+            id="pussyweights",
+            name="Pussy Weights",
+            lewdness=75,
+            revealingness=0,
+            protection=0,
+            clothing_type="pussy_acc",
+            clothing_tags=("pussyweights",),
+            base_image_name="pussyweights",
+            base_value=45,
+            can_be_damaged=False,
+        ),
+        "weighted_pussyplug": Clothing(
+            id="weighted_pussyplug",
+            name="Weighted Pussy Plug",
+            lewdness=85,
+            revealingness=0,
+            protection=0,
+            clothing_type="pussy_acc",
+            clothing_tags=("weighted_pussyplug", "pussyplug"),
+            covered_parts=("pussyhole",),
+            base_image_name="weighted_pussyplug",
+            base_value=45,
+            can_be_damaged=False,
+        ),
+        "pussyclamp": Clothing(
+            id="pussyclamp",
+            name="Pussy Clamp",
+            lewdness=100,
+            revealingness=0,
+            protection=0,
+            clothing_type="pussy_acc",
+            clothing_tags=("pussyclamp",),
+            base_image_name="pussyclamp",
+            base_value=55,
+            can_be_damaged=False,
+        ),
+        "vibrating_pussyplug": Clothing(
+            id="vibrating_pussyplug",
+            name="Vibrating Pussy Plug",
+            lewdness=100,
+            revealingness=0,
+            protection=0,
+            clothing_type="pussy_acc",
+            clothing_tags=(
+                "pussyplug",
+                "vibrator",
+            ),
+            covered_parts=("pussyhole",),
+            base_image_name="vibrating_pussyplug",
+            base_value=65,
+            can_be_damaged=False,
+        ),
+    },
+    "nipple_acc": {
+        "none": Clothing(
+            id="none",
+            name="None",
+            lewdness=0,
+            revealingness=0,
+            protection=0,
+            clothing_type="nipple_acc",
+            clothing_tags=("none",),
+            base_image_name="images/body/none_nipple_acc.webp",
+            base_value=0,
+            can_be_damaged=False,
+        ),
+        "pasties": Clothing(
+            id="pasties",
+            name="Nipple Pasties",
+            lewdness=45,
+            revealingness=0,
+            protection=0,
+            clothing_type="nipple_acc",
+            clothing_tags=("pasties", "passive_arousal_l"),
+            covered_parts=("nipple",),
+            base_image_name="pasties",
+            base_value=35,
+            can_be_damaged=False,
+        ),
+        "pasties_tassels": Clothing(
+            id="pasties_tassels",
+            name="Pasties with Tassels",
+            lewdness=60,
+            revealingness=0,
+            protection=0,
+            clothing_type="nipple_acc",
+            clothing_tags=("pasties", "pasties_tassels", "passive_arousal_l"),
+            covered_parts=("nipple",),
+            base_image_name="pasties_tassels",
+            base_value=35,
+            can_be_damaged=False,
+        ),
+        "nippleclamp": Clothing(
+            id="nippleclamp",
+            name="Nipple Clamps",
+            lewdness=75,
+            revealingness=0,
+            protection=0,
+            clothing_type="nipple_acc",
+            clothing_tags=("nippleclamp",),
+            covered_parts=("nipple",),
+            base_image_name="nippleclamp",
+            base_value=45,
+            can_be_damaged=False,
+        ),
+        "vibrating_nippleclamp": Clothing(
+            id="vibrating_nippleclamp",
+            name="Vibrating Nipple Clamps",
+            lewdness=100,
+            revealingness=0,
+            protection=0,
+            clothing_type="nipple_acc",
+            clothing_tags=(
+                "nippleclamp",
+                "vibrator",
+            ),
+            covered_parts=("nipple",),
+            base_image_name="vibrating_nippleclamp",
+            base_value=55,
+            can_be_damaged=False,
+        ),
+    },
+}
+
+# Each tag can have 'value', 'lewdness', 'revealingness' and 'protection' increase or decreases.
+# There are all percentages!
+database_clothing_quality_tags = {
+    "nipple_acc": {
+        "positive": {
+            "item.id == 'pasties'": {
+                "material": {
+                    "metallic_foil": {"value": 18},
+                    "crystal_edge": {"value": 28, "lewdness": 10},
+                },
+                "finish": {
+                    "designer_brand": {"value": 30},
+                    "brand_name": {"value": 22},
+                    "luxury_label": {"value": 35},
+                }
+            },
+            "item.id == 'pasties_tassels'": {
+                "material": {
+                    "swinging_silk": {"value": 25, "lewdness": 15},
+                    "feather_light": {"value": 20, "lewdness": 12},
+                },
+                "detail": {
+                    "premium_tassel": {"value": 32, "lewdness": 20},
+                }
+            },
+            "item.id == 'nippleclamp'": {
+                "material": {
+                    "chrome_finish": {"value": 28},
+                },
+                "mechanism": {
+                    "precision_adjustable": {"value": 35},
+                    "chain_connected": {"value": 30, "lewdness": 15},
+                }
+            },
+            "item.id == 'vibrating_nippleclamp'": {
+                "motor": {
+                    "quiet_motor": {"value": 45, "lewdness": 25},
+                    "multi_speed": {"value": 40, "lewdness": 30},
+                },
+                "control": {
+                    "remote_vibe": {"value": 55, "lewdness": 35},
+                }
+            },
+            "generic": {
+                "finish": {
+                    "clean_lines": {"value": 12},
+                    "durable_coating": {"value": 15},
+                    "subtle_design": {"value": 10},
+                }
+            }
+        },
+        "negative": {
+            "item.id == 'pasties'": {
+                "material": {
+                    "cheap_plastic": {"value": -12},
+                    "irritating_back": {"value": -10, "lewdness": 5},
+                },
+                "adhesion": {
+                    "weak_adhesive": {"value": -15},
+                }
+            },
+            "item.id == 'pasties_tassels'": {
+                "detail": {
+                    "tangled_threads": {"value": -14},
+                    "short_tassel": {"value": -10, "lewdness": 5},
+                },
+                "color": {
+                    "fading_color": {"value": -10},
+                }
+            },
+            "item.id == 'nippleclamp'": {
+                "mechanism": {
+                    "loose_grip": {"value": -18},
+                    "sharp_edge": {"value": -20, "lewdness": 10},
+                },
+                "material": {
+                    "rust_prone": {"value": -15},
+                }
+            },
+            "item.id == 'vibrating_nippleclamp'": {
+                "motor": {
+                    "loud_motor": {"value": -25, "lewdness": 10},
+                    "unreliable_vibe": {"value": -22, "lewdness": 5},
+                },
+                "battery": {
+                    "short_battery": {"value": -20},
+                }
+            },
+            "generic": {
+                "finish": {
+                    "poor_finish": {"value": -10},
+                    "cheap_material": {"value": -10},
+                    "basic_mold": {"value": -5},
+                }
+            }
+        },
+    },
+    "pussy_acc": {
+        "positive": {
+            "item.id == 'pussyplug'": {
+                "material": {
+                    "polished_steel": {"value": 35},
+                },
+                "base": {
+                    "smooth_taper": {"value": 28},
+                    "gem_base": {"value": 45, "lewdness": 20},
+                }
+            },
+            "item.id == 'pussyweights'": {
+                "material": {
+                    "chrome_weights": {"value": 32},
+                },
+                "chain": {
+                    "weighted_chain": {"value": 30, "lewdness": 25},
+                },
+                "clamp": {
+                    "adjustable_clamp": {"value": 25},
+                }
+            },
+            "item.id == 'weighted_pussyplug'": {
+                "balls": {
+                    "stackable_balls": {"value": 40, "lewdness": 30},
+                },
+                "coating": {
+                    "silicone_coated": {"value": 35},
+                },
+                "weight": {
+                    "progressive_weight": {"value": 38},
+                }
+            },
+            "item.id == 'pussyclamp'": {
+                "clamp": {
+                    "precision_clamp": {"value": 30, "lewdness": 20},
+                    "adjustable_tension": {"value": 35},
+                },
+                "chain": {
+                    "linked_chain": {"value": 28, "lewdness": 15},
+                }
+            },
+            "item.id == 'vibrating_pussyplug'": {
+                "motor": {
+                    "powerful_motor": {"value": 50, "lewdness": 40},
+                    "rhythmic_pattern": {"value": 45, "lewdness": 35},
+                },
+                "control": {
+                    "wireless_remote": {"value": 60, "lewdness": 45},
+                }
+            },
+            "generic": {
+                "surface": {
+                    "smooth_surface": {"value": 15},
+                },
+                "safety": {
+                    "body_safe": {"value": 12},
+                },
+                "shape": {
+                    "simple_shape": {"value": 10},
+                }
+            }
+        },
+        "negative": {
+                "item.id == 'pussyplug'": {
+                    "material": {
+                        "porous_material": {
+                            "value": -22,
+                            "lewdness": 5
+                        }
+                    },
+                    "cast": {
+                        "uneven_cast": {
+                            "value": -18
+                        }
+                    },
+                    "seam": {
+                        "sharp_seam": {
+                            "value": -20
+                        }
+                    }
+                },
+                "item.id == 'pussyweights'": {
+                    "weight": {
+                        "unbalanced_weight": {
+                            "value": -15
+                        }
+                    },
+                    "clamp": {
+                        "rusting_clamp": {
+                            "value": -18
+                        }
+                    },
+                    "chain": {
+                        "weak_chain": {
+                            "value": -12
+                        }
+                    }
+                },
+                "item.id == 'weighted_pussyplug'": {
+                    "balls": {
+                        "detachable_balls": {
+                            "value": -20
+                        }
+                    },
+                    "weight": {
+                        "poor_weight_dist": {
+                            "value": -16
+                        }
+                    },
+                    "thread": {
+                        "cheap_thread": {
+                            "value": -14
+                        }
+                    }
+                },
+                "item.id == 'pussyclamp'": {
+                    "clamp": {
+                        "slipping_grip": {
+                            "value": -18
+                        },
+                        "pinching_edge": {
+                            "value": -20,
+                            "lewdness": 10
+                        }
+                    },
+                    "material": {
+                        "cheap_metal": {
+                            "value": -15
+                        }
+                    }
+                },
+                "item.id == 'vibrating_pussyplug'": {
+                    "motor": {
+                        "noisy_vibe": {
+                            "value": -25,
+                            "lewdness": 10
+                        }
+                    },
+                    "battery": {
+                        "weak_battery": {
+                            "value": -22
+                        }
+                    },
+                    "temperature": {
+                        "overheating": {
+                            "value": -28
+                        }
+                    }
+                },
+                "generic": {
+                    "texture": {
+                        "rough_texture": {
+                            "value": -10
+                        }
+                    },
+                    "durability": {
+                        "low_durability": {
+                            "value": -10
+                        }
+                    },
+                    "mold": {
+                        "basic_mold": {
+                            "value": -5
+                        }
+                    }
+                }
+            }
+        },
+    "buttplug": {
+        "positive": {
+            "item.id == 'buttplug'": {
+                "material": {
+                    "mirror_steel": {"value": 38},
+                },
+                "shape": {
+                    "tapered_base": {"value": 30},
+                },
+                "handle": {
+                    "flared_handle": {"value": 28},
+                }
+            },
+            "item.id == 'buttplug_tail'": {
+                "tail": {
+                    "luxury_fur": {"value": 45, "lewdness": 25},
+                    "silky_tail": {"value": 35, "lewdness": 20},
+                    "long_plume": {"value": 40, "lewdness": 22},
+                }
+            },
+            "item.id == 'vibrating_buttplug'": {
+                "motor": {
+                    "deep_rumble": {"value": 55, "lewdness": 40},
+                    "multi_pattern": {"value": 50, "lewdness": 35},
+                },
+                "control": {
+                    "app_controlled": {"value": 65, "lewdness": 50},
+                }
+            },
+            "generic": {
+                "shape": {
+                    "comfortable_shape": {"value": 15},
+                },
+                "finish": {
+                    "smooth_finish": {"value": 12},
+                },
+                "base": {
+                    "reliable_base": {"value": 10},
+                }
+            }
+        },
+        "negative": {
+            "item.id == 'buttplug'": {
+                "material": {
+                    "rough_cast": {
+                        "value": -18
+                    },
+                    "cheap_plating": {
+                        "value": -12
+                    }
+                },
+                "flare": {
+                    "thin_flare": {
+                        "value": -15
+                    }
+                }
+            },
+            "item.id == 'buttplug_tail'": {
+                "tail": {
+                    "shedding_fur": {
+                        "value": -20,
+                        "lewdness": 5
+                    },
+                    "short_tail": {
+                        "value": -15
+                    }
+                },
+                "attachment": {
+                    "poor_attachment": {
+                        "value": -18
+                    }
+                }
+            },
+            "item.id == 'vibrating_buttplug'": {
+                "motor": {
+                    "erratic_vibe": {
+                        "value": -25,
+                        "lewdness": 10
+                    }
+                },
+                "operation": {
+                    "loud_operation": {
+                        "value": -22
+                    }
+                },
+                "runtime": {
+                    "short_runtime": {
+                        "value": -20
+                    }
+                }
+            },
+            "generic": {
+                "surface": {
+                    "uneven_surface": {
+                        "value": -10
+                    }
+                },
+                "base": {
+                    "weak_base": {
+                        "value": -10
+                    }
+                },
+                "mold": {
+                    "cheap_mold": {
+                        "value": -5
+                    }
+                }
+            }
+        }
+    },
+    "shoes": {
+        "positive": {
+            "generic": {
+                "brand": {
+                    "designer_brand": {
+                        "value": 30
+                    },
+                    "brand_name": {
+                        "value": 22
+                    },
+                    "luxury_label": {
+                        "value": 35,
+                    }
+                },
+                "fabric": {
+                    "low_quality_materials": {
+                        "value": 18,
+                        "protection": 10
+                    },
+                    "premium_materials": {
+                        "value": 25,
+                        "protection": 20
+                    }
+                },
+                "finish": {
+                    "tailored_fit": {
+                        "value": 20,
+                        "revealingness": -10,
+                        "protection": -10
+                    },
+                    "elegant_details": {
+                        "value": 15,
+                        "lewdness": 5
+                    }
+                }
+            }
+        },
+        "negative": {
+            "generic": {
+                "brand": {
+                    "knock_off_brand": {
+                        "value": -15,
+                        "lewdness": 5,
+                        "revealingness": 10,
+                        "protection": -15
+                    },
+                    "cheap_fake": {
+                        "value": -20,
+                        "lewdness": 10,
+                        "revealingness": 15,
+                        "protection": -20
+                    }
+                },
+                "fabric": {
+                    "low_quality_materials": {
+                        "value": -12,
+                        "lewdness": 5,
+                        "revealingness": 10,
+                        "protection": -15
+                    },
+                    "thin_materials": {
+                        "value": -10,
+                        "lewdness": 10,
+                        "revealingness": 20,
+                        "protection": -10
+                    },
+                },
+                "finish": {
+                    "poor_fit": {
+                        "value": -18,
+                        "lewdness": 10,
+                        "revealingness": 10,
+                        "protection": 10
+                    },
+                    "mass_produced": {
+                        "value": -10,
+                        "revealingness": 5
+                    }
+                }
+            }
+        }
+    },
+    "default": {
+        "positive": {
+            "generic": {
+                "brand": {
+                    "designer_brand": {
+                        "value": 30
+                    },
+                    "brand_name": {
+                        "value": 22
+                    },
+                    "luxury_label": {
+                        "value": 35,
+                    }
+                },
+                "fabric": {
+                    "high_quality_fabric": {
+                        "value": 18,
+                        "protection": 10
+                    },
+                    "double_stitched": {
+                        "value": 15,
+                        "protection": 10
+                    },
+                    "premium_material": {
+                        "value": 25,
+                        "protection": 20
+                    },
+                    "silk_blend": {
+                        "value": 20,
+                        "lewdness": 10,
+                        "revealingness": 5,
+                        "protection": -15
+                    }
+                },
+                "finish": {
+                    "perfect_seams": {
+                        "value": 12,
+                        "protection": 5
+                    },
+                    "tailored_fit": {
+                        "value": 20,
+                        "revealingness": -10,
+                        "protection": -10
+                    },
+                    "elegant_details": {
+                        "value": 15,
+                        "lewdness": 5
+                    }
+                }
+            }
+        },
+        "negative": {
+            "generic": {
+                "brand": {
+                    "knock_off_brand": {
+                        "value": -15,
+                        "lewdness": 5,
+                        "revealingness": 10,
+                        "protection": -15
+                    },
+                    "cheap_fake": {
+                        "value": -20,
+                        "lewdness": 10,
+                        "revealingness": 15,
+                        "protection": -20
+                    }
+                },
+                "fabric": {
+                    "low_quality_fabric": {
+                        "value": -12,
+                        "lewdness": 5,
+                        "revealingness": 10,
+                        "protection": -15
+                    },
+                    "weak_stitches": {
+                        "value": -15,
+                        "revealingness": 15,
+                        "protection": -10
+                    },
+                    "thin_material": {
+                        "value": -10,
+                        "lewdness": 10,
+                        "revealingness": 20,
+                        "protection": -10
+                    },
+                    "scratchy_polyester": {
+                        "value": -14,
+                        "lewdness": 5,
+                        "revealingness": 10
+                    }
+                },
+                "finish": {
+                    "loose_threads": {
+                        "value": -10,
+                        "lewdness": 5,
+                        "revealingness": 12,
+                        "protection": -10
+                    },
+                    "poor_fit": {
+                        "value": -18,
+                        "lewdness": 10,
+                        "revealingness": 10,
+                        "protection": 10
+                    },
+                    "mass_produced": {
+                        "value": -10,
+                        "revealingness": 5
+                    }
+                }
+            }
+        }
+    }
+}
+ 
+
+THIS IS the source code of theclothes from the game extract every category and every peiice of clothing and classify them where yolo detects leg_cover for clothes thatcover legs and boobs_cover for clothes covering boobs and so on for the pussy_cover and ass_cover also i think we can make use of the values from suourve vode as valuw,price,reavelingness,protection,coverage the cnn model will be responsible to classify the cover detected to the specfic cloth typing 

@@ -1,0 +1,25 @@
+{
+  "reference_directory": "F:\\My Tools\\New folder\\Girl Packer1\\smaples",
+  "new_application_samples_directory": "samples/",
+  "new_application_samples_present": true,
+  "new_application_user_image_count": 44,
+  "new_application_image_formats": {".jpg": 44},
+  "matching_reference_images_by_filename_and_sha256": 44,
+  "reference_hash_mismatches": [],
+  "read_only_inspection": true,
+  "supported_image_count": 44,
+  "supported_image_formats": {".jpg": 44},
+  "dimensions_pixels": {
+    "920x1380": 11,
+    "920x614": 10,
+    "912x1358": 4,
+    "920x518": 9,
+    "920x1371": 3,
+    "920x1381": 3,
+    "920x1379": 4
+  },
+  "unreadable_images": [],
+  "exact_duplicate_groups": [],
+  "non_image_files_ignored": {".mp4": 13},
+  "assessment": "Both sample folders contain the same 44 JPEG files by filename and SHA-256. NewAssetApp scanner indexed 44/44 with no duplicates or decode errors. Suitable for scanner, YOLO detection, crop, and GUI testing; contains no ground-truth annotations and cannot establish classification accuracy."
+}

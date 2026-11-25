@@ -1,0 +1,796 @@
+{
+  "class_order": [
+    "bra",
+    "dress",
+    "footwear",
+    "lingerie",
+    "outerwear",
+    "pants",
+    "panty",
+    "shirt",
+    "shorts",
+    "skirt",
+    "socks",
+    "top"
+  ],
+  "counts_by_split_and_class": {
+    "train": {
+      "bra": 140,
+      "dress": 245,
+      "footwear": 162,
+      "lingerie": 110,
+      "outerwear": 67,
+      "pants": 116,
+      "panty": 199,
+      "shirt": 227,
+      "shorts": 100,
+      "skirt": 271,
+      "socks": 107,
+      "top": 137
+    },
+    "val": {
+      "bra": 35,
+      "dress": 62,
+      "footwear": 40,
+      "lingerie": 28,
+      "outerwear": 17,
+      "pants": 29,
+      "panty": 40,
+      "shirt": 56,
+      "shorts": 25,
+      "skirt": 54,
+      "socks": 27,
+      "top": 36
+    },
+    "test": {}
+  },
+  "split_totals": {
+    "train": 1881,
+    "val": 449,
+    "test": 0
+  },
+  "total_images": 2330,
+  "supported_extensions": {
+    ".jpg": 2330
+  },
+  "unreadable_files": [],
+  "exact_duplicate_groups": [
+    [
+      {
+        "path": "train/dress/short_dres00s (1).jpg",
+        "class_name": "dress",
+        "split": "train",
+        "sha256": "a16f90876f4cb5201c794d10a3502af054634b1d627fa69d1117fbd591909756"
+      },
+      {
+        "path": "train/dress/short_dress.jpg",
+        "class_name": "dress",
+        "split": "train",
+        "sha256": "a16f90876f4cb5201c794d10a3502af054634b1d627fa69d1117fbd591909756"
+      }
+    ],
+    [
+      {
+        "path": "train/socks/lingerie_legbd.jpg",
+        "class_name": "socks",
+        "split": "train",
+        "sha256": "91e4600a803f1146d7ff7973792acba19e33247ebb27cd5b3493766cf43a67e4"
+      },
+      {
+        "path": "train/socks/lingerie_legsp.jpg",
+        "class_name": "socks",
+        "split": "train",
+        "sha256": "91e4600a803f1146d7ff7973792acba19e33247ebb27cd5b3493766cf43a67e4"
+      }
+    ]
+  ],
+  "cross_split_duplicate_groups": [],
+  "cross_class_duplicate_groups": [],
+  "empty_classes": [],
+  "inactive_empty_class_dirs": [
+    {
+      "split": "test",
+      "class_name": "bodypart_ass"
+    },
+    {
+      "split": "test",
+      "class_name": "bodypart_boobs"
+    },
+    {
+      "split": "test",
+      "class_name": "bodypart_face"
+    },
+    {
+      "split": "test",
+      "class_name": "bodypart_legs"
+    },
+    {
+      "split": "test",
+      "class_name": "bodypart_portrait_clothed"
+    },
+    {
+      "split": "test",
+      "class_name": "bodypart_portrait_topless"
+    },
+    {
+      "split": "test",
+      "class_name": "bodypart_pussy"
+    },
+    {
+      "split": "test",
+      "class_name": "fullbody_clothed_states"
+    },
+    {
+      "split": "test",
+      "class_name": "fullbody_costume_states"
+    },
+    {
+      "split": "test",
+      "class_name": "fullbody_nude_states"
+    },
+    {
+      "split": "test",
+      "class_name": "pantyhose"
+    },
+    {
+      "split": "test",
+      "class_name": "special_wear"
+    },
+    {
+      "split": "test",
+      "class_name": "stockings"
+    },
+    {
+      "split": "test",
+      "class_name": "sweater"
+    },
+    {
+      "split": "test",
+      "class_name": "utility_cover"
+    },
+    {
+      "split": "test",
+      "class_name": "vest"
+    }
+  ],
+  "class_min": 84,
+  "class_max": 325,
+  "possible_source_leakage_warning_only": [
+    {
+      "filename_prefix": "42466057",
+      "paths": [
+        "train/bra/42466057_105_d5c8.jpg",
+        "val/panty/42466057_105_d5125c8.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "44047978",
+      "paths": [
+        "train/bra/44047978_015_15143b.jpg",
+        "train/bra/44047978_018_4b35.jpg",
+        "train/skirt/44047978_015_153b.jpg",
+        "val/skirt/44047978_018_4b1235.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "49742828",
+      "paths": [
+        "train/bra/49742828_017_9d1e.jpg",
+        "val/skirt/49742828_017_9d115e.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "49882047",
+      "paths": [
+        "train/bra/49882047_005_1b9d.jpg",
+        "val/shorts/49882047_005_1b259d.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "52531593",
+      "paths": [
+        "train/bra/52531593_040_9d8f.jpg",
+        "val/shorts/52531593_040_9d148f.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "57045358",
+      "paths": [
+        "train/bra/57045358_015_0aa7.jpg",
+        "val/shorts/57045358_01536545_0aa7.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "67677858",
+      "paths": [
+        "train/bra/67677858_003_4394.jpg",
+        "val/shorts/67677858_00312_4394.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "83602646",
+      "paths": [
+        "train/bra/83602646_0122211_ab62.jpg",
+        "val/skirt/83602646_01211_ab62.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "83661712",
+      "paths": [
+        "train/bra/83661712_043_d1ac.jpg",
+        "val/panty/83661712_043_d112ac.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "19737279",
+      "paths": [
+        "train/dress/19737279_008_b117b.jpg",
+        "train/dress/19737279_008_b17b.jpg",
+        "train/dress/19737279_024_8444.jpg",
+        "val/dress/19737279_047_18ab.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "22075664",
+      "paths": [
+        "train/dress/22075664_002_81c5.jpg",
+        "val/dress/22075664_002_811c5.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "34141597",
+      "paths": [
+        "train/dress/34141597_001_5a45a7.jpg",
+        "train/dress/34141597_001_5aa7.jpg",
+        "train/dress/34141597_002_9059+659.jpg",
+        "train/dress/34141597_002_9099.jpg",
+        "train/dress/34141597_003_7a91.jpg",
+        "val/dress/34141597_002_90599.jpg",
+        "val/dress/34141597_009_8e45.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "34534778",
+      "paths": [
+        "train/dress/34534778_002_a0d144.jpg",
+        "train/dress/34534778_018_f896.jpg",
+        "val/dress/34534778_002_a0d4.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "43715245",
+      "paths": [
+        "train/dress/43715245_001_53c11252b.jpg",
+        "train/dress/43715245_001_53c12b.jpg",
+        "train/dress/43715245_001_53cb.jpg",
+        "train/dress/43715245_020_1dab.jpg",
+        "val/dress/43715245_011_ce75.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "46261491",
+      "paths": [
+        "train/dress/46261491_002_38c18.jpg",
+        "train/dress/46261491_002_38c8.jpg",
+        "train/dress/46261491_014_ba215.jpg",
+        "train/dress/46261491_021_9897.jpg",
+        "val/dress/46261491_014_ba25.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "48677210",
+      "paths": [
+        "train/dress/48677210_001_7244.jpg",
+        "train/dress/48677210_005_646f.jpg",
+        "val/dress/48677210_005_64126f.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "54117012",
+      "paths": [
+        "train/dress/54117012_001_1ab1a.jpg",
+        "val/dress/54117012_001_1aba.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "62569737",
+      "paths": [
+        "train/dress/62569737_001_c1ee2.jpg",
+        "train/dress/62569737_001_cee2.jpg",
+        "train/dress/62569737_002_494e.jpg",
+        "train/dress/62569737_005_948a.jpg",
+        "val/dress/62569737_0022_494e.jpg",
+        "val/dress/62569737_003_6c2e.jpg",
+        "val/dress/62569737_0054_774e.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "76139599",
+      "paths": [
+        "train/dress/76139599_0502_c100.jpg",
+        "val/dress/76139599_002_c100.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "77255189",
+      "paths": [
+        "train/dress/77255189_004_70581c.jpg",
+        "train/dress/77255189_006_96f2.jpg",
+        "train/dress/77255189_00858_b1af.jpg",
+        "train/dress/77255189_008_b1af.jpg",
+        "train/dress/77255189_009_b1af.jpg",
+        "train/dress/77255189_015_780e.jpg",
+        "val/dress/77255189_004_701c.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "93648263",
+      "paths": [
+        "train/dress/93648263_002_9eb0.jpg",
+        "train/dress/93648263_00456_d78f.jpg",
+        "train/dress/93648263_005_e15e.jpg",
+        "train/dress/93648263_006_d78f.jpg",
+        "val/dress/93648263_003_074c.jpg",
+        "val/dress/93648263_004_8b20.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "13705825",
+      "paths": [
+        "train/footwear/13705825_065_b01211122221128e.jpg",
+        "val/footwear/13705825_065_b01211221128e.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "91517639",
+      "paths": [
+        "train/footwear/91517639_002564563175453_2783.jpg",
+        "val/footwear/91517639_009_7650b4.jpg",
+        "val/shirt/91517639_002_2783.jpg",
+        "val/socks/91517639_0025645631_2783.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "31528217",
+      "paths": [
+        "train/lingerie/31528217_088_4312454052.jpg",
+        "train/lingerie/31528217_098_d65345645571.jpg",
+        "train/lingerie/31528217_098_d6534571.jpg",
+        "val/lingerie/31528217_083_12132312ba01.jpg",
+        "val/lingerie/31528217_083_12312ba01.jpg",
+        "val/lingerie/31528217_088_4312052.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "44994972",
+      "paths": [
+        "train/lingerie/44994972_00364846_13b213f.jpg",
+        "train/lingerie/44994972_00364846_13bf.jpg",
+        "val/lingerie/44994972_023_e2a4.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "49540056",
+      "paths": [
+        "train/lingerie/49540056_0056456_7d4b.jpg",
+        "val/lingerie/49540056_001_1531246f54.jpg",
+        "val/lingerie/49540056_001_1546f54.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "56380374",
+      "paths": [
+        "train/lingerie/56380374_050_98cf.jpg",
+        "val/socks/56380374_096_592e.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "77961439",
+      "paths": [
+        "train/lingerie/77961439_003_47c6.jpg",
+        "val/lingerie/77961439_001_c307.jpg",
+        "val/lingerie/77961439_001_c30712.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "13019038",
+      "paths": [
+        "train/outerwear/13019038_001_726a.jpg",
+        "val/outerwear/13019038_004_a23c.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "21175293",
+      "paths": [
+        "train/outerwear/21175293_018_145a3f.jpg",
+        "train/outerwear/21175293_032_3b158ec.jpg",
+        "train/outerwear/21175293_032_3bec.jpg",
+        "val/outerwear/21175293_018_5a3f.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "48712906",
+      "paths": [
+        "train/outerwear/48712906_035_55b0.jpg",
+        "val/outerwear/48712906_005_aa9d.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "56791298",
+      "paths": [
+        "train/outerwear/56791298_013_376b.jpg",
+        "train/outerwear/56791298_014_7e23.jpg",
+        "train/outerwear/56791298_019_87a4.jpg",
+        "val/outerwear/56791298_005_7373.jpg",
+        "val/outerwear/56791298_023_ce45.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "69523664",
+      "paths": [
+        "train/outerwear/69523664_002_3131.jpg",
+        "val/outerwear/69523664_002_143131.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "75686606",
+      "paths": [
+        "train/outerwear/75686606_001_503d.jpg",
+        "train/socks/75686606_005_67ce.jpg",
+        "val/outerwear/75686606_003_30a0.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "76565148",
+      "paths": [
+        "train/outerwear/76565148_001_3c9e.jpg",
+        "train/socks/76565148_003_5ade.jpg",
+        "train/socks/76565148_008_bf40.jpg",
+        "train/socks/76565148_010_dbfd.jpg",
+        "train/socks/76565148_011_fce8.jpg",
+        "train/socks/76565148_011_fce81.jpg",
+        "train/socks/76565148_0121_19d4.jpg",
+        "train/socks/76565148_012_19d4.jpg",
+        "train/socks/76565148_013_86af.jpg",
+        "train/socks/76565148_015_6026.jpg",
+        "val/socks/76565148_005_7c94.jpg",
+        "val/socks/76565148_015_60126.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "79988118",
+      "paths": [
+        "train/outerwear/79988118_003_c39d.jpg",
+        "train/outerwear/79988118_005_ede1.jpg",
+        "val/outerwear/79988118_002_2608.jpg",
+        "val/outerwear/79988118_008_ca84.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "28896606",
+      "paths": [
+        "train/pants/28896606_019_4141c15d.jpg",
+        "train/pants/28896606_019_41c15d.jpg",
+        "val/top/28896606_019_41cd.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "22480490",
+      "paths": [
+        "train/panty/22480490_018_a311aa.jpg",
+        "train/panty/22480490_022_132d217.jpg",
+        "val/bra/22480490_018_a1aa.jpg",
+        "val/bra/22480490_022_1321332d217.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "53884277",
+      "paths": [
+        "train/panty/53884277_001_aded.jpg",
+        "val/panty/53884277_006_9020.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "15574913",
+      "paths": [
+        "train/shirt/15574913_020_d230.jpg",
+        "val/shirt/15574913_021_b6f1.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "25089860",
+      "paths": [
+        "train/shirt/25089860_037_4a78.jpg",
+        "val/shirt/25089860_031_bc74.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "77193075",
+      "paths": [
+        "train/shirt/77193075_018_22ba5a.jpg",
+        "train/shirt/77193075_083_89f7.jpg",
+        "val/shirt/77193075_009_c94b.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "77377811",
+      "paths": [
+        "train/shirt/77377811_001_2a5564565.jpg",
+        "val/shirt/77377811_0035464_3856231.jpg",
+        "val/socks/77377811_00335464_3886456231.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "88514884",
+      "paths": [
+        "train/shirt/88514884_002_1cb8.jpg",
+        "val/top/88514884_011_a813.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "52223610",
+      "paths": [
+        "train/skirt/52223610_04517_ef2c.jpg",
+        "val/top/52223610_017_ef2c.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "81585669",
+      "paths": [
+        "train/skirt/81585669_003_4f6de.jpg",
+        "val/top/81585669_003_f6de.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "12517036",
+      "paths": [
+        "train/socks/12517036_038_62ee.jpg",
+        "train/socks/12517036_063_1e213f.jpg",
+        "train/socks/12517036_068_2115f3.jpg",
+        "train/socks/12517036_068_215f3.jpg",
+        "train/socks/12517036_070_9906.jpg",
+        "val/socks/12517036_039_bfc4.jpg",
+        "val/socks/12517036_054_6ea4.jpg",
+        "val/socks/12517036_063_1e3f.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "14002485",
+      "paths": [
+        "train/socks/14002485_067_7ed4.jpg",
+        "val/socks/14002485_100_ea8f.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "87140658",
+      "paths": [
+        "train/socks/87140658_006_a6bc.jpg",
+        "val/top/87140658_012_7f17.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "87284346",
+      "paths": [
+        "train/socks/87284346_007_7079.jpg",
+        "train/socks/87284346_063_6123678.jpg",
+        "train/socks/87284346_069_a445646c.jpg",
+        "train/socks/87284346_10123102_1c456b4.jpg",
+        "train/socks/87284346_130_0629.jpg",
+        "val/top/87284346_102_1cb4.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    },
+    {
+      "filename_prefix": "24028205",
+      "paths": [
+        "train/top/24028205_013_0871.jpg",
+        "val/panty/24028205_01345_0871.jpg"
+      ],
+      "splits": [
+        "train",
+        "val"
+      ]
+    }
+  ],
+  "source_identity_manifest_available": false,
+  "registry_consistency": "passed"
+}

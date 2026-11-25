@@ -1,0 +1,15 @@
+[
+  {
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_020453_13288\\newassetapp\\1280x720_professional_review.png",
+    "name": "1280x720_professional_review.png",
+    "app": "newassetapp",
+    "scenario": "professional_review",
+    "width": 1280,
+    "height": 720,
+    "capture_mode": "headless_qt_widget_grab",
+    "captured": true,
+    "bytes": 43440,
+    "captured_at": "2026-11-22T02:04:58.240177+00:00",
+    "application": "newassetapp"
+  }
+]

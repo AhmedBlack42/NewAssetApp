@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "registry_id": "newassetapp_task_eligibility",
+  "registry_version": "task-eligibility-v1",
+  "model_id": "unified_body_images_fullbody_cnn",
+  "tasks": {
+    "face": ["body_images", "arousal", "corruption"],
+    "portrait_frame": ["body_images", "portrait", "arousal", "corruption"],
+    "boobs": ["body_images", "arousal", "corruption"],
+    "ass": ["body_images", "arousal", "corruption"],
+    "pussy": ["body_images", "arousal", "corruption"],
+    "legs": ["body_images", "arousal", "corruption"],
+    "person": ["arousal", "corruption"],
+    "pussy_cover_item": ["clothing_broad", "clothing_fine", "corruption"],
+    "ass_cover_item": ["clothing_broad", "clothing_fine", "corruption"],
+    "boobs_cover_item": ["clothing_broad", "clothing_fine", "corruption"],
+    "leg_cover_item": ["clothing_broad", "clothing_fine", "corruption"],
+    "accessory_footwear": ["clothing_broad", "clothing_fine", "corruption"]
+  },
+  "fullbody_task_rule": ["fullbody", "corruption"],
+  "location_task_rule": ["location"],
+  "historical_only": [],
+  "historical_compatibility_only_classes": ["action_event", "fullbody_topless", "fullbody_bottomless"],
+  "body_images": {
+    "labels": ["cum", "accessory"],
+    "unknown_is_pending": true,
+    "none_is_both_evaluated_and_negative": true
+  }
+}

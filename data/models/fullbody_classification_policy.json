@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "taxonomy_source": "data/tags/fullbody_tags.json",
+  "output_categories": [
+    "fullbody",
+    "fullbody_topless",
+    "fullbody_bottomless"
+  ],
+  "main_tag_contexts": {
+    "clothed_states": [
+      "clothed",
+      "underwear",
+      "bikini",
+      "athletic",
+      "lingerie"
+    ],
+    "nude_states": [
+      "topless",
+      "bare",
+      "bottomless",
+      "shower"
+    ],
+    "costume_states": [
+      "maid",
+      "swimsuit",
+      "bikini",
+      "nurse",
+      "uniform",
+      "work",
+      "cosplay"
+    ]
+  },
+  "state_specifications": [
+    "clothed",
+    "topless",
+    "bottomless"
+  ],
+  "output_category_by_state": {
+    "clothed": "fullbody",
+    "topless": "fullbody_topless",
+    "bottomless": "fullbody_bottomless"
+  },
+  "supported_compositions": {
+    "clothed|topless": "clothed_topless",
+    "clothed|bottomless": "clothed_bottomless",
+    "bikini|bottomless": "bikini_bottomless"
+  },
+  "supported_subtags": ["slut", "conservative", "whore", "u_whore", "park"],
+  "subtag_crosswalk": {
+    "conservative": {
+      "serialized_value": "conservative",
+      "source": "docs/girlpack_Guide.md",
+      "taxonomy_source": "data/tags/body_images_tags.json",
+      "example": "clothed-bottomless,conservative.webp"
+    },
+    "park": {
+      "serialized_value": "park",
+      "source": "data/tags/body_images_tags.json > subtags/location_tags",
+      "taxonomy_source": "data/tags/body_images_tags.json",
+      "example": "clothed_topless-slut,park1.webp"
+    }
+  },
+  "legacy_read_aliases": {
+    "clothed-bottomless": "clothed_bottomless"
+  },
+  "automatic_state_from_asset_cnn": false,
+  "automatic_main_tag_from_legacy_yolo_fullbody_classes": false,
+  "human_review_required": true,
+  "filename_pattern": "<verified main_state composition>[-<subtag1>,<subtag2>]<positive sequence number>.webp",
+  "filenames": {
+    "normal_example": "shower1.webp",
+    "topless_example": "clothed_topless1.webp",
+    "bottomless_example": "bikini_bottomless1.webp"
+  },
+  "notes": [
+    "The historical spelling atheletic is preserved as review-required; new human-facing Fullbody labels use athletic.",
+    "bikini appears under two source contexts with the same serialized token; retain source context in metadata.",
+    "The Asset CNN's clothing/costume/nude group output is a suggestion only and does not distinguish topless from bottomless."
+  ],
+  "legacy_state_aliases": {
+    "normal": "clothed"
+  },
+  "fullbody_state_checkpoint": null,
+  "fullbody_state_model_id": "unified_body_images_fullbody_cnn",
+  "fullbody_state_classes": [
+    "clothed",
+    "topless",
+    "bottomless"
+  ],
+  "future_training": {
+    "dataset_labels": [
+      "clothed",
+      "topless",
+      "bottomless"
+    ],
+    "architecture": "task-specific Fullbody State output group within the single unified_body_images_fullbody_cnn; legacy asset_classifier group outputs are not equivalent state labels",
+    "training_performed": false
+  }
+}

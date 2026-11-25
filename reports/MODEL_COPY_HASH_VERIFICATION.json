@@ -1,0 +1,147 @@
+{
+  "verified": true,
+  "file_count": 14,
+  "total_bytes": 1904383778,
+  "files": [
+    {
+      "model": "yolo",
+      "file": "checkpoint",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\best.pt",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\yolo\\best.pt",
+      "size_bytes": 22523946,
+      "source_sha256": "57449664AA24427C703770AE155A361DA252F26BE4840242AAE95F3017DF58EA",
+      "destination_sha256": "57449664AA24427C703770AE155A361DA252F26BE4840242AAE95F3017DF58EA",
+      "identical": true
+    },
+    {
+      "model": "asset_classifier",
+      "file": "checkpoint",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\asset_classifier.pth",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\asset_classifier\\asset_classifier.pth",
+      "size_bytes": 44839755,
+      "source_sha256": "EB1251DADE9293098E327F3E708BF92F0C5FC09C272C6CDDB0F4F04F210AE6D2",
+      "destination_sha256": "EB1251DADE9293098E327F3E708BF92F0C5FC09C272C6CDDB0F4F04F210AE6D2",
+      "identical": true
+    },
+    {
+      "model": "asset_classifier",
+      "file": "class_map",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\asset_class_map.json",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\asset_classifier\\asset_class_map.json",
+      "size_bytes": 596,
+      "source_sha256": "6AC9C2276686265F933C37832F909ADA87CC85337B3F16C33134B5DC571DECBE",
+      "destination_sha256": "6AC9C2276686265F933C37832F909ADA87CC85337B3F16C33134B5DC571DECBE",
+      "identical": true
+    },
+    {
+      "model": "birefnet_general",
+      "file": "config.json",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\general\\config.json",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\general\\config.json",
+      "size_bytes": 405,
+      "source_sha256": "C97EA21569DAF66B205491A4635147DD3BC42C7C168B89D7D75B53F67EF548AE",
+      "destination_sha256": "C97EA21569DAF66B205491A4635147DD3BC42C7C168B89D7D75B53F67EF548AE",
+      "identical": true
+    },
+    {
+      "model": "birefnet_general",
+      "file": "BiRefNet_config.py",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\general\\BiRefNet_config.py",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\general\\BiRefNet_config.py",
+      "size_bytes": 298,
+      "source_sha256": "E7B8C2A74F6CEA6A59553D517F71D47F2C1D90E670A13416AF17C25FE2F3DC52",
+      "destination_sha256": "E7B8C2A74F6CEA6A59553D517F71D47F2C1D90E670A13416AF17C25FE2F3DC52",
+      "identical": true
+    },
+    {
+      "model": "birefnet_general",
+      "file": "birefnet.py",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\general\\birefnet.py",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\general\\birefnet.py",
+      "size_bytes": 92068,
+      "source_sha256": "A9566611AA07A6FBB68DDB6AC8E19E62C879A428FBFC2F44EFA53D233F2E302F",
+      "destination_sha256": "A9566611AA07A6FBB68DDB6AC8E19E62C879A428FBFC2F44EFA53D233F2E302F",
+      "identical": true
+    },
+    {
+      "model": "birefnet_general",
+      "file": "README.md",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\general\\README.md",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\general\\README.md",
+      "size_bytes": 9983,
+      "source_sha256": "DA2827F51F17042CE32E3C0B17277A688254973AF5C555BC8F8A4A522891FFA3",
+      "destination_sha256": "DA2827F51F17042CE32E3C0B17277A688254973AF5C555BC8F8A4A522891FFA3",
+      "identical": true
+    },
+    {
+      "model": "birefnet_general",
+      "file": "model.safetensors",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\general\\model.safetensors",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\general\\model.safetensors",
+      "size_bytes": 884878856,
+      "source_sha256": "77277264C0E8C74149D3FF2FADE4FD8176965B7108F3C5FC3B8C9C811EDB4519",
+      "destination_sha256": "77277264C0E8C74149D3FF2FADE4FD8176965B7108F3C5FC3B8C9C811EDB4519",
+      "identical": true
+    },
+    {
+      "model": "birefnet_portrait",
+      "file": "config.json",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\portrait\\config.json",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\portrait\\config.json",
+      "size_bytes": 414,
+      "source_sha256": "68A27B9F0058E0D81F8B32655C3B5B8D82838C523243A2851B8269DD3F080A0E",
+      "destination_sha256": "68A27B9F0058E0D81F8B32655C3B5B8D82838C523243A2851B8269DD3F080A0E",
+      "identical": true
+    },
+    {
+      "model": "birefnet_portrait",
+      "file": "BiRefNet_config.py",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\portrait\\BiRefNet_config.py",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\portrait\\BiRefNet_config.py",
+      "size_bytes": 298,
+      "source_sha256": "E7B8C2A74F6CEA6A59553D517F71D47F2C1D90E670A13416AF17C25FE2F3DC52",
+      "destination_sha256": "E7B8C2A74F6CEA6A59553D517F71D47F2C1D90E670A13416AF17C25FE2F3DC52",
+      "identical": true
+    },
+    {
+      "model": "birefnet_portrait",
+      "file": "birefnet.py",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\portrait\\birefnet.py",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\portrait\\birefnet.py",
+      "size_bytes": 92010,
+      "source_sha256": "7EEB0CE127B9D1E881451CC9F139AB10AC700723632791E54E3D2A4F75D9FDF1",
+      "destination_sha256": "7EEB0CE127B9D1E881451CC9F139AB10AC700723632791E54E3D2A4F75D9FDF1",
+      "identical": true
+    },
+    {
+      "model": "birefnet_portrait",
+      "file": "README.md",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\portrait\\README.md",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\portrait\\README.md",
+      "size_bytes": 4568,
+      "source_sha256": "FAD01C7069F04CF7A84483F31882F1A854306AF4E11B53C174414228CF1E4067",
+      "destination_sha256": "FAD01C7069F04CF7A84483F31882F1A854306AF4E11B53C174414228CF1E4067",
+      "identical": true
+    },
+    {
+      "model": "birefnet_portrait",
+      "file": "model.safetensors",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\birefnet\\portrait\\model.safetensors",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\portrait\\model.safetensors",
+      "size_bytes": 884878856,
+      "source_sha256": "4A4EB3A5469B75F0CCCAEC6772C22FC30E6C12ED429C2C0BA71B43E3D8D97182",
+      "destination_sha256": "4A4EB3A5469B75F0CCCAEC6772C22FC30E6C12ED429C2C0BA71B43E3D8D97182",
+      "identical": true
+    },
+    {
+      "model": "realesrgan_x2plus",
+      "file": "checkpoint",
+      "source": "F:\\My Tools\\New folder\\Girl Packer1\\ai\\models\\realesrgan\\RealESRGAN_x2plus.pth",
+      "destination": "F:\\My Tools\\New folder\\NewAssetApp\\models\\realesrgan\\RealESRGAN_x2plus.pth",
+      "size_bytes": 67061725,
+      "source_sha256": "49FAFD45F8FD7AA8D31AB2A22D14D91B536C34494A5CFE31EB5D89C2FA266ABB",
+      "destination_sha256": "49FAFD45F8FD7AA8D31AB2A22D14D91B536C34494A5CFE31EB5D89C2FA266ABB",
+      "identical": true
+    }
+  ]
+}

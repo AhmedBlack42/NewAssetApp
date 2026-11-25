@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "status": "pending_user_review",
+  "entries": [
+    {
+      "id": "review-fullbody-athletic-spelling",
+      "exact_original_tag": "Atheletic",
+      "group": "fullbody",
+      "where_found": [
+        "database/asset_tags/fullbody.json $.nude_states[\"Atheletic\"]",
+        "docs/girlpack_Guide.md > Fullbody (\"athletic\")"
+      ],
+      "possible_interpretation": "The database label/value may be a misspelling of the guide term athletic; the serialized value is atheletic.",
+      "why_unclear": "Guide and active map differ in spelling; the model label fullbody_athletic is a separate context.",
+      "decision_needed": "Should NewAssetApp preserve the map spelling, add an explicit alias, or wait for a game-compatible tag decision?",
+      "affected_tag_ids": [
+        "fullbody|clothed_states|atheletic"
+      ]
+    },
+    {
+      "id": "review-fullbody-separator",
+      "exact_original_tag": "clothed-bottomless",
+      "group": "fullbody",
+      "where_found": [
+        "docs/girlpack_Guide.md > Fullbody example",
+        "database/asset_tags/fullbody_compositions.json $.compositions / $.legacy_read_aliases",
+        "utils/fullbody_tags.py compose_fullbody_tag/parse_fullbody_tag"
+      ],
+      "possible_interpretation": "Guide example uses a hyphen; current writer emits clothed_bottomless with an underscore; parser reads the hyphen alias.",
+      "why_unclear": "The guide example and current writer differ.",
+      "decision_needed": "Which spelling should NewAssetApp offer and write?",
+      "affected_tag_ids": [
+        "fullbody|legacy_read_aliases|clothed-bottomless",
+        "fullbody|compositions|clothed_bottomless"
+      ]
+    },
+    {
+      "id": "review-body-ultimate-whore",
+      "exact_original_tag": "Ultimate_whore",
+      "group": "body_images",
+      "where_found": [
+        "docs/girlpack_Guide.md > Vids > Corruption Levels",
+        "database/vid_tags.json $.corruption_level[\"Ultimate Whore\"]"
+      ],
+      "possible_interpretation": "Guide spelling is Ultimate_whore; current database token is u_whore.",
+      "why_unclear": "Resolved by the original video-tag mapping: display label Ultimate Whore serializes as u_whore, and the Body Images guide reuses video subtags.",
+      "decision_needed": "Resolved: retain exact serialized token u_whore; do not normalize it.",
+      "resolution_status": "resolved_from_authoritative_source_crosswalk",
+      "affected_tag_ids": [
+        "body_images|subtags/corruption_level|u_whore"
+      ]
+    },
+    {
+      "id": "review-body-subtag-combinations",
+      "exact_original_tag": "{main_tag},{main_tag2}-{sub_tag},{sub_tag2}",
+      "group": "body_images",
+      "where_found": [
+        "docs/girlpack_Guide.md > Body_images update"
+      ],
+      "possible_interpretation": "Comma-separated main tags, optional hyphen separator, comma-separated subtags; face-cum is an explicit example.",
+      "why_unclear": "Per-main compatibility, ordering within lists, and multiple corruption-value restrictions are not defined.",
+      "decision_needed": "Confirm valid subtag combinations and ordering before enabling tag composition/export controls.",
+      "affected_tag_ids": [
+        "body_images|subtags/fluids|cum",
+        "body_images|subtags/fluids|creampie",
+        "body_images|subtags/corruption_level|conservative",
+        "body_images|subtags/corruption_level|slut",
+        "body_images|subtags/corruption_level|whore",
+        "body_images|subtags/corruption_level|u_whore",
+        "body_images|subtags/location_tags|bathroom",
+        "body_images|subtags/location_tags|bar",
+        "body_images|subtags/location_tags|beach",
+        "body_images|subtags/location_tags|cafeteria",
+        "body_images|subtags/location_tags|class",
+        "body_images|subtags/location_tags|clinic",
+        "body_images|subtags/location_tags|coffee_shop",
+        "body_images|subtags/location_tags|home",
+        "body_images|subtags/location_tags|locker_room",
+        "body_images|subtags/location_tags|mall",
+        "body_images|subtags/location_tags|office",
+        "body_images|subtags/location_tags|park",
+        "body_images|subtags/location_tags|pier",
+        "body_images|subtags/location_tags|shower",
+        "body_images|subtags/location_tags|lounge"
+      ]
+    },
+    {
+      "id": "review-clothing-modifier-parent-t-shirt",
+      "exact_original_tag": "t-shirt",
+      "group": "clothing",
+      "where_found": [
+        "database/asset_tags/clothing_modifiers.json $[\"t-shirt\"]",
+        "database/asset_tags/clothing.json slot values"
+      ],
+      "possible_interpretation": "The modifier key may correspond to a similarly spelled asset tag or gameplay clothing definition.",
+      "why_unclear": "No exact serialized-value parent match exists; spelling normalization would be a guess.",
+      "decision_needed": "Confirm the parent asset tag or keep this modifier bucket informational and nonselectable.",
+      "affected_tag_ids": [
+        "clothing|clothing_modifiers/t-shirt|t-shirt",
+        "clothing|clothing_modifiers/t-shirt|plain",
+        "clothing|clothing_modifiers/t-shirt|graphic",
+        "clothing|clothing_modifiers/t-shirt|striped"
+      ]
+    },
+    {
+      "id": "review-clothing-modifier-parent-skirt",
+      "exact_original_tag": "skirt",
+      "group": "clothing",
+      "where_found": [
+        "database/asset_tags/clothing_modifiers.json $[\"skirt\"]",
+        "database/asset_tags/clothing.json slot values"
+      ],
+      "possible_interpretation": "The modifier key may correspond to a similarly spelled asset tag or gameplay clothing definition.",
+      "why_unclear": "No exact serialized-value parent match exists; spelling normalization would be a guess.",
+      "decision_needed": "Confirm the parent asset tag or keep this modifier bucket informational and nonselectable.",
+      "affected_tag_ids": [
+        "clothing|clothing_modifiers/skirt|skirt",
+        "clothing|clothing_modifiers/skirt|pleated",
+        "clothing|clothing_modifiers/skirt|denim",
+        "clothing|clothing_modifiers/skirt|leather",
+        "clothing|clothing_modifiers/skirt|uniform",
+        "clothing|clothing_modifiers/skirt|transparent",
+        "clothing|clothing_modifiers/skirt|slutty",
+        "clothing|clothing_modifiers/skirt|cheerleader",
+        "clothing|clothing_modifiers/skirt|pencil-skirt"
+      ]
+    },
+    {
+      "id": "review-clothing-modifier-parent-bra",
+      "exact_original_tag": "bra",
+      "group": "clothing",
+      "where_found": [
+        "database/asset_tags/clothing_modifiers.json $[\"bra\"]",
+        "database/asset_tags/clothing.json slot values"
+      ],
+      "possible_interpretation": "The modifier key may correspond to a similarly spelled asset tag or gameplay clothing definition.",
+      "why_unclear": "No exact serialized-value parent match exists; spelling normalization would be a guess.",
+      "decision_needed": "Confirm the parent asset tag or keep this modifier bucket informational and nonselectable.",
+      "affected_tag_ids": [
+        "clothing|clothing_modifiers/bra|bra",
+        "clothing|clothing_modifiers/bra|lace",
+        "clothing|clothing_modifiers/bra|sheer",
+        "clothing|clothing_modifiers/bra|open-cup",
+        "clothing|clothing_modifiers/bra|transparent",
+        "clothing|clothing_modifiers/bra|harness"
+      ]
+    },
+    {
+      "id": "review-clothing-modifier-parent-panty",
+      "exact_original_tag": "panty",
+      "group": "clothing",
+      "where_found": [
+        "database/asset_tags/clothing_modifiers.json $[\"panty\"]",
+        "database/asset_tags/clothing.json slot values"
+      ],
+      "possible_interpretation": "The modifier key may correspond to a similarly spelled asset tag or gameplay clothing definition.",
+      "why_unclear": "No exact serialized-value parent match exists; spelling normalization would be a guess.",
+      "decision_needed": "Confirm the parent asset tag or keep this modifier bucket informational and nonselectable.",
+      "affected_tag_ids": [
+        "clothing|clothing_modifiers/panty|panty",
+        "clothing|clothing_modifiers/panty|lace",
+        "clothing|clothing_modifiers/panty|sheer",
+        "clothing|clothing_modifiers/panty|crotchless",
+        "clothing|clothing_modifiers/panty|harness"
+      ]
+    },
+    {
+      "id": "review-clothing-modifier-parent-thigh-high-stockings",
+      "exact_original_tag": "thigh-high-stockings",
+      "group": "clothing",
+      "where_found": [
+        "database/asset_tags/clothing_modifiers.json $[\"thigh-high-stockings\"]",
+        "database/asset_tags/clothing.json slot values"
+      ],
+      "possible_interpretation": "The modifier key may correspond to a similarly spelled asset tag or gameplay clothing definition.",
+      "why_unclear": "No exact serialized-value parent match exists; spelling normalization would be a guess.",
+      "decision_needed": "Confirm the parent asset tag or keep this modifier bucket informational and nonselectable.",
+      "affected_tag_ids": [
+        "clothing|clothing_modifiers/thigh-high-stockings|thigh-high-stockings",
+        "clothing|clothing_modifiers/thigh-high-stockings|plain",
+        "clothing|clothing_modifiers/thigh-high-stockings|latex",
+        "clothing|clothing_modifiers/thigh-high-stockings|lace-top",
+        "clothing|clothing_modifiers/thigh-high-stockings|garter"
+      ]
+    },
+    {
+      "id": "review-clothing-modifier-parent-boots",
+      "exact_original_tag": "boots",
+      "group": "clothing",
+      "where_found": [
+        "database/asset_tags/clothing_modifiers.json $[\"boots\"]",
+        "database/asset_tags/clothing.json slot values"
+      ],
+      "possible_interpretation": "The modifier key may correspond to a similarly spelled asset tag or gameplay clothing definition.",
+      "why_unclear": "No exact serialized-value parent match exists; spelling normalization would be a guess.",
+      "decision_needed": "Confirm the parent asset tag or keep this modifier bucket informational and nonselectable.",
+      "affected_tag_ids": [
+        "clothing|clothing_modifiers/boots|boots",
+        "clothing|clothing_modifiers/boots|ankle-boots",
+        "clothing|clothing_modifiers/boots|knee-high-boots",
+        "clothing|clothing_modifiers/boots|thigh-high-boots",
+        "clothing|clothing_modifiers/boots|combat-boots"
+      ]
+    },
+    {
+      "id": "review-angle-bracket-token",
+      "exact_original_tag": "<",
+      "group": "tag_grammar",
+      "where_found": [
+        "User Phase 1 brief Section 5; no occurrence/definition in the inspected guide or active asset serializer"
+      ],
+      "possible_interpretation": null,
+      "why_unclear": "No use or definition was found in the source guide or active image-tag implementation.",
+      "decision_needed": "Is < part of an external naming/schema rule that NewAssetApp must support?",
+      "affected_tag_ids": []
+    }
+  ]
+}

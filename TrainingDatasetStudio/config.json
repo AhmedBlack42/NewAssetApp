@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "database": "data/studio.sqlite3",
+  "storage": "storage",
+  "media": "storage/media",
+  "logs": "logs",
+  "outputs": "outputs",
+  "python_environment": ".venv"
+}

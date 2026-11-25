@@ -1,0 +1,7 @@
+Application: NewAssetApp
+Window: NewAssetApp - Normal Processing and Professional Review
+Window size: 1360x749
+Live database: C:\Users\asker\AppData\Local\Temp\newassetapp_acceptance_phase2_20261122_174826\app\newassetapp.sqlite3
+Status: Headed window opened in isolated mode.
+Mutation: BLOCKED by concurrent desktop user input.
+Screenshot: unavailable from the desktop automation backend.

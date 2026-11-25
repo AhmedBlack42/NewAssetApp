@@ -1,0 +1,83 @@
+{
+  "image_file_count": 3843,
+  "readable_count": 3843,
+  "unreadable": [],
+  "cnn_duplicate_hash_groups": [
+    [
+      {
+        "path": "cnn_train/asset_classifier_data/train/dress/short_dres00s (1).jpg",
+        "split": "train",
+        "class": "dress"
+      },
+      {
+        "path": "cnn_train/asset_classifier_data/train/dress/short_dress.jpg",
+        "split": "train",
+        "class": "dress"
+      }
+    ],
+    [
+      {
+        "path": "cnn_train/asset_classifier_data/train/dress/short_dress20.jpg",
+        "split": "train",
+        "class": "dress"
+      },
+      {
+        "path": "cnn_train/asset_classifier_data/train/shirt/short_dress20.jpg",
+        "split": "train",
+        "class": "shirt"
+      }
+    ],
+    [
+      {
+        "path": "cnn_train/asset_classifier_data/train/fullbody_clothed_states/work.jpg",
+        "split": "train",
+        "class": "fullbody_clothed_states"
+      },
+      {
+        "path": "cnn_train/asset_classifier_data/train/fullbody_clothed_states/work0 (11).jpg",
+        "split": "train",
+        "class": "fullbody_clothed_states"
+      }
+    ],
+    [
+      {
+        "path": "cnn_train/asset_classifier_data/train/stockings/lingerie_legbd.jpg",
+        "split": "train",
+        "class": "stockings"
+      },
+      {
+        "path": "cnn_train/asset_classifier_data/train/stockings/lingerie_legsp.jpg",
+        "split": "train",
+        "class": "stockings"
+      }
+    ],
+    [
+      {
+        "path": "cnn_train/asset_classifier_data/train/stockings/lingerie_legbd3.jpg",
+        "split": "train",
+        "class": "stockings"
+      },
+      {
+        "path": "cnn_train/asset_classifier_data/val/stockings/lingerie_legbd1.jpg",
+        "split": "val",
+        "class": "stockings"
+      }
+    ]
+  ],
+  "cnn_cross_split_duplicate_groups": [
+    [
+      {
+        "path": "cnn_train/asset_classifier_data/train/stockings/lingerie_legbd3.jpg",
+        "split": "train",
+        "class": "stockings"
+      },
+      {
+        "path": "cnn_train/asset_classifier_data/val/stockings/lingerie_legbd1.jpg",
+        "split": "val",
+        "class": "stockings"
+      }
+    ]
+  ],
+  "body_images_duplicate_groups": [],
+  "body_images_cross_split_duplicate_groups": []
+}

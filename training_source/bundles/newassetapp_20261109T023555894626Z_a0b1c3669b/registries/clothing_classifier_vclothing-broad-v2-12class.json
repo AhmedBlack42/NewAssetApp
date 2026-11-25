@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "model_id": "clothing_classifier",
+  "checkpoint_identity": "clothing_classifier_12class_v1",
+  "checkpoint_path": "models/clothing_classifier/clothing_classifier_12class.pth",
+  "checkpoint_status": "not_trained_dataset_review_blocked",
+  "architecture": "ResNet-18, output dimension 12",
+  "taxonomy_version": "clothing-broad-v2-12class",
+  "class_count": 12,
+  "classes": [
+    {
+      "class_id": 0,
+      "class_name": "bra",
+      "display_name": "Bra",
+      "broad_family": "bra",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 1,
+      "class_name": "dress",
+      "display_name": "Dress",
+      "broad_family": "dress",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 2,
+      "class_name": "footwear",
+      "display_name": "Footwear",
+      "broad_family": "footwear",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 3,
+      "class_name": "lingerie",
+      "display_name": "Lingerie",
+      "broad_family": "lingerie",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 4,
+      "class_name": "outerwear",
+      "display_name": "Outerwear",
+      "broad_family": "outerwear",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 5,
+      "class_name": "pants",
+      "display_name": "Pants",
+      "broad_family": "pants",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 6,
+      "class_name": "panty",
+      "display_name": "Panty",
+      "broad_family": "panty",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 7,
+      "class_name": "shirt",
+      "display_name": "Shirt",
+      "broad_family": "shirt",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 8,
+      "class_name": "shorts",
+      "display_name": "Shorts",
+      "broad_family": "shorts",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 9,
+      "class_name": "skirt",
+      "display_name": "Skirt",
+      "broad_family": "skirt",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 10,
+      "class_name": "socks",
+      "display_name": "Socks",
+      "broad_family": "socks",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    },
+    {
+      "class_id": 11,
+      "class_name": "top",
+      "display_name": "Top",
+      "broad_family": "top",
+      "active": true,
+      "application_role": "broad_family_prediction",
+      "detailed_tag_selection": "human_only",
+      "taxonomy_version": "clothing-broad-v2-12class"
+    }
+  ],
+  "class_names_file": "train_data/clothing_classifier/classes/classes.txt",
+  "legacy_checkpoint_provenance": {
+    "identity": "asset_classifier_26class_legacy",
+    "checkpoint": "models/clothing_classifier/clothing_classifier.pth",
+    "source_checkpoint": "models/asset_classifier/asset_classifier.pth",
+    "source_class_map": "models/asset_classifier/asset_class_map.json",
+    "class_count": 26,
+    "class_order_preserved": true,
+    "sha256": "EB1251DADE9293098E327F3E708BF92F0C5FC09C272C6CDDB0F4F04F210AE6D2"
+  },
+  "training_performed": false
+}

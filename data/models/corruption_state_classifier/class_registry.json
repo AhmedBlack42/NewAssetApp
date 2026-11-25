@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "registry_id": "newassetapp_corruption_state_v1",
+  "version": "1.0.0",
+  "model_id": "newassetapp_corruption_state_cnn",
+  "model_type": "cnn_image_classifier",
+  "purpose": "Human-confirmed corruption-state targets from reviewed person-region crops.",
+  "prediction_enabled": false,
+  "weights_available": false,
+  "classes": [
+    {"class_id": 0, "class_name": "slut", "display_name": "Slut"},
+    {"class_id": 1, "class_name": "conservative", "display_name": "Conservative"},
+    {"class_id": 2, "class_name": "whore", "display_name": "Whore"},
+    {"class_id": 3, "class_name": "u_whore", "display_name": "Ultimate Whore"}
+  ]
+}

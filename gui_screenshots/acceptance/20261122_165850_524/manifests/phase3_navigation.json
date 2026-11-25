@@ -1,0 +1,50 @@
+{
+  "navigation_map": [
+    {
+      "row": 0,
+      "label": "Model Projects",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 1,
+      "label": "Dataset Segments",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 2,
+      "label": "Dataset Builder",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 3,
+      "label": "Dataset Records",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 4,
+      "label": "Validation",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 5,
+      "label": "Colab Packages",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 6,
+      "label": "Model Artifacts",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 7,
+      "label": "Import / Activation",
+      "page_object": "QWidget"
+    },
+    {
+      "row": 8,
+      "label": "History",
+      "page_object": "QWidget"
+    }
+  ],
+  "status": "PASS_REAL_APP_QT"
+}

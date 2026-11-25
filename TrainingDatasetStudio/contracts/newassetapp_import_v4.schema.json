@@ -1,0 +1,531 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://newassetapp.local/schemas/newassetapp-import-v4.schema.json",
+  "title": "NewAssetApp immutable training source bundle with explicit annotation geometry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "bundle_id",
+    "created_at",
+    "producer",
+    "models",
+    "registries",
+    "records",
+    "excluded_records",
+    "files",
+    "bundle_sha256"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 4
+    },
+    "bundle_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "application",
+        "version",
+        "database_schema_version",
+        "project_id"
+      ],
+      "properties": {
+        "application": {
+          "const": "NewAssetApp"
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "database_schema_version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "project_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/model"
+      }
+    },
+    "registries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/registry"
+      }
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/record"
+      }
+    },
+    "excluded_records": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/excluded_record"
+      }
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/file"
+      }
+    },
+    "bundle_sha256": {
+      "$ref": "#/$defs/sha256"
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[A-Fa-f0-9]{64}$"
+    },
+    "relative_path": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?![A-Za-z]:)(?!.*(?:^|/)\\.\\.(?:/|$)).+$"
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "registry_id",
+        "registry_version"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "registry_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "registry_version": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "registry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "version",
+        "sha256",
+        "relative_path"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "relative_path": {
+          "$ref": "#/$defs/relative_path"
+        }
+      }
+    },
+    "file": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relative_path",
+        "sha256",
+        "bytes"
+      ],
+      "properties": {
+        "relative_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "bbox": {
+      "type": "array",
+      "prefixItems": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "number"
+        }
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_image_id",
+        "sha256",
+        "width",
+        "height"
+      ],
+      "properties": {
+        "source_image_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "relative_path",
+        "sha256",
+        "role"
+      ],
+      "properties": {
+        "relative_path": {
+          "$ref": "#/$defs/relative_path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "role": {
+          "enum": ["source_image", "authoritative_detection_crop"]
+        },
+        "source_sha256": {"$ref": "#/$defs/sha256"},
+        "bbox_xyxy": {"$ref": "#/$defs/bbox"}
+      }
+    },
+    "detection": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "required": [
+            "detection_id",
+            "bbox_xyxy"
+          ],
+          "properties": {
+            "detection_id": {
+              "type": "string"
+            },
+            "bbox_xyxy": {
+              "$ref": "#/$defs/bbox"
+            }
+          }
+        }
+      ]
+    },
+    "record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "task",
+        "model",
+        "source",
+        "media",
+        "bbox_xyxy",
+        "detection",
+        "review",
+        "labels",
+        "provenance",
+        "annotation"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "enum": [
+            "yolo_detection",
+            "fullbody_state_classification",
+            "body_images_classification",
+            "broad_clothing_classification",
+            "detailed_clothing_classification",
+            "corruption_state_classification",
+            "portrait_classification",
+            "arousal_classification",
+            "corruption_classification"
+          ]
+        },
+        "model": {
+          "$ref": "#/$defs/model"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "media": {
+          "$ref": "#/$defs/media"
+        },
+        "bbox_xyxy": {
+          "oneOf": [
+            {"type": "null"},
+            {"$ref": "#/$defs/bbox"}
+          ]
+        },
+        "detection": {
+          "$ref": "#/$defs/detection"
+        },
+        "review": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "human_confirmed",
+            "eligible",
+            "review_state",
+            "exclusion_reason"
+          ],
+          "properties": {
+            "human_confirmed": {
+              "const": true
+            },
+            "eligible": {
+              "const": true
+            },
+            "review_state": {
+              "const": "reviewed"
+            },
+            "exclusion_reason": {
+              "type": "null"
+            }
+          }
+        },
+        "labels": {
+          "type": "object",
+          "required": [
+            "class_label",
+            "structured"
+          ],
+          "properties": {
+            "class_label": {
+              "type": "string",
+              "minLength": 1
+            },
+            "structured": {
+              "type": "object"
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": [
+            "source_snapshot_id",
+            "created_at",
+            "model_prediction",
+            "correction_events"
+          ],
+          "properties": {
+            "source_snapshot_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "created_at": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "model_prediction": {},
+            "correction_events": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "source_workflow": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "training_record_table": {
+              "type": "string"
+            }
+          }
+        },
+        "annotation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "coordinate_space",
+            "target_bbox_xyxy",
+            "original_model_bbox_xyxy",
+            "target_class_id"
+          ],
+          "properties": {
+            "coordinate_space": {
+              "const": "source_pixels"
+            },
+            "target_bbox_xyxy": {
+              "oneOf": [
+                {"type": "null"},
+                {"$ref": "#/$defs/bbox"}
+              ]
+            },
+            "original_model_bbox_xyxy": {
+              "oneOf": [
+                {
+                  "type": "null"
+                },
+                {
+                  "$ref": "#/$defs/bbox"
+                }
+              ]
+            },
+            "target_class_id": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "body_images_target_mask": {
+              "type": "object",
+              "required": ["cum", "accessory"],
+              "properties": {
+                "cum": {
+                  "type": "object",
+                  "required": ["target", "evaluated"],
+                  "properties": {
+                    "target": {"type": ["boolean", "null"]},
+                    "evaluated": {"type": "boolean"}
+                  },
+                  "additionalProperties": false
+                },
+                "accessory": {
+                  "type": "object",
+                  "required": ["target", "evaluated"],
+                  "properties": {
+                    "target": {"type": ["boolean", "null"]},
+                    "evaluated": {"type": "boolean"}
+                  },
+                  "additionalProperties": false
+                }
+              },
+              "additionalProperties": false
+            },
+            "empty_image": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    },
+    "excluded_record": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "record_id",
+        "task",
+        "reason",
+        "source",
+        "media",
+        "bbox_xyxy",
+        "labels",
+        "provenance"
+      ],
+      "properties": {
+        "record_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "task": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "model": {
+          "$ref": "#/$defs/model"
+        },
+        "source": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/source"
+            }
+          ]
+        },
+        "media": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/media"
+            }
+          ]
+        },
+        "bbox_xyxy": {
+          "oneOf": [
+            {
+              "type": "null"
+            },
+            {
+              "$ref": "#/$defs/bbox"
+            }
+          ]
+        },
+        "labels": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "provenance": {
+          "type": [
+            "object",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}

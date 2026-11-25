@@ -1,0 +1,10 @@
+RuntimeError: Internal C++ object (PySide6.QtWidgets.QListWidgetItem) already deleted.
+
+Traceback (most recent call last):
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\run_gui_acceptance.py", line 143, in main
+    result = registry[scenario_name](
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\scenarios\newassetapp_normal.py", line 56, in run
+    row = body_item.data(Qt.ItemDataRole.UserRole)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Internal C++ object (PySide6.QtWidgets.QListWidgetItem) already deleted.

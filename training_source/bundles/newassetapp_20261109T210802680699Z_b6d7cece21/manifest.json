@@ -1,0 +1,2330 @@
+{
+  "schema_version": 3,
+  "bundle_id": "newassetapp_20261109T210802680699Z",
+  "created_at": "2026-11-09T21:08:02.680699+00:00",
+  "producer": {
+    "application": "NewAssetApp",
+    "version": "unreleased",
+    "database_schema_version": 17
+  },
+  "models": [
+    {
+      "id": "clothing_classifier",
+      "registry_id": "clothing_classifier",
+      "registry_version": "clothing-broad-v2-12class"
+    },
+    {
+      "id": "newassetapp_detailed_clothing_classifier",
+      "registry_id": "newassetapp_detailed_clothing_v1",
+      "registry_version": "1.0.0"
+    },
+    {
+      "id": "newassetapp_yolo_detector_v1",
+      "registry_id": "newassetapp_yolo_detector_v1",
+      "registry_version": "1"
+    },
+    {
+      "id": "unified_body_images_fullbody_cnn",
+      "registry_id": "newassetapp_unified_body_images_fullbody",
+      "registry_version": "v1_architecture_untrained"
+    }
+  ],
+  "registries": [
+    {
+      "id": "clothing_classifier",
+      "version": "clothing-broad-v2-12class",
+      "sha256": "89120f7eaa67aa54b74d314b2c2bbe7ccbf43ffcf3f45c0e74f53da9cc5f4b38",
+      "relative_path": "registries/clothing_classifier_vclothing-broad-v2-12class.json"
+    },
+    {
+      "id": "newassetapp_detailed_clothing_v1",
+      "version": "1.0.0",
+      "sha256": "fa63f9540364cd53eb86b94d0db1d40d7627a81ce42facd80718178ebfd31b93",
+      "relative_path": "registries/newassetapp_detailed_clothing_v1_v1.0.0.json"
+    },
+    {
+      "id": "newassetapp_unified_body_images_fullbody",
+      "version": "v1_architecture_untrained",
+      "sha256": "8a21088a84411b2dd930b0a0f81149afa84d1cb9b6b1cc3d969a43754b3058d3",
+      "relative_path": "registries/newassetapp_unified_body_images_fullbody_vv1_architecture_untrained.json"
+    },
+    {
+      "id": "newassetapp_yolo_detector_v1",
+      "version": "1",
+      "sha256": "519d662aad45b1a29c5ad700a09c49675ce745c195c916b8d0a6404e0d46634a",
+      "relative_path": "registries/newassetapp_yolo_detector_v1_v1.json"
+    }
+  ],
+  "records": [
+    {
+      "record_id": "training_example:18",
+      "task": "body_images_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "29",
+        "sha256": "2354eb44427375db86aefc8b4b4bb3ba84ab5d4f91c5cb6d8ee7aa0e46eac6de",
+        "width": 912,
+        "height": 1358
+      },
+      "media": {
+        "relative_path": "media/sources/2354eb44427375db86aefc8b4b4bb3ba84ab5d4f91c5cb6d8ee7aa0e46eac6de.jpg",
+        "sha256": "2354eb44427375db86aefc8b4b4bb3ba84ab5d4f91c5cb6d8ee7aa0e46eac6de",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        152.492736816406,
+        9.12882900238037,
+        538.480346679688,
+        514.49072265625
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          152.492736816406,
+          9.12882900238037,
+          538.480346679688,
+          514.49072265625
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 1
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "tportrait",
+        "structured": {
+          "task": "body_images_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "1",
+          "output_group": "body_images",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "2354eb44427375db86aefc8b4b4bb3ba84ab5d4f91c5cb6d8ee7aa0e46eac6de:proposal:168:training_example:18",
+        "created_at": "2026-11-09T02:31:04+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.7903631925582886,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 2,
+            "class_name": "portrait_frame",
+            "confidence": 0.8338403105735779,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:21",
+      "task": "body_images_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "30",
+        "sha256": "344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5",
+        "width": 912,
+        "height": 1358
+      },
+      "media": {
+        "relative_path": "media/sources/344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5.jpg",
+        "sha256": "344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        285.330871582031,
+        0.0,
+        653.328430175781,
+        490.135192871094
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          285.330871582031,
+          0.0,
+          653.328430175781,
+          490.135192871094
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 0
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "portrait",
+        "structured": {
+          "task": "body_images_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "1",
+          "output_group": "body_images",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5:proposal:175:training_example:21",
+        "created_at": "2026-11-09T02:32:32+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.7900491952896118,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 2,
+            "class_name": "portrait_frame",
+            "confidence": 0.8507625460624695,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:6",
+      "task": "body_images_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "1",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d.jpg",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        280.241973876953,
+        34.7735443115234,
+        823.669860839844,
+        798.569946289063
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          280.241973876953,
+          34.7735443115234,
+          823.669860839844,
+          798.569946289063
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 0
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "portrait",
+        "structured": {
+          "task": "body_images_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "1",
+          "output_group": "body_images",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d:proposal:5:training_example:6",
+        "created_at": "2026-11-09T01:20:16+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bodypart_portrait_clothed",
+            "confidence": 0.3080422580242157,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 2,
+            "class_name": "portrait_frame",
+            "confidence": 0.5807034373283386,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:4",
+      "task": "body_images_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "12",
+        "sha256": "82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a",
+        "width": 920,
+        "height": 614
+      },
+      "media": {
+        "relative_path": "media/sources/82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a.jpg",
+        "sha256": "82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        643.164367675781,
+        2.09195995330811,
+        775.038146972656,
+        220.058227539063
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          643.164367675781,
+          2.09195995330811,
+          775.038146972656,
+          220.058227539063
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 0
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "portrait",
+        "structured": {
+          "task": "body_images_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "1",
+          "output_group": "body_images",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a:proposal:72:training_example:4",
+        "created_at": "2026-11-08T23:27:25+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bodypart_portrait_topless",
+            "confidence": 0.8784958720207214,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 2,
+            "class_name": "portrait_frame",
+            "confidence": 0.5745525360107422,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:1",
+      "task": "broad_clothing_classification",
+      "model": {
+        "id": "clothing_classifier",
+        "registry_id": "clothing_classifier",
+        "registry_version": "clothing-broad-v2-12class"
+      },
+      "source": {
+        "source_image_id": "1",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d.jpg",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        240.63847792444153,
+        436.959913017336,
+        912.8882032662384,
+        902.9825570603048
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          240.63847792444153,
+          436.959913017336,
+          912.8882032662384,
+          902.9825570603048
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 0
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "bra",
+        "structured": {
+          "task": "broad_clothing_classification",
+          "taxonomy_id": "clothing_classifier",
+          "taxonomy_version": "clothing-broad-v2-12class",
+          "output_group": "broad_family",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d:proposal:4:training_example:1",
+        "created_at": "2026-11-08T22:23:53+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "fullbody_clothed_states",
+            "confidence": 0.36475953459739685,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 10,
+            "class_name": "boobs_cover_item",
+            "confidence": 0.8304923176765442,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:13",
+      "task": "broad_clothing_classification",
+      "model": {
+        "id": "clothing_classifier",
+        "registry_id": "clothing_classifier",
+        "registry_version": "clothing-broad-v2-12class"
+      },
+      "source": {
+        "source_image_id": "3",
+        "sha256": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499.jpg",
+        "sha256": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        352.064479282924,
+        642.8722272600447,
+        685.2365635463169,
+        910.452845982143
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          352.064479282924,
+          642.8722272600447,
+          685.2365635463169,
+          910.452845982143
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 6
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "panty",
+        "structured": {
+          "task": "broad_clothing_classification",
+          "taxonomy_id": "clothing_classifier",
+          "taxonomy_version": "clothing-broad-v2-12class",
+          "output_group": "broad_family",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499:proposal:14:training_example:13",
+        "created_at": "2026-11-09T02:28:41+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.9968089461326599,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 8,
+            "class_name": "pussy_cover_item",
+            "confidence": 0.9195085167884827,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:16",
+      "task": "broad_clothing_classification",
+      "model": {
+        "id": "clothing_classifier",
+        "registry_id": "clothing_classifier",
+        "registry_version": "clothing-broad-v2-12class"
+      },
+      "source": {
+        "source_image_id": "16",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "width": 920,
+        "height": 1371
+      },
+      "media": {
+        "relative_path": "media/sources/f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46.jpg",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        296.174865722656,
+        248.618682861328,
+        615.27392578125,
+        513.115295410156
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          296.174865722656,
+          248.618682861328,
+          615.27392578125,
+          513.115295410156
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 0
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "bra",
+        "structured": {
+          "task": "broad_clothing_classification",
+          "taxonomy_id": "clothing_classifier",
+          "taxonomy_version": "clothing-broad-v2-12class",
+          "output_group": "broad_family",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46:proposal:87:training_example:16",
+        "created_at": "2026-11-09T02:30:22+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bra",
+            "confidence": 0.9922505021095276,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 10,
+            "class_name": "boobs_cover_item",
+            "confidence": 0.9354689121246338,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:19",
+      "task": "broad_clothing_classification",
+      "model": {
+        "id": "clothing_classifier",
+        "registry_id": "clothing_classifier",
+        "registry_version": "clothing-broad-v2-12class"
+      },
+      "source": {
+        "source_image_id": "16",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "width": 920,
+        "height": 1371
+      },
+      "media": {
+        "relative_path": "media/sources/f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46.jpg",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        282.778472900391,
+        546.298706054688,
+        632.431518554688,
+        867.7333984375
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          282.778472900391,
+          546.298706054688,
+          632.431518554688,
+          867.7333984375
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 6
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "panty",
+        "structured": {
+          "task": "broad_clothing_classification",
+          "taxonomy_id": "clothing_classifier",
+          "taxonomy_version": "clothing-broad-v2-12class",
+          "output_group": "broad_family",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46:proposal:91:training_example:19",
+        "created_at": "2026-11-09T02:31:54+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.7689706087112427,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 8,
+            "class_name": "pussy_cover_item",
+            "confidence": 0.901465892791748,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:2",
+      "task": "detailed_clothing_classification",
+      "model": {
+        "id": "newassetapp_detailed_clothing_classifier",
+        "registry_id": "newassetapp_detailed_clothing_v1",
+        "registry_version": "1.0.0"
+      },
+      "source": {
+        "source_image_id": "1",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d.jpg",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        240.63847792444153,
+        436.959913017336,
+        912.8882032662384,
+        902.9825570603048
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          240.63847792444153,
+          436.959913017336,
+          912.8882032662384,
+          902.9825570603048
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": null
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "plain_bra",
+        "structured": {
+          "task": "detailed_clothing_classification",
+          "taxonomy_id": "newassetapp_structured_classification",
+          "taxonomy_version": "1.0.0",
+          "output_group": "detailed_type",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d:proposal:4:training_example:2",
+        "created_at": "2026-11-08T22:23:53+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "fullbody_clothed_states",
+            "confidence": 0.36475953459739685,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 10,
+            "class_name": "boobs_cover_item",
+            "confidence": 0.8304923176765442,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:14",
+      "task": "detailed_clothing_classification",
+      "model": {
+        "id": "newassetapp_detailed_clothing_classifier",
+        "registry_id": "newassetapp_detailed_clothing_v1",
+        "registry_version": "1.0.0"
+      },
+      "source": {
+        "source_image_id": "3",
+        "sha256": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499.jpg",
+        "sha256": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        352.064479282924,
+        642.8722272600447,
+        685.2365635463169,
+        910.452845982143
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          352.064479282924,
+          642.8722272600447,
+          685.2365635463169,
+          910.452845982143
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": null
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "high_cut_panties",
+        "structured": {
+          "task": "detailed_clothing_classification",
+          "taxonomy_id": "newassetapp_structured_classification",
+          "taxonomy_version": "1.0.0",
+          "output_group": "detailed_type",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499:proposal:14:training_example:14",
+        "created_at": "2026-11-09T02:28:41+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.9968089461326599,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 8,
+            "class_name": "pussy_cover_item",
+            "confidence": 0.9195085167884827,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:17",
+      "task": "detailed_clothing_classification",
+      "model": {
+        "id": "newassetapp_detailed_clothing_classifier",
+        "registry_id": "newassetapp_detailed_clothing_v1",
+        "registry_version": "1.0.0"
+      },
+      "source": {
+        "source_image_id": "16",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "width": 920,
+        "height": 1371
+      },
+      "media": {
+        "relative_path": "media/sources/f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46.jpg",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        296.174865722656,
+        248.618682861328,
+        615.27392578125,
+        513.115295410156
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          296.174865722656,
+          248.618682861328,
+          615.27392578125,
+          513.115295410156
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": null
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "bikini_top",
+        "structured": {
+          "task": "detailed_clothing_classification",
+          "taxonomy_id": "newassetapp_structured_classification",
+          "taxonomy_version": "1.0.0",
+          "output_group": "detailed_type",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46:proposal:87:training_example:17",
+        "created_at": "2026-11-09T02:30:22+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bra",
+            "confidence": 0.9922505021095276,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 10,
+            "class_name": "boobs_cover_item",
+            "confidence": 0.9354689121246338,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:20",
+      "task": "detailed_clothing_classification",
+      "model": {
+        "id": "newassetapp_detailed_clothing_classifier",
+        "registry_id": "newassetapp_detailed_clothing_v1",
+        "registry_version": "1.0.0"
+      },
+      "source": {
+        "source_image_id": "16",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "width": 920,
+        "height": 1371
+      },
+      "media": {
+        "relative_path": "media/sources/f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46.jpg",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        282.778472900391,
+        546.298706054688,
+        632.431518554688,
+        867.7333984375
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          282.778472900391,
+          546.298706054688,
+          632.431518554688,
+          867.7333984375
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": null
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "bikini_bottom",
+        "structured": {
+          "task": "detailed_clothing_classification",
+          "taxonomy_id": "newassetapp_structured_classification",
+          "taxonomy_version": "1.0.0",
+          "output_group": "detailed_type",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46:proposal:91:training_example:20",
+        "created_at": "2026-11-09T02:31:54+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.7689706087112427,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 8,
+            "class_name": "pussy_cover_item",
+            "confidence": 0.901465892791748,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:10",
+      "task": "fullbody_state_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "59",
+        "sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+        "width": 920,
+        "height": 518
+      },
+      "media": {
+        "relative_path": "media/sources/1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291.jpg",
+        "sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        428.89,
+        26.66,
+        596.72,
+        296.74
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          428.89,
+          26.66,
+          596.72,
+          296.74
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 2
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "bottomless",
+        "structured": {
+          "task": "fullbody_state_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "fullbody_state",
+          "output_group": "fullbody_state",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291:proposal:351:training_example:10",
+        "created_at": "2026-11-09T02:19:53+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bodypart_portrait_topless",
+            "confidence": 0.6657648682594299,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 2,
+            "class_name": "portrait_frame",
+            "confidence": 0.46402543783187866,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [
+          {
+            "correction_record_id": "72",
+            "decision_type": "classification_confirmation",
+            "final_state": "confirmed",
+            "human_confirmed": true,
+            "original_snapshot": {
+              "cnn": {
+                "class_name": "bodypart_portrait_topless",
+                "confidence": 0.6657648682594299,
+                "created_at": "2026-11-06 00:38:15",
+                "detection_id": 351,
+                "id": 351,
+                "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+                "model_id": "asset_cnn",
+                "probabilities_json": "{\"bodypart_ass\": 1.1216346138098743e-05, \"bodypart_boobs\": 2.1508463760255836e-05, \"bodypart_face\": 0.18018653988838196, \"bodypart_legs\": 6.428078904718859e-07, \"bodypart_portrait_clothed\": 0.1477590799331665, \"bodypart_portrait_topless\": 0.6657648682594299, \"bodypart_pussy\": 5.961250053587719e-07, \"bra\": 5.731970668421127e-05, \"dress\": 8.021639223443344e-05, \"footwear\": 1.044007785822032e-05, \"fullbody_clothed_states\": 7.282857404788956e-05, \"fullbody_costume_states\": 0.0001861401688074693, \"fullbody_nude_states\": 0.001112491125240922, \"outerwear\": 0.0002949116751551628, \"pants\": 1.820827128540259e-05, \"panty\": 2.9629078198922798e-05, \"pantyhose\": 5.292951641422405e-07, \"shirt\": 0.0037989960983395576, \"shorts\": 1.9780824004556052e-05, \"skirt\": 0.00017504471179563552, \"socks\": 1.2508651252574055e-06, \"special_wear\": 6.174620011734078e-06, \"stockings\": 6.051650416338816e-07, \"sweater\": 5.1506649469956756e-05, \"utility_cover\": 0.0002619914012029767, \"vest\": 7.74120562709868e-05}",
+                "status": "ok"
+              },
+              "image_height": 518,
+              "image_width": 920,
+              "proposal": {
+                "asset_type": "bodypart_portrait_topless",
+                "category": "others",
+                "confidence": 0.6657648682594299,
+                "corrected_bbox_json": null,
+                "id": 351,
+                "proposed_tags_json": null,
+                "review_status": "review_required"
+              },
+              "source_image_id": 59,
+              "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\96423004_043_5b0c.jpg",
+              "source_sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+              "yolo": {
+                "class_id": 2,
+                "class_name": "portrait_frame",
+                "confidence": 0.46402543783187866,
+                "coordinate_space": "source_pixels",
+                "created_at": "2026-11-06 00:38:14",
+                "id": 351,
+                "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+                "model_id": "legacy_yolo",
+                "source_image_id": 59,
+                "status": "original",
+                "x1": 428.89373779296875,
+                "x2": 596.7162475585938,
+                "y1": 26.663545608520508,
+                "y2": 296.7365417480469
+              }
+            },
+            "corrected_payload": {
+              "asset_cnn_class": "bodypart_portrait_topless",
+              "bbox_xyxy": [
+                428.89,
+                26.66,
+                596.72,
+                296.74
+              ],
+              "broad_clothing_training_eligible": false,
+              "category": "fullbody",
+              "class_id": 2,
+              "classification_registry_id": "newassetapp_structured_classification",
+              "clothing_cnn_class": "bodypart_portrait_topless",
+              "clothing_cnn_training_eligible": false,
+              "clothing_family_tag": null,
+              "clothing_tag": "",
+              "clothing_tag_input_method": null,
+              "clothing_taxonomy_version": "clothing-broad-v2-12class",
+              "cnn_training_eligible": false,
+              "corruption_classifier_target": null,
+              "corruption_state": "slut",
+              "corruption_training_eligible": false,
+              "corruption_values": [
+                "slut"
+              ],
+              "exclusion_reason": null,
+              "fullbody_output_category": "fullbody_bottomless",
+              "location_evidence_checkpoint_digest": null,
+              "location_evidence_class": "portrait_frame",
+              "location_evidence_class_id": 2,
+              "location_evidence_model_id": null,
+              "location_evidence_registry_id": null,
+              "location_tag": "pier",
+              "main_tag": "clothed",
+              "no_objects": false,
+              "notes": "",
+              "output_filename": null,
+              "propagate_corruption_review": false,
+              "requested_training_tasks": [
+                "yolo_detector",
+                "unified"
+              ],
+              "state_spec": "bottomless",
+              "subtags": [
+                "slut"
+              ],
+              "target_yolo_training_eligible": true,
+              "taxonomy_version": "1.0.0",
+              "unified_cnn_class": "bottomless",
+              "unified_cnn_task": "fullbody_state",
+              "unified_cnn_training_eligible": true,
+              "validity_state": "valid",
+              "yolo_annotation_class_id": 20,
+              "yolo_annotation_class_name": "fullbody_clothed",
+              "yolo_annotation_registry_id": "newassetapp_yolo_detector_v1",
+              "yolo_class_id": 2,
+              "yolo_training_eligible": true
+            }
+          }
+        ],
+        "source_workflow": "professional_review",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:12",
+      "task": "fullbody_state_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "2",
+        "sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54.jpg",
+        "sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        0.0,
+        0.0,
+        920.0,
+        1380.0
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          0.0,
+          0.0,
+          920.0,
+          1380.0
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 2
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "bottomless",
+        "structured": {
+          "task": "fullbody_state_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "fullbody_state",
+          "output_group": "fullbody_state",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54:proposal:1131:training_example:12",
+        "created_at": "2026-11-09T02:26:48+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": null,
+            "confidence": null,
+            "model_digest": null,
+            "model_id": null
+          },
+          "yolo": {
+            "class_id": null,
+            "class_name": null,
+            "confidence": null,
+            "model_digest": null,
+            "model_id": null
+          }
+        },
+        "correction_events": [
+          {
+            "correction_record_id": "73",
+            "decision_type": "classification_confirmation",
+            "final_state": "confirmed",
+            "human_confirmed": true,
+            "original_snapshot": {
+              "cnn": null,
+              "image_height": 1380,
+              "image_width": 920,
+              "proposal": {
+                "asset_type": null,
+                "category": "others",
+                "confidence": null,
+                "corrected_bbox_json": null,
+                "id": 1131,
+                "proposed_tags_json": null,
+                "review_status": "pending"
+              },
+              "source_image_id": 2,
+              "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\26461358_003_b527.jpg",
+              "source_sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+              "yolo": null
+            },
+            "corrected_payload": {
+              "asset_cnn_class": null,
+              "bbox_xyxy": [
+                0.0,
+                0.0,
+                920.0,
+                1380.0
+              ],
+              "broad_clothing_training_eligible": false,
+              "category": "fullbody",
+              "class_id": null,
+              "classification_registry_id": "newassetapp_structured_classification",
+              "clothing_cnn_class": null,
+              "clothing_cnn_training_eligible": false,
+              "clothing_family_tag": null,
+              "clothing_tag": "",
+              "clothing_tag_input_method": null,
+              "clothing_taxonomy_version": "clothing-broad-v2-12class",
+              "cnn_training_eligible": false,
+              "corruption_classifier_target": null,
+              "corruption_state": "conservative",
+              "corruption_training_eligible": false,
+              "corruption_values": [
+                "conservative"
+              ],
+              "exclusion_reason": null,
+              "fullbody_output_category": "fullbody_bottomless",
+              "location_evidence_checkpoint_digest": null,
+              "location_evidence_class": null,
+              "location_evidence_class_id": null,
+              "location_evidence_model_id": null,
+              "location_evidence_registry_id": null,
+              "location_tag": "home",
+              "main_tag": "clothed",
+              "no_objects": false,
+              "notes": "",
+              "output_filename": null,
+              "propagate_corruption_review": false,
+              "requested_training_tasks": [
+                "yolo_detector",
+                "unified"
+              ],
+              "state_spec": "bottomless",
+              "subtags": [
+                "conservative"
+              ],
+              "target_yolo_training_eligible": true,
+              "taxonomy_version": "1.0.0",
+              "unified_cnn_class": "bottomless",
+              "unified_cnn_task": "fullbody_state",
+              "unified_cnn_training_eligible": true,
+              "validity_state": "valid",
+              "yolo_annotation_class_id": 20,
+              "yolo_annotation_class_name": "fullbody_clothed",
+              "yolo_annotation_registry_id": "newassetapp_yolo_detector_v1",
+              "yolo_class_id": null,
+              "yolo_training_eligible": true
+            }
+          }
+        ],
+        "source_workflow": "professional_review",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:3",
+      "task": "fullbody_state_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "1",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d.jpg",
+        "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        279.9507603020427,
+        50.97943846197029,
+        906.8571428571428,
+        1309.4484044675144
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          279.9507603020427,
+          50.97943846197029,
+          906.8571428571428,
+          1309.4484044675144
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 1
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "topless",
+        "structured": {
+          "task": "fullbody_state_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "1",
+          "output_group": "fullbody_state",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d:proposal:6:training_example:3",
+        "created_at": "2026-11-08T22:24:29+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bodypart_face",
+            "confidence": 0.6790498495101929,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 2,
+            "class_name": "portrait_frame",
+            "confidence": 0.34302258491516113,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:8",
+      "task": "fullbody_state_classification",
+      "model": {
+        "id": "unified_body_images_fullbody_cnn",
+        "registry_id": "newassetapp_unified_body_images_fullbody",
+        "registry_version": "v1_architecture_untrained"
+      },
+      "source": {
+        "source_image_id": "74",
+        "sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+        "width": 920,
+        "height": 690
+      },
+      "media": {
+        "relative_path": "media/sources/8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030.jpg",
+        "sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        0.0,
+        0.0,
+        920.0,
+        690.0
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          0.0,
+          0.0,
+          920.0,
+          690.0
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 0
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "clothed",
+        "structured": {
+          "task": "fullbody_state_classification",
+          "taxonomy_id": "newassetapp_unified_body_images_fullbody",
+          "taxonomy_version": "fullbody_state",
+          "output_group": "fullbody_state",
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030:proposal:1130:training_example:8",
+        "created_at": "2026-11-09T02:17:58+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": null,
+            "confidence": null,
+            "model_digest": null,
+            "model_id": null
+          },
+          "yolo": {
+            "class_id": null,
+            "class_name": null,
+            "confidence": null,
+            "model_digest": null,
+            "model_id": null
+          }
+        },
+        "correction_events": [
+          {
+            "correction_record_id": "71",
+            "decision_type": "classification_confirmation",
+            "final_state": "confirmed",
+            "human_confirmed": true,
+            "original_snapshot": {
+              "cnn": null,
+              "image_height": 690,
+              "image_width": 920,
+              "proposal": {
+                "asset_type": null,
+                "category": "others",
+                "confidence": null,
+                "corrected_bbox_json": null,
+                "id": 1130,
+                "proposed_tags_json": null,
+                "review_status": "pending"
+              },
+              "source_image_id": 74,
+              "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_073_a7a8.jpg",
+              "source_sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+              "yolo": null
+            },
+            "corrected_payload": {
+              "asset_cnn_class": null,
+              "bbox_xyxy": [
+                0.0,
+                0.0,
+                920.0,
+                690.0
+              ],
+              "broad_clothing_training_eligible": false,
+              "category": "fullbody",
+              "class_id": null,
+              "classification_registry_id": "newassetapp_structured_classification",
+              "clothing_cnn_class": null,
+              "clothing_cnn_training_eligible": false,
+              "clothing_family_tag": null,
+              "clothing_tag": "",
+              "clothing_tag_input_method": null,
+              "clothing_taxonomy_version": "clothing-broad-v2-12class",
+              "cnn_training_eligible": false,
+              "corruption_classifier_target": null,
+              "corruption_state": "conservative",
+              "corruption_training_eligible": false,
+              "corruption_values": [
+                "conservative"
+              ],
+              "exclusion_reason": null,
+              "fullbody_output_category": "fullbody",
+              "location_evidence_checkpoint_digest": null,
+              "location_evidence_class": null,
+              "location_evidence_class_id": null,
+              "location_evidence_model_id": null,
+              "location_evidence_registry_id": null,
+              "location_tag": "home",
+              "main_tag": "clothed",
+              "no_objects": false,
+              "notes": "",
+              "output_filename": null,
+              "propagate_corruption_review": false,
+              "requested_training_tasks": [
+                "yolo_detector",
+                "unified"
+              ],
+              "state_spec": "clothed",
+              "subtags": [
+                "conservative"
+              ],
+              "target_yolo_training_eligible": true,
+              "taxonomy_version": "1.0.0",
+              "unified_cnn_class": "clothed",
+              "unified_cnn_task": "fullbody_state",
+              "unified_cnn_training_eligible": true,
+              "validity_state": "valid",
+              "yolo_annotation_class_id": 20,
+              "yolo_annotation_class_name": "fullbody_clothed",
+              "yolo_annotation_registry_id": "newassetapp_yolo_detector_v1",
+              "yolo_class_id": null,
+              "yolo_training_eligible": true
+            }
+          }
+        ],
+        "source_workflow": "professional_review",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:9",
+      "task": "yolo_detection",
+      "model": {
+        "id": "newassetapp_yolo_detector_v1",
+        "registry_id": "newassetapp_yolo_detector_v1",
+        "registry_version": "1"
+      },
+      "source": {
+        "source_image_id": "59",
+        "sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+        "width": 920,
+        "height": 518
+      },
+      "media": {
+        "relative_path": "media/sources/1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291.jpg",
+        "sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        428.89,
+        26.66,
+        596.72,
+        296.74
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          428.89,
+          26.66,
+          596.72,
+          296.74
+        ],
+        "original_model_bbox_xyxy": [
+          428.89373779296875,
+          26.663545608520508,
+          596.7162475585938,
+          296.7365417480469
+        ],
+        "target_class_id": 20
+      },
+      "detection": {
+        "detection_id": "351",
+        "bbox_xyxy": [
+          428.89373779296875,
+          26.663545608520508,
+          596.7162475585938,
+          296.7365417480469
+        ]
+      },
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "fullbody_clothed",
+        "structured": {
+          "task": "yolo_detection",
+          "taxonomy_id": "newassetapp_yolo_detector_v1",
+          "taxonomy_version": "1",
+          "output_group": null,
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291:proposal:351:training_example:9",
+        "created_at": "2026-11-09T02:19:53+00:00",
+        "model_prediction": {
+          "checkpoint_sha256": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+          "class_id": 2,
+          "class_name": "portrait_frame",
+          "confidence": 0.46402543783187866,
+          "model_id": "legacy_yolo",
+          "original_bbox_xyxy": [
+            428.89373779296875,
+            26.663545608520508,
+            596.7162475585938,
+            296.7365417480469
+          ],
+          "target_registry_id": "newassetapp_yolo_detector_v1"
+        },
+        "correction_events": [
+          {
+            "correction_record_id": "72",
+            "decision_type": "classification_confirmation",
+            "final_state": "confirmed",
+            "human_confirmed": true,
+            "original_snapshot": {
+              "cnn": {
+                "class_name": "bodypart_portrait_topless",
+                "confidence": 0.6657648682594299,
+                "created_at": "2026-11-06 00:38:15",
+                "detection_id": 351,
+                "id": 351,
+                "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+                "model_id": "asset_cnn",
+                "probabilities_json": "{\"bodypart_ass\": 1.1216346138098743e-05, \"bodypart_boobs\": 2.1508463760255836e-05, \"bodypart_face\": 0.18018653988838196, \"bodypart_legs\": 6.428078904718859e-07, \"bodypart_portrait_clothed\": 0.1477590799331665, \"bodypart_portrait_topless\": 0.6657648682594299, \"bodypart_pussy\": 5.961250053587719e-07, \"bra\": 5.731970668421127e-05, \"dress\": 8.021639223443344e-05, \"footwear\": 1.044007785822032e-05, \"fullbody_clothed_states\": 7.282857404788956e-05, \"fullbody_costume_states\": 0.0001861401688074693, \"fullbody_nude_states\": 0.001112491125240922, \"outerwear\": 0.0002949116751551628, \"pants\": 1.820827128540259e-05, \"panty\": 2.9629078198922798e-05, \"pantyhose\": 5.292951641422405e-07, \"shirt\": 0.0037989960983395576, \"shorts\": 1.9780824004556052e-05, \"skirt\": 0.00017504471179563552, \"socks\": 1.2508651252574055e-06, \"special_wear\": 6.174620011734078e-06, \"stockings\": 6.051650416338816e-07, \"sweater\": 5.1506649469956756e-05, \"utility_cover\": 0.0002619914012029767, \"vest\": 7.74120562709868e-05}",
+                "status": "ok"
+              },
+              "image_height": 518,
+              "image_width": 920,
+              "proposal": {
+                "asset_type": "bodypart_portrait_topless",
+                "category": "others",
+                "confidence": 0.6657648682594299,
+                "corrected_bbox_json": null,
+                "id": 351,
+                "proposed_tags_json": null,
+                "review_status": "review_required"
+              },
+              "source_image_id": 59,
+              "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\96423004_043_5b0c.jpg",
+              "source_sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+              "yolo": {
+                "class_id": 2,
+                "class_name": "portrait_frame",
+                "confidence": 0.46402543783187866,
+                "coordinate_space": "source_pixels",
+                "created_at": "2026-11-06 00:38:14",
+                "id": 351,
+                "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+                "model_id": "legacy_yolo",
+                "source_image_id": 59,
+                "status": "original",
+                "x1": 428.89373779296875,
+                "x2": 596.7162475585938,
+                "y1": 26.663545608520508,
+                "y2": 296.7365417480469
+              }
+            },
+            "corrected_payload": {
+              "asset_cnn_class": "bodypart_portrait_topless",
+              "bbox_xyxy": [
+                428.89,
+                26.66,
+                596.72,
+                296.74
+              ],
+              "broad_clothing_training_eligible": false,
+              "category": "fullbody",
+              "class_id": 2,
+              "classification_registry_id": "newassetapp_structured_classification",
+              "clothing_cnn_class": "bodypart_portrait_topless",
+              "clothing_cnn_training_eligible": false,
+              "clothing_family_tag": null,
+              "clothing_tag": "",
+              "clothing_tag_input_method": null,
+              "clothing_taxonomy_version": "clothing-broad-v2-12class",
+              "cnn_training_eligible": false,
+              "corruption_classifier_target": null,
+              "corruption_state": "slut",
+              "corruption_training_eligible": false,
+              "corruption_values": [
+                "slut"
+              ],
+              "exclusion_reason": null,
+              "fullbody_output_category": "fullbody_bottomless",
+              "location_evidence_checkpoint_digest": null,
+              "location_evidence_class": "portrait_frame",
+              "location_evidence_class_id": 2,
+              "location_evidence_model_id": null,
+              "location_evidence_registry_id": null,
+              "location_tag": "pier",
+              "main_tag": "clothed",
+              "no_objects": false,
+              "notes": "",
+              "output_filename": null,
+              "propagate_corruption_review": false,
+              "requested_training_tasks": [
+                "yolo_detector",
+                "unified"
+              ],
+              "state_spec": "bottomless",
+              "subtags": [
+                "slut"
+              ],
+              "target_yolo_training_eligible": true,
+              "taxonomy_version": "1.0.0",
+              "unified_cnn_class": "bottomless",
+              "unified_cnn_task": "fullbody_state",
+              "unified_cnn_training_eligible": true,
+              "validity_state": "valid",
+              "yolo_annotation_class_id": 20,
+              "yolo_annotation_class_name": "fullbody_clothed",
+              "yolo_annotation_registry_id": "newassetapp_yolo_detector_v1",
+              "yolo_class_id": 2,
+              "yolo_training_eligible": true
+            }
+          }
+        ],
+        "source_workflow": "professional_review",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:11",
+      "task": "yolo_detection",
+      "model": {
+        "id": "newassetapp_yolo_detector_v1",
+        "registry_id": "newassetapp_yolo_detector_v1",
+        "registry_version": "1"
+      },
+      "source": {
+        "source_image_id": "2",
+        "sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54.jpg",
+        "sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        0.0,
+        0.0,
+        920.0,
+        1380.0
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          0.0,
+          0.0,
+          920.0,
+          1380.0
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 20
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "fullbody_clothed",
+        "structured": {
+          "task": "yolo_detection",
+          "taxonomy_id": "newassetapp_yolo_detector_v1",
+          "taxonomy_version": "1",
+          "output_group": null,
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54:proposal:1131:training_example:11",
+        "created_at": "2026-11-09T02:26:48+00:00",
+        "model_prediction": {
+          "checkpoint_sha256": null,
+          "class_id": null,
+          "class_name": null,
+          "confidence": null,
+          "model_id": null,
+          "original_bbox_xyxy": null,
+          "target_registry_id": "newassetapp_yolo_detector_v1"
+        },
+        "correction_events": [
+          {
+            "correction_record_id": "73",
+            "decision_type": "classification_confirmation",
+            "final_state": "confirmed",
+            "human_confirmed": true,
+            "original_snapshot": {
+              "cnn": null,
+              "image_height": 1380,
+              "image_width": 920,
+              "proposal": {
+                "asset_type": null,
+                "category": "others",
+                "confidence": null,
+                "corrected_bbox_json": null,
+                "id": 1131,
+                "proposed_tags_json": null,
+                "review_status": "pending"
+              },
+              "source_image_id": 2,
+              "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\26461358_003_b527.jpg",
+              "source_sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+              "yolo": null
+            },
+            "corrected_payload": {
+              "asset_cnn_class": null,
+              "bbox_xyxy": [
+                0.0,
+                0.0,
+                920.0,
+                1380.0
+              ],
+              "broad_clothing_training_eligible": false,
+              "category": "fullbody",
+              "class_id": null,
+              "classification_registry_id": "newassetapp_structured_classification",
+              "clothing_cnn_class": null,
+              "clothing_cnn_training_eligible": false,
+              "clothing_family_tag": null,
+              "clothing_tag": "",
+              "clothing_tag_input_method": null,
+              "clothing_taxonomy_version": "clothing-broad-v2-12class",
+              "cnn_training_eligible": false,
+              "corruption_classifier_target": null,
+              "corruption_state": "conservative",
+              "corruption_training_eligible": false,
+              "corruption_values": [
+                "conservative"
+              ],
+              "exclusion_reason": null,
+              "fullbody_output_category": "fullbody_bottomless",
+              "location_evidence_checkpoint_digest": null,
+              "location_evidence_class": null,
+              "location_evidence_class_id": null,
+              "location_evidence_model_id": null,
+              "location_evidence_registry_id": null,
+              "location_tag": "home",
+              "main_tag": "clothed",
+              "no_objects": false,
+              "notes": "",
+              "output_filename": null,
+              "propagate_corruption_review": false,
+              "requested_training_tasks": [
+                "yolo_detector",
+                "unified"
+              ],
+              "state_spec": "bottomless",
+              "subtags": [
+                "conservative"
+              ],
+              "target_yolo_training_eligible": true,
+              "taxonomy_version": "1.0.0",
+              "unified_cnn_class": "bottomless",
+              "unified_cnn_task": "fullbody_state",
+              "unified_cnn_training_eligible": true,
+              "validity_state": "valid",
+              "yolo_annotation_class_id": 20,
+              "yolo_annotation_class_name": "fullbody_clothed",
+              "yolo_annotation_registry_id": "newassetapp_yolo_detector_v1",
+              "yolo_class_id": null,
+              "yolo_training_eligible": true
+            }
+          }
+        ],
+        "source_workflow": "professional_review",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:7",
+      "task": "yolo_detection",
+      "model": {
+        "id": "newassetapp_yolo_detector_v1",
+        "registry_id": "newassetapp_yolo_detector_v1",
+        "registry_version": "1"
+      },
+      "source": {
+        "source_image_id": "74",
+        "sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+        "width": 920,
+        "height": 690
+      },
+      "media": {
+        "relative_path": "media/sources/8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030.jpg",
+        "sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        0.0,
+        0.0,
+        920.0,
+        690.0
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          0.0,
+          0.0,
+          920.0,
+          690.0
+        ],
+        "original_model_bbox_xyxy": null,
+        "target_class_id": 20
+      },
+      "detection": null,
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "fullbody_clothed",
+        "structured": {
+          "task": "yolo_detection",
+          "taxonomy_id": "newassetapp_yolo_detector_v1",
+          "taxonomy_version": "1",
+          "output_group": null,
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030:proposal:1130:training_example:7",
+        "created_at": "2026-11-09T02:17:58+00:00",
+        "model_prediction": {
+          "checkpoint_sha256": null,
+          "class_id": null,
+          "class_name": null,
+          "confidence": null,
+          "model_id": null,
+          "original_bbox_xyxy": null,
+          "target_registry_id": "newassetapp_yolo_detector_v1"
+        },
+        "correction_events": [
+          {
+            "correction_record_id": "71",
+            "decision_type": "classification_confirmation",
+            "final_state": "confirmed",
+            "human_confirmed": true,
+            "original_snapshot": {
+              "cnn": null,
+              "image_height": 690,
+              "image_width": 920,
+              "proposal": {
+                "asset_type": null,
+                "category": "others",
+                "confidence": null,
+                "corrected_bbox_json": null,
+                "id": 1130,
+                "proposed_tags_json": null,
+                "review_status": "pending"
+              },
+              "source_image_id": 74,
+              "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_073_a7a8.jpg",
+              "source_sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+              "yolo": null
+            },
+            "corrected_payload": {
+              "asset_cnn_class": null,
+              "bbox_xyxy": [
+                0.0,
+                0.0,
+                920.0,
+                690.0
+              ],
+              "broad_clothing_training_eligible": false,
+              "category": "fullbody",
+              "class_id": null,
+              "classification_registry_id": "newassetapp_structured_classification",
+              "clothing_cnn_class": null,
+              "clothing_cnn_training_eligible": false,
+              "clothing_family_tag": null,
+              "clothing_tag": "",
+              "clothing_tag_input_method": null,
+              "clothing_taxonomy_version": "clothing-broad-v2-12class",
+              "cnn_training_eligible": false,
+              "corruption_classifier_target": null,
+              "corruption_state": "conservative",
+              "corruption_training_eligible": false,
+              "corruption_values": [
+                "conservative"
+              ],
+              "exclusion_reason": null,
+              "fullbody_output_category": "fullbody",
+              "location_evidence_checkpoint_digest": null,
+              "location_evidence_class": null,
+              "location_evidence_class_id": null,
+              "location_evidence_model_id": null,
+              "location_evidence_registry_id": null,
+              "location_tag": "home",
+              "main_tag": "clothed",
+              "no_objects": false,
+              "notes": "",
+              "output_filename": null,
+              "propagate_corruption_review": false,
+              "requested_training_tasks": [
+                "yolo_detector",
+                "unified"
+              ],
+              "state_spec": "clothed",
+              "subtags": [
+                "conservative"
+              ],
+              "target_yolo_training_eligible": true,
+              "taxonomy_version": "1.0.0",
+              "unified_cnn_class": "clothed",
+              "unified_cnn_task": "fullbody_state",
+              "unified_cnn_training_eligible": true,
+              "validity_state": "valid",
+              "yolo_annotation_class_id": 20,
+              "yolo_annotation_class_name": "fullbody_clothed",
+              "yolo_annotation_registry_id": "newassetapp_yolo_detector_v1",
+              "yolo_class_id": null,
+              "yolo_training_eligible": true
+            }
+          }
+        ],
+        "source_workflow": "professional_review",
+        "training_record_table": "training_examples"
+      }
+    },
+    {
+      "record_id": "training_example:15",
+      "task": "yolo_detection",
+      "model": {
+        "id": "newassetapp_yolo_detector_v1",
+        "registry_id": "newassetapp_yolo_detector_v1",
+        "registry_version": "1"
+      },
+      "source": {
+        "source_image_id": "7",
+        "sha256": "a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2",
+        "width": 920,
+        "height": 1380
+      },
+      "media": {
+        "relative_path": "media/sources/a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2.jpg",
+        "sha256": "a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        285.400543212891,
+        627.184326171875,
+        553.82177734375,
+        791.88134765625
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          285.400543212891,
+          627.184326171875,
+          553.82177734375,
+          791.88134765625
+        ],
+        "original_model_bbox_xyxy": [
+          285.4005432128906,
+          627.184326171875,
+          553.82177734375,
+          791.88134765625
+        ],
+        "target_class_id": 5
+      },
+      "detection": {
+        "detection_id": "43",
+        "bbox_xyxy": [
+          285.4005432128906,
+          627.184326171875,
+          553.82177734375,
+          791.88134765625
+        ]
+      },
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "pussy",
+        "structured": {
+          "task": "yolo_detection",
+          "taxonomy_id": "newassetapp_yolo_detector_v1",
+          "taxonomy_version": "1",
+          "output_group": null,
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2:proposal:43:training_example:15",
+        "created_at": "2026-11-09T02:29:24+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "panty",
+            "confidence": 0.8012516498565674,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 5,
+            "class_name": "pussy",
+            "confidence": 0.5181592702865601,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo",
+            "original_bbox_xyxy": [
+              285.4005432128906,
+              627.184326171875,
+              553.82177734375,
+              791.88134765625
+            ],
+            "detection_status": "original"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples",
+        "task_mapping": {
+          "source_task": "unified_body_images_fullbody",
+          "source_record_id": null,
+          "mapping": "human_confirmed_body_region_identity_to_yolo_detection",
+          "reason": "YOLO owns body-part identity; the human-confirmed region label matches the linked YOLO class."
+        }
+      }
+    },
+    {
+      "record_id": "training_example:5",
+      "task": "yolo_detection",
+      "model": {
+        "id": "newassetapp_yolo_detector_v1",
+        "registry_id": "newassetapp_yolo_detector_v1",
+        "registry_version": "1"
+      },
+      "source": {
+        "source_image_id": "16",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "width": 920,
+        "height": 1371
+      },
+      "media": {
+        "relative_path": "media/sources/f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46.jpg",
+        "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+        "role": "source_image"
+      },
+      "bbox_xyxy": [
+        413.168975830078,
+        3.54559540748596,
+        585.632873535156,
+        256.12548828125
+      ],
+      "annotation": {
+        "coordinate_space": "source_pixels",
+        "target_bbox_xyxy": [
+          413.168975830078,
+          3.54559540748596,
+          585.632873535156,
+          256.12548828125
+        ],
+        "original_model_bbox_xyxy": [
+          413.1689758300781,
+          3.545595407485962,
+          585.6328735351562,
+          256.12548828125
+        ],
+        "target_class_id": 1
+      },
+      "detection": {
+        "detection_id": "90",
+        "bbox_xyxy": [
+          413.1689758300781,
+          3.545595407485962,
+          585.6328735351562,
+          256.12548828125
+        ]
+      },
+      "review": {
+        "human_confirmed": true,
+        "eligible": true,
+        "review_state": "reviewed",
+        "exclusion_reason": null
+      },
+      "labels": {
+        "class_label": "face",
+        "structured": {
+          "task": "yolo_detection",
+          "taxonomy_id": "newassetapp_yolo_detector_v1",
+          "taxonomy_version": "1",
+          "output_group": null,
+          "location": null
+        }
+      },
+      "provenance": {
+        "source_snapshot_id": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46:proposal:90:training_example:5",
+        "created_at": "2026-11-08T23:28:04+00:00",
+        "model_prediction": {
+          "cnn": {
+            "class_name": "bodypart_face",
+            "confidence": 0.9765977263450623,
+            "model_digest": "eb1251dade9293098e327f3e708bf92f0c5fc09c272c6cddb0f4f04f210ae6d2",
+            "model_id": "asset_cnn"
+          },
+          "yolo": {
+            "class_id": 1,
+            "class_name": "face",
+            "confidence": 0.9030352830886841,
+            "model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+            "model_id": "legacy_yolo",
+            "original_bbox_xyxy": [
+              413.1689758300781,
+              3.545595407485962,
+              585.6328735351562,
+              256.12548828125
+            ],
+            "detection_status": "original"
+          }
+        },
+        "correction_events": [],
+        "source_workflow": "normal_processing",
+        "training_record_table": "training_examples",
+        "task_mapping": {
+          "source_task": "unified_body_images_fullbody",
+          "source_record_id": null,
+          "mapping": "human_confirmed_body_region_identity_to_yolo_detection",
+          "reason": "YOLO owns body-part identity; the human-confirmed region label matches the linked YOLO class."
+        }
+      }
+    }
+  ],
+  "excluded_records": [],
+  "files": [
+    {
+      "relative_path": "media/sources/1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291.jpg",
+      "sha256": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291",
+      "bytes": 49404
+    },
+    {
+      "relative_path": "media/sources/2354eb44427375db86aefc8b4b4bb3ba84ab5d4f91c5cb6d8ee7aa0e46eac6de.jpg",
+      "sha256": "2354eb44427375db86aefc8b4b4bb3ba84ab5d4f91c5cb6d8ee7aa0e46eac6de",
+      "bytes": 122980
+    },
+    {
+      "relative_path": "media/sources/310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54.jpg",
+      "sha256": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+      "bytes": 187757
+    },
+    {
+      "relative_path": "media/sources/344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5.jpg",
+      "sha256": "344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5",
+      "bytes": 117978
+    },
+    {
+      "relative_path": "media/sources/673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d.jpg",
+      "sha256": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+      "bytes": 120407
+    },
+    {
+      "relative_path": "media/sources/82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a.jpg",
+      "sha256": "82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a",
+      "bytes": 66471
+    },
+    {
+      "relative_path": "media/sources/8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030.jpg",
+      "sha256": "8363f820d72d6d05d822b51a9287b4a731a2f144ca4b0dc32b7f18532048e030",
+      "bytes": 50328
+    },
+    {
+      "relative_path": "media/sources/a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2.jpg",
+      "sha256": "a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2",
+      "bytes": 159904
+    },
+    {
+      "relative_path": "media/sources/d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499.jpg",
+      "sha256": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+      "bytes": 215538
+    },
+    {
+      "relative_path": "media/sources/f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46.jpg",
+      "sha256": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+      "bytes": 136634
+    },
+    {
+      "relative_path": "registries/clothing_classifier_vclothing-broad-v2-12class.json",
+      "sha256": "89120f7eaa67aa54b74d314b2c2bbe7ccbf43ffcf3f45c0e74f53da9cc5f4b38",
+      "bytes": 4730
+    },
+    {
+      "relative_path": "registries/newassetapp_detailed_clothing_v1_v1.0.0.json",
+      "sha256": "fa63f9540364cd53eb86b94d0db1d40d7627a81ce42facd80718178ebfd31b93",
+      "bytes": 438118
+    },
+    {
+      "relative_path": "registries/newassetapp_unified_body_images_fullbody_vv1_architecture_untrained.json",
+      "sha256": "8a21088a84411b2dd930b0a0f81149afa84d1cb9b6b1cc3d969a43754b3058d3",
+      "bytes": 5202
+    },
+    {
+      "relative_path": "registries/newassetapp_yolo_detector_v1_v1.json",
+      "sha256": "519d662aad45b1a29c5ad700a09c49675ce745c195c916b8d0a6404e0d46634a",
+      "bytes": 1639
+    }
+  ],
+  "bundle_sha256": "b6d7cece21e0876e7e89c4264770422caf2a7e8af9042f4c264fbb64756a29ec"
+}

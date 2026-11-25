@@ -1,0 +1,11 @@
+{
+  "app_name": "NewAssetApp",
+  "recursive_scan": true,
+  "confidence_threshold": 0.75,
+  "supported_extensions": [".png", ".jpg", ".jpeg", ".webp", ".bmp", ".tif", ".tiff"],
+  "yolo_checkpoint": null,
+  "clothing_classifier_checkpoint": "models/clothing_classifier/clothing_classifier_12class.pth",
+  "clothing_classifier_class_map": "data/models/clothing_classifier_12class_map.json",
+  "asset_classifier_checkpoint": null,
+  "asset_class_map": null
+}

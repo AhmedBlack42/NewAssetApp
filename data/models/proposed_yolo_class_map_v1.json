@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "status": "proposed_pending_user_review",
+  "class_map_frozen": false,
+  "id_status": "Provisional IDs for discussion only; do not use for training or production export until the list is reviewed and frozen.",
+  "source_checkpoint_preserved": "models/yolo/best.pt",
+  "legacy_checkpoint_class_map_preserved": true,
+  "person_is_active_class": false,
+  "location_classes_included": false,
+  "legacy_fullbody_classes_included": false,
+  "photoshoot_class_included": false,
+  "accessory_footwear_decision": "Pending user review; omitted from this 10-class proposal.",
+  "classes": [
+    {"proposed_id": 0, "name": "face", "definition": "A face image region.", "legacy_class_ids": [1]},
+    {"proposed_id": 1, "name": "portrait_frame", "definition": "A portrait region intended for portrait or T-Portrait review.", "legacy_class_ids": [2]},
+    {"proposed_id": 2, "name": "boobs", "definition": "A boobs body-image region.", "legacy_class_ids": [3]},
+    {"proposed_id": 3, "name": "ass", "definition": "An ass body-image region.", "legacy_class_ids": [4]},
+    {"proposed_id": 4, "name": "pussy", "definition": "A pussy body-image region.", "legacy_class_ids": [5]},
+    {"proposed_id": 5, "name": "legs", "definition": "A legs body-image region.", "legacy_class_ids": [6]},
+    {"proposed_id": 6, "name": "boobs_cover", "definition": "A clothing region explicitly covering boobs.", "legacy_class_ids": [10]},
+    {"proposed_id": 7, "name": "legs_cover", "definition": "A clothing region explicitly covering legs.", "legacy_class_ids": [11]},
+    {"proposed_id": 8, "name": "ass_cover", "definition": "A clothing region explicitly covering ass.", "legacy_class_ids": [9]},
+    {"proposed_id": 9, "name": "pussy_cover", "definition": "A clothing region explicitly covering pussy.", "legacy_class_ids": [8]}
+  ],
+  "legacy_name_mapping": {
+    "1:face": "face",
+    "2:portrait_frame": "portrait_frame",
+    "3:boobs": "boobs",
+    "4:ass": "ass",
+    "5:pussy": "pussy",
+    "6:legs": "legs",
+    "8:pussy_cover_item": "pussy_cover",
+    "9:ass_cover_item": "ass_cover",
+    "10:boobs_cover_item": "boobs_cover",
+    "11:leg_cover_item": "legs_cover"
+  },
+  "annotation_policy": "Only human-confirmed bounding boxes enter training. A source image may have multiple detections. Clothing detections for one garment retain a shared garment identity when they associate with multiple covered regions."
+}

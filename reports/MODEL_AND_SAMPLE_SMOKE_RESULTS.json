@@ -1,0 +1,2066 @@
+{
+  "runtime": {
+    "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+    "executable": "F:\\My Tools\\New folder\\Girl Packer1\\.venv_girlpacker\\Scripts\\python.exe",
+    "torch": "2.0.1+cpu",
+    "torchvision": "0.15.2",
+    "ultralytics": "8.0.186",
+    "opencv": "4.8.1",
+    "pyside6": "6.6.1",
+    "device": "cpu"
+  },
+  "synthetic_checkpoint_smoke": {
+    "birefnet_general": {
+      "status": "passed",
+      "seconds": 41.92,
+      "checkpoint": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\general\\model.safetensors",
+      "output_shape": [
+        64,
+        96,
+        4
+      ],
+      "dtype": "uint8",
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    "birefnet_portrait": {
+      "status": "passed",
+      "seconds": 32.0,
+      "checkpoint": "F:\\My Tools\\New folder\\NewAssetApp\\models\\birefnet\\portrait\\model.safetensors",
+      "output_shape": [
+        64,
+        96,
+        4
+      ],
+      "dtype": "uint8",
+      "alpha_range": [
+        0,
+        0
+      ]
+    },
+    "realesrgan_x2plus": {
+      "status": "passed",
+      "seconds": 2.37,
+      "checkpoint": "F:\\My Tools\\New folder\\NewAssetApp\\models\\realesrgan\\RealESRGAN_x2plus.pth",
+      "output_shape": [
+        128,
+        192,
+        3
+      ],
+      "dtype": "uint8"
+    }
+  },
+  "sample_evaluation": {
+    "sample_dir": "F:\\My Tools\\New folder\\NewAssetApp\\samples",
+    "source_images_read_only": true,
+    "threshold": 0.25,
+    "asset_review_threshold": 0.75,
+    "images_found": 44,
+    "images_decoded": 44,
+    "images_sha256_unchanged": true,
+    "sha256_before": {
+      "19958866_017_9e32.jpg": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+      "26461358_003_b527.jpg": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+      "26461358_010_e9fe.jpg": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+      "26461358_030_5066.jpg": "c4c5f98445a36f1a48dbc980fc53247bc4ee591c714d2c103ae5189584de1266",
+      "26461358_035_a29b.jpg": "3ff3bf0a5fa8026428cc9076bdfa580159c91a75518ca4b5fc6827a1de3a782d",
+      "41722352_024_6d97.jpg": "349205bf341fd6bd7eb133bdded62dc86bc69df1485dadc59a2a1b2557588259",
+      "41722352_052_23b3.jpg": "a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2",
+      "41722352_057_d94b.jpg": "82a0681e4b8fa2aa848944e31724dfc9eb3924929f83d8b5b10090ffb7f56519",
+      "45449178_002_0171.jpg": "7886035705c15b676a69e902dd4c1a78d9846ae10f8fd946c52f6540ef866d5a",
+      "45449178_133_4576.jpg": "1d488e3397e0f3a3e383738592415d43478a60ff0889c9cc5c11a334bac10a58",
+      "45449178_146_2ad9.jpg": "255f8434e5646e95d9d64848fe9e476224e12562bd77e109cfba3e43dc405480",
+      "61787864_093_ed94.jpg": "82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a",
+      "61787864_166_9cfe.jpg": "09f439d845185dbe88f95b599d36dc5c3000d957560c86543f9eec3e5af02239",
+      "61787864_179_639f.jpg": "10a5311fd1f40e32918256fb185454e74d3a10199ee074ad5f51bc5bdfbc9d4f",
+      "71328784_006_2eeb.jpg": "4587f50601ce771e5ae8b202c0291295944311cf8a5dd4ec5707fedf4fa14df8",
+      "71328784_037_2c7b.jpg": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+      "71328784_092_48fe.jpg": "679b0edaabb3a7815d7955e5f42e67b5502b8845c7c6e1cbbc927def9516ae47",
+      "77428762_003_920f.jpg": "4b87700808026f92e6eceaa8608666238750824f390196de12652254f13a308d",
+      "77428762_013_f28c.jpg": "e04b39c8bc48f3fefeccffed034eb11ef1a46a389f04991ce8eed27d8819cbbd",
+      "77428762_038_a2b0.jpg": "0ed09dc48bdf096b64a0532716912bb97d9c05dd84113baa276d05d2997171c6",
+      "77428762_046_8944.jpg": "b8f9b10d739663aee4a07932684895e642c521d4adf3bf1b2f31c289907d61b5",
+      "77428762_075_4d94.jpg": "4e1bdae3e10690e9342d4d0a46f840b51e7819ee55fc9395bc6a0caed4ab84e7",
+      "77428762_078_689e.jpg": "0fd54b931af185e64f53e65aaf457b83276860a72280f516faec5da596e9fdce",
+      "77428762_087_ecd4.jpg": "aea4b2f028a3c99495f651870b016a97369456196acb21e15f26f66b4ce02d7d",
+      "77428762_142_461f.jpg": "beaf15e71d7660b545c7566c5ce081672d8673b3992254134e1c869d7d6d768d",
+      "80983975_004_991e.jpg": "a67030b0d665b9f1ccaac7f65b91084f31e659cbade14ea07ec2306bb213c9ad",
+      "80983975_013_fc20.jpg": "7899320dbcf2aa07bdd7dc47bb319c3fa87ff8d7a34eeae33c29a5ccc4cbbc8d",
+      "80983975_026_bc48.jpg": "ebd396264c23ace8292e530eafe90ca69153738fd5c5a7bce85bddc40e11863d",
+      "81455352_013_106d.jpg": "344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5",
+      "81455352_020_fd77.jpg": "8475f884e5ea08a2138ad56ccbf4d2b90458dbb172cdebf694bf9c203c148cbe",
+      "81455352_055_cdb2.jpg": "2dc3f42527c80b1173482468b143fbbd63f26cc3b82bb866cfe3e6cb73ce689b",
+      "81455352_063_489c.jpg": "6bc80f295d7e73e46f95ac63f5b3853294084017f2173021b38d9e914c6321e1",
+      "81455352_077_2711.jpg": "e4a7b87bbb229109045be0b669b0f0e280d41b4d014f9a08e08ffa2deee41648",
+      "81455352_092_1ca4.jpg": "d3eea2a270e7f5a43f40587504f664747e0f0e42303facd69b9a8aab90d0e087",
+      "81455352_104_915e.jpg": "f55972b307ac6b4c92f665e4a2e01ce82934f7b328d97219619e28b53fffe81c",
+      "81455352_149_188f.jpg": "fb8ab9070547c07bfee1e3c5162ba69e3bd78259aeb6c002d8ef8c1d0e8ace52",
+      "81455352_164_abff.jpg": "375501d081e8e8cfe01f91db4c69b2f0ca442587677ba3a6b470b181b0bbd614",
+      "93578140_012_0383.jpg": "47e8890d0d74e387f997d3769056d3c61ccdc25579826d7a6fe2c9184005088e",
+      "93578140_054_b0ca.jpg": "3ddb4636fa962231f5cf54a6344de0effddb6ab53b358a9256acbf1651782ce3",
+      "93578140_149_08cf.jpg": "7d234ee55c3fa97d1f3749de1a637c99bbae5797cade205c77739770910adb6b",
+      "93578140_166_9372.jpg": "504218ed3c7baf8ebc8957f994eebc5998da5cf0f7cf29ade466eeae3df58821",
+      "93578140_320_3a18.jpg": "5486ee8fae5118b82327f2f3a510884d6fc72b2ecc1dc37366832c39461d83ad",
+      "93578140_516_1698.jpg": "37115dfea674b0b75a024861c319982f16dc1abfa4445346e1ac940319bd8de7",
+      "96423004_043_5b0c.jpg": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291"
+    },
+    "sha256_after": {
+      "19958866_017_9e32.jpg": "673e49b60d5689d32827fc04604b9cf0d51dc622443d0528cc5171119427689d",
+      "26461358_003_b527.jpg": "310f88f930f3635b09ebd690446c7fef0ca05f5796329586b24ac2ac669c4d54",
+      "26461358_010_e9fe.jpg": "d0f3d052c81f582e9d9b88974e45284c8989d47f066a2166390f61fdef0d6499",
+      "26461358_030_5066.jpg": "c4c5f98445a36f1a48dbc980fc53247bc4ee591c714d2c103ae5189584de1266",
+      "26461358_035_a29b.jpg": "3ff3bf0a5fa8026428cc9076bdfa580159c91a75518ca4b5fc6827a1de3a782d",
+      "41722352_024_6d97.jpg": "349205bf341fd6bd7eb133bdded62dc86bc69df1485dadc59a2a1b2557588259",
+      "41722352_052_23b3.jpg": "a74071bc83fdf995979d54ac2e7ea4d6741455cf87bfea5663c2dc5f260587f2",
+      "41722352_057_d94b.jpg": "82a0681e4b8fa2aa848944e31724dfc9eb3924929f83d8b5b10090ffb7f56519",
+      "45449178_002_0171.jpg": "7886035705c15b676a69e902dd4c1a78d9846ae10f8fd946c52f6540ef866d5a",
+      "45449178_133_4576.jpg": "1d488e3397e0f3a3e383738592415d43478a60ff0889c9cc5c11a334bac10a58",
+      "45449178_146_2ad9.jpg": "255f8434e5646e95d9d64848fe9e476224e12562bd77e109cfba3e43dc405480",
+      "61787864_093_ed94.jpg": "82b8933d1426b777b0d1b0e27f5becda8a88556fbc8b67d091fe942ea5eca80a",
+      "61787864_166_9cfe.jpg": "09f439d845185dbe88f95b599d36dc5c3000d957560c86543f9eec3e5af02239",
+      "61787864_179_639f.jpg": "10a5311fd1f40e32918256fb185454e74d3a10199ee074ad5f51bc5bdfbc9d4f",
+      "71328784_006_2eeb.jpg": "4587f50601ce771e5ae8b202c0291295944311cf8a5dd4ec5707fedf4fa14df8",
+      "71328784_037_2c7b.jpg": "f8365f2330e91fdf1f262701050e5664b653da6a97f5e309717f13c0323e7b46",
+      "71328784_092_48fe.jpg": "679b0edaabb3a7815d7955e5f42e67b5502b8845c7c6e1cbbc927def9516ae47",
+      "77428762_003_920f.jpg": "4b87700808026f92e6eceaa8608666238750824f390196de12652254f13a308d",
+      "77428762_013_f28c.jpg": "e04b39c8bc48f3fefeccffed034eb11ef1a46a389f04991ce8eed27d8819cbbd",
+      "77428762_038_a2b0.jpg": "0ed09dc48bdf096b64a0532716912bb97d9c05dd84113baa276d05d2997171c6",
+      "77428762_046_8944.jpg": "b8f9b10d739663aee4a07932684895e642c521d4adf3bf1b2f31c289907d61b5",
+      "77428762_075_4d94.jpg": "4e1bdae3e10690e9342d4d0a46f840b51e7819ee55fc9395bc6a0caed4ab84e7",
+      "77428762_078_689e.jpg": "0fd54b931af185e64f53e65aaf457b83276860a72280f516faec5da596e9fdce",
+      "77428762_087_ecd4.jpg": "aea4b2f028a3c99495f651870b016a97369456196acb21e15f26f66b4ce02d7d",
+      "77428762_142_461f.jpg": "beaf15e71d7660b545c7566c5ce081672d8673b3992254134e1c869d7d6d768d",
+      "80983975_004_991e.jpg": "a67030b0d665b9f1ccaac7f65b91084f31e659cbade14ea07ec2306bb213c9ad",
+      "80983975_013_fc20.jpg": "7899320dbcf2aa07bdd7dc47bb319c3fa87ff8d7a34eeae33c29a5ccc4cbbc8d",
+      "80983975_026_bc48.jpg": "ebd396264c23ace8292e530eafe90ca69153738fd5c5a7bce85bddc40e11863d",
+      "81455352_013_106d.jpg": "344cb922d3fa399e2d725486e998757048f5ce795dedf7e1356809e7429067a5",
+      "81455352_020_fd77.jpg": "8475f884e5ea08a2138ad56ccbf4d2b90458dbb172cdebf694bf9c203c148cbe",
+      "81455352_055_cdb2.jpg": "2dc3f42527c80b1173482468b143fbbd63f26cc3b82bb866cfe3e6cb73ce689b",
+      "81455352_063_489c.jpg": "6bc80f295d7e73e46f95ac63f5b3853294084017f2173021b38d9e914c6321e1",
+      "81455352_077_2711.jpg": "e4a7b87bbb229109045be0b669b0f0e280d41b4d014f9a08e08ffa2deee41648",
+      "81455352_092_1ca4.jpg": "d3eea2a270e7f5a43f40587504f664747e0f0e42303facd69b9a8aab90d0e087",
+      "81455352_104_915e.jpg": "f55972b307ac6b4c92f665e4a2e01ce82934f7b328d97219619e28b53fffe81c",
+      "81455352_149_188f.jpg": "fb8ab9070547c07bfee1e3c5162ba69e3bd78259aeb6c002d8ef8c1d0e8ace52",
+      "81455352_164_abff.jpg": "375501d081e8e8cfe01f91db4c69b2f0ca442587677ba3a6b470b181b0bbd614",
+      "93578140_012_0383.jpg": "47e8890d0d74e387f997d3769056d3c61ccdc25579826d7a6fe2c9184005088e",
+      "93578140_054_b0ca.jpg": "3ddb4636fa962231f5cf54a6344de0effddb6ab53b358a9256acbf1651782ce3",
+      "93578140_149_08cf.jpg": "7d234ee55c3fa97d1f3749de1a637c99bbae5797cade205c77739770910adb6b",
+      "93578140_166_9372.jpg": "504218ed3c7baf8ebc8957f994eebc5998da5cf0f7cf29ade466eeae3df58821",
+      "93578140_320_3a18.jpg": "5486ee8fae5118b82327f2f3a510884d6fc72b2ecc1dc37366832c39461d83ad",
+      "93578140_516_1698.jpg": "37115dfea674b0b75a024861c319982f16dc1abfa4445346e1ac940319bd8de7",
+      "96423004_043_5b0c.jpg": "1b9557647d710c0ad40e7cbcf086c155d3fd47b850cf91f12d9f20fd2aeaf291"
+    },
+    "images": [
+      {
+        "file": "19958866_017_9e32.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 6
+      },
+      {
+        "file": "26461358_003_b527.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 8
+      },
+      {
+        "file": "26461358_010_e9fe.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 9
+      },
+      {
+        "file": "26461358_030_5066.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 7
+      },
+      {
+        "file": "26461358_035_a29b.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 8
+      },
+      {
+        "file": "41722352_024_6d97.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 9
+      },
+      {
+        "file": "41722352_052_23b3.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 9
+      },
+      {
+        "file": "41722352_057_d94b.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 9
+      },
+      {
+        "file": "45449178_002_0171.jpg",
+        "width": 912,
+        "height": 1358,
+        "detection_count": 8
+      },
+      {
+        "file": "45449178_133_4576.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 9
+      },
+      {
+        "file": "45449178_146_2ad9.jpg",
+        "width": 912,
+        "height": 1358,
+        "detection_count": 8
+      },
+      {
+        "file": "61787864_093_ed94.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 9
+      },
+      {
+        "file": "61787864_166_9cfe.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 8
+      },
+      {
+        "file": "61787864_179_639f.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 4
+      },
+      {
+        "file": "71328784_006_2eeb.jpg",
+        "width": 920,
+        "height": 1371,
+        "detection_count": 8
+      },
+      {
+        "file": "71328784_037_2c7b.jpg",
+        "width": 920,
+        "height": 1371,
+        "detection_count": 10
+      },
+      {
+        "file": "71328784_092_48fe.jpg",
+        "width": 920,
+        "height": 1371,
+        "detection_count": 6
+      },
+      {
+        "file": "77428762_003_920f.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 8
+      },
+      {
+        "file": "77428762_013_f28c.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 7
+      },
+      {
+        "file": "77428762_038_a2b0.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 8
+      },
+      {
+        "file": "77428762_046_8944.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 11
+      },
+      {
+        "file": "77428762_075_4d94.jpg",
+        "width": 920,
+        "height": 1380,
+        "detection_count": 8
+      },
+      {
+        "file": "77428762_078_689e.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 7
+      },
+      {
+        "file": "77428762_087_ecd4.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 10
+      },
+      {
+        "file": "77428762_142_461f.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 11
+      },
+      {
+        "file": "80983975_004_991e.jpg",
+        "width": 920,
+        "height": 1381,
+        "detection_count": 7
+      },
+      {
+        "file": "80983975_013_fc20.jpg",
+        "width": 920,
+        "height": 1381,
+        "detection_count": 8
+      },
+      {
+        "file": "80983975_026_bc48.jpg",
+        "width": 920,
+        "height": 1381,
+        "detection_count": 10
+      },
+      {
+        "file": "81455352_013_106d.jpg",
+        "width": 912,
+        "height": 1358,
+        "detection_count": 8
+      },
+      {
+        "file": "81455352_020_fd77.jpg",
+        "width": 912,
+        "height": 1358,
+        "detection_count": 7
+      },
+      {
+        "file": "81455352_055_cdb2.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 7
+      },
+      {
+        "file": "81455352_063_489c.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 10
+      },
+      {
+        "file": "81455352_077_2711.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 13
+      },
+      {
+        "file": "81455352_092_1ca4.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 7
+      },
+      {
+        "file": "81455352_104_915e.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 12
+      },
+      {
+        "file": "81455352_149_188f.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 6
+      },
+      {
+        "file": "81455352_164_abff.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 8
+      },
+      {
+        "file": "93578140_012_0383.jpg",
+        "width": 920,
+        "height": 1379,
+        "detection_count": 9
+      },
+      {
+        "file": "93578140_054_b0ca.jpg",
+        "width": 920,
+        "height": 1379,
+        "detection_count": 8
+      },
+      {
+        "file": "93578140_149_08cf.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 10
+      },
+      {
+        "file": "93578140_166_9372.jpg",
+        "width": 920,
+        "height": 1379,
+        "detection_count": 10
+      },
+      {
+        "file": "93578140_320_3a18.jpg",
+        "width": 920,
+        "height": 614,
+        "detection_count": 9
+      },
+      {
+        "file": "93578140_516_1698.jpg",
+        "width": 920,
+        "height": 1379,
+        "detection_count": 6
+      },
+      {
+        "file": "96423004_043_5b0c.jpg",
+        "width": 920,
+        "height": 518,
+        "detection_count": 7
+      }
+    ],
+    "detection_total": 367,
+    "asset_crops_classified": 300,
+    "yolo_class_summary": [
+      {
+        "class_id": 0,
+        "name": "person",
+        "detections": 71,
+        "representative_detections": [
+          {
+            "file": "93578140_516_1698.jpg",
+            "confidence": 0.973862,
+            "bbox_xyxy": [
+              5.69,
+              0.0,
+              918.88,
+              1378.45
+            ],
+            "crop_wh": [
+              914,
+              1379
+            ],
+            "crop_area_ratio": 0.993478,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.923152,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "61787864_166_9cfe.jpg",
+            "confidence": 0.973769,
+            "bbox_xyxy": [
+              129.99,
+              15.38,
+              797.53,
+              614.0
+            ],
+            "crop_wh": [
+              669,
+              599
+            ],
+            "crop_area_ratio": 0.709409,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.995079,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_078_689e.jpg",
+            "confidence": 0.960816,
+            "bbox_xyxy": [
+              621.63,
+              0.0,
+              920.0,
+              610.08
+            ],
+            "crop_wh": [
+              299,
+              611
+            ],
+            "crop_area_ratio": 0.323412,
+            "crop_status": "ok",
+            "asset_prediction": "special_wear",
+            "asset_confidence": 0.467251,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 1,
+        "name": "face",
+        "detections": 43,
+        "representative_detections": [
+          {
+            "file": "45449178_133_4576.jpg",
+            "confidence": 0.945112,
+            "bbox_xyxy": [
+              181.78,
+              23.56,
+              340.55,
+              236.6
+            ],
+            "crop_wh": [
+              160,
+              214
+            ],
+            "crop_area_ratio": 0.071848,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.896946,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_078_689e.jpg",
+            "confidence": 0.94247,
+            "bbox_xyxy": [
+              404.64,
+              74.68,
+              607.27,
+              361.93
+            ],
+            "crop_wh": [
+              204,
+              288
+            ],
+            "crop_area_ratio": 0.104008,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.976678,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_038_a2b0.jpg",
+            "confidence": 0.939455,
+            "bbox_xyxy": [
+              390.45,
+              131.84,
+              628.28,
+              468.27
+            ],
+            "crop_wh": [
+              239,
+              338
+            ],
+            "crop_area_ratio": 0.063628,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.94087,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 2,
+        "name": "portrait_frame",
+        "detections": 36,
+        "representative_detections": [
+          {
+            "file": "71328784_037_2c7b.jpg",
+            "confidence": 0.929511,
+            "bbox_xyxy": [
+              310.58,
+              0.0,
+              619.02,
+              467.67
+            ],
+            "crop_wh": [
+              310,
+              468
+            ],
+            "crop_area_ratio": 0.115022,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_portrait_topless",
+            "asset_confidence": 0.627163,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_054_b0ca.jpg",
+            "confidence": 0.927623,
+            "bbox_xyxy": [
+              293.28,
+              29.91,
+              548.64,
+              451.58
+            ],
+            "crop_wh": [
+              256,
+              423
+            ],
+            "crop_area_ratio": 0.085355,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_portrait_topless",
+            "asset_confidence": 0.795234,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "45449178_002_0171.jpg",
+            "confidence": 0.923779,
+            "bbox_xyxy": [
+              341.3,
+              17.26,
+              629.24,
+              454.12
+            ],
+            "crop_wh": [
+              289,
+              438
+            ],
+            "crop_area_ratio": 0.102206,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.445438,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 3,
+        "name": "boobs",
+        "detections": 10,
+        "representative_detections": [
+          {
+            "file": "61787864_166_9cfe.jpg",
+            "confidence": 0.938312,
+            "bbox_xyxy": [
+              332.96,
+              181.98,
+              562.75,
+              348.32
+            ],
+            "crop_wh": [
+              231,
+              168
+            ],
+            "crop_area_ratio": 0.068701,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_boobs",
+            "asset_confidence": 0.999976,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_142_461f.jpg",
+            "confidence": 0.907659,
+            "bbox_xyxy": [
+              332.64,
+              293.79,
+              664.88,
+              533.66
+            ],
+            "crop_wh": [
+              333,
+              241
+            ],
+            "crop_area_ratio": 0.142071,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_boobs",
+            "asset_confidence": 0.9979,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "80983975_013_fc20.jpg",
+            "confidence": 0.85551,
+            "bbox_xyxy": [
+              310.9,
+              522.18,
+              756.04,
+              854.11
+            ],
+            "crop_wh": [
+              447,
+              333
+            ],
+            "crop_area_ratio": 0.117158,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_boobs",
+            "asset_confidence": 1.0,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 4,
+        "name": "ass",
+        "detections": 4,
+        "representative_detections": [
+          {
+            "file": "80983975_026_bc48.jpg",
+            "confidence": 0.909677,
+            "bbox_xyxy": [
+              354.65,
+              686.29,
+              769.13,
+              1024.83
+            ],
+            "crop_wh": [
+              416,
+              339
+            ],
+            "crop_area_ratio": 0.110997,
+            "crop_status": "ok",
+            "asset_prediction": "panty",
+            "asset_confidence": 0.988042,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "41722352_024_6d97.jpg",
+            "confidence": 0.641992,
+            "bbox_xyxy": [
+              380.26,
+              197.16,
+              498.63,
+              318.17
+            ],
+            "crop_wh": [
+              119,
+              122
+            ],
+            "crop_area_ratio": 0.025701,
+            "crop_status": "ok",
+            "asset_prediction": "bra",
+            "asset_confidence": 0.682676,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "71328784_092_48fe.jpg",
+            "confidence": 0.585404,
+            "bbox_xyxy": [
+              595.81,
+              391.38,
+              739.4,
+              578.63
+            ],
+            "crop_wh": [
+              145,
+              188
+            ],
+            "crop_area_ratio": 0.021612,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_ass",
+            "asset_confidence": 0.606751,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 5,
+        "name": "pussy",
+        "detections": 4,
+        "representative_detections": [
+          {
+            "file": "77428762_046_8944.jpg",
+            "confidence": 0.920864,
+            "bbox_xyxy": [
+              367.68,
+              567.74,
+              689.81,
+              799.74
+            ],
+            "crop_wh": [
+              323,
+              233
+            ],
+            "crop_area_ratio": 0.059278,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.3574,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "81455352_104_915e.jpg",
+            "confidence": 0.566595,
+            "bbox_xyxy": [
+              479.85,
+              391.98,
+              606.38,
+              509.55
+            ],
+            "crop_wh": [
+              128,
+              119
+            ],
+            "crop_area_ratio": 0.031962,
+            "crop_status": "ok",
+            "asset_prediction": "bra",
+            "asset_confidence": 0.457423,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "41722352_052_23b3.jpg",
+            "confidence": 0.518159,
+            "bbox_xyxy": [
+              285.4,
+              627.18,
+              553.82,
+              791.88
+            ],
+            "crop_wh": [
+              269,
+              165
+            ],
+            "crop_area_ratio": 0.03496,
+            "crop_status": "ok",
+            "asset_prediction": "panty",
+            "asset_confidence": 0.801252,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 6,
+        "name": "legs",
+        "detections": 20,
+        "representative_detections": [
+          {
+            "file": "77428762_003_920f.jpg",
+            "confidence": 0.906611,
+            "bbox_xyxy": [
+              378.0,
+              889.31,
+              673.45,
+              1163.15
+            ],
+            "crop_wh": [
+              296,
+              275
+            ],
+            "crop_area_ratio": 0.064115,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.474752,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "80983975_013_fc20.jpg",
+            "confidence": 0.898642,
+            "bbox_xyxy": [
+              384.53,
+              1186.18,
+              665.86,
+              1381.0
+            ],
+            "crop_wh": [
+              282,
+              195
+            ],
+            "crop_area_ratio": 0.043281,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_ass",
+            "asset_confidence": 0.456914,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_012_0383.jpg",
+            "confidence": 0.896926,
+            "bbox_xyxy": [
+              310.73,
+              722.19,
+              626.11,
+              1105.8
+            ],
+            "crop_wh": [
+              317,
+              384
+            ],
+            "crop_area_ratio": 0.095949,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.785012,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 7,
+        "name": "action_event",
+        "detections": 21,
+        "representative_detections": [
+          {
+            "file": "77428762_087_ecd4.jpg",
+            "confidence": 0.847998,
+            "bbox_xyxy": [
+              620.13,
+              280.88,
+              801.99,
+              471.78
+            ],
+            "crop_wh": [
+              182,
+              192
+            ],
+            "crop_area_ratio": 0.061861,
+            "crop_status": "not_routed"
+          },
+          {
+            "file": "77428762_142_461f.jpg",
+            "confidence": 0.776682,
+            "bbox_xyxy": [
+              165.02,
+              165.85,
+              403.09,
+              344.03
+            ],
+            "crop_wh": [
+              239,
+              180
+            ],
+            "crop_area_ratio": 0.076158,
+            "crop_status": "not_routed"
+          },
+          {
+            "file": "26461358_035_a29b.jpg",
+            "confidence": 0.740398,
+            "bbox_xyxy": [
+              231.61,
+              296.32,
+              471.9,
+              537.18
+            ],
+            "crop_wh": [
+              241,
+              242
+            ],
+            "crop_area_ratio": 0.045937,
+            "crop_status": "not_routed"
+          }
+        ]
+      },
+      {
+        "class_id": 8,
+        "name": "pussy_cover_item",
+        "detections": 23,
+        "representative_detections": [
+          {
+            "file": "80983975_004_991e.jpg",
+            "confidence": 0.944708,
+            "bbox_xyxy": [
+              256.27,
+              1029.31,
+              742.26,
+              1379.75
+            ],
+            "crop_wh": [
+              487,
+              351
+            ],
+            "crop_area_ratio": 0.134541,
+            "crop_status": "ok",
+            "asset_prediction": "skirt",
+            "asset_confidence": 0.92351,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "80983975_013_fc20.jpg",
+            "confidence": 0.934952,
+            "bbox_xyxy": [
+              337.76,
+              874.78,
+              708.94,
+              1249.99
+            ],
+            "crop_wh": [
+              372,
+              376
+            ],
+            "crop_area_ratio": 0.11009,
+            "crop_status": "ok",
+            "asset_prediction": "skirt",
+            "asset_confidence": 0.900646,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_166_9372.jpg",
+            "confidence": 0.924434,
+            "bbox_xyxy": [
+              243.9,
+              843.11,
+              698.38,
+              1233.26
+            ],
+            "crop_wh": [
+              456,
+              391
+            ],
+            "crop_area_ratio": 0.140537,
+            "crop_status": "ok",
+            "asset_prediction": "panty",
+            "asset_confidence": 0.998154,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 9,
+        "name": "ass_cover_item",
+        "detections": 11,
+        "representative_detections": [
+          {
+            "file": "93578140_320_3a18.jpg",
+            "confidence": 0.967527,
+            "bbox_xyxy": [
+              190.85,
+              107.65,
+              374.31,
+              285.89
+            ],
+            "crop_wh": [
+              185,
+              179
+            ],
+            "crop_area_ratio": 0.058623,
+            "crop_status": "ok",
+            "asset_prediction": "utility_cover",
+            "asset_confidence": 0.883453,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_054_b0ca.jpg",
+            "confidence": 0.867845,
+            "bbox_xyxy": [
+              311.91,
+              460.6,
+              607.59,
+              734.51
+            ],
+            "crop_wh": [
+              297,
+              275
+            ],
+            "crop_area_ratio": 0.064378,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_clothed_states",
+            "asset_confidence": 0.379564,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "71328784_006_2eeb.jpg",
+            "confidence": 0.838787,
+            "bbox_xyxy": [
+              395.47,
+              488.42,
+              722.98,
+              808.7
+            ],
+            "crop_wh": [
+              328,
+              321
+            ],
+            "crop_area_ratio": 0.083474,
+            "crop_status": "ok",
+            "asset_prediction": "shorts",
+            "asset_confidence": 0.623298,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 10,
+        "name": "boobs_cover_item",
+        "detections": 20,
+        "representative_detections": [
+          {
+            "file": "81455352_092_1ca4.jpg",
+            "confidence": 0.960662,
+            "bbox_xyxy": [
+              370.55,
+              154.15,
+              544.4,
+              319.85
+            ],
+            "crop_wh": [
+              175,
+              166
+            ],
+            "crop_area_ratio": 0.060958,
+            "crop_status": "ok",
+            "asset_prediction": "bra",
+            "asset_confidence": 0.617295,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "26461358_010_e9fe.jpg",
+            "confidence": 0.942947,
+            "bbox_xyxy": [
+              264.59,
+              356.57,
+              573.87,
+              625.19
+            ],
+            "crop_wh": [
+              310,
+              270
+            ],
+            "crop_area_ratio": 0.065926,
+            "crop_status": "ok",
+            "asset_prediction": "bra",
+            "asset_confidence": 0.998251,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "71328784_037_2c7b.jpg",
+            "confidence": 0.935469,
+            "bbox_xyxy": [
+              296.17,
+              248.62,
+              615.27,
+              513.12
+            ],
+            "crop_wh": [
+              320,
+              266
+            ],
+            "crop_area_ratio": 0.067485,
+            "crop_status": "ok",
+            "asset_prediction": "bra",
+            "asset_confidence": 0.960367,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 11,
+        "name": "leg_cover_item",
+        "detections": 3,
+        "representative_detections": [
+          {
+            "file": "81455352_013_106d.jpg",
+            "confidence": 0.808049,
+            "bbox_xyxy": [
+              267.8,
+              816.86,
+              680.19,
+              1256.54
+            ],
+            "crop_wh": [
+              414,
+              441
+            ],
+            "crop_area_ratio": 0.147416,
+            "crop_status": "ok",
+            "asset_prediction": "pants",
+            "asset_confidence": 0.792494,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "81455352_077_2711.jpg",
+            "confidence": 0.791074,
+            "bbox_xyxy": [
+              703.0,
+              342.14,
+              860.99,
+              516.19
+            ],
+            "crop_wh": [
+              158,
+              175
+            ],
+            "crop_area_ratio": 0.05802,
+            "crop_status": "ok",
+            "asset_prediction": "skirt",
+            "asset_confidence": 0.294808,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "71328784_006_2eeb.jpg",
+            "confidence": 0.318035,
+            "bbox_xyxy": [
+              302.53,
+              788.82,
+              568.89,
+              1239.66
+            ],
+            "crop_wh": [
+              267,
+              452
+            ],
+            "crop_area_ratio": 0.095681,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.956759,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 12,
+        "name": "location_home",
+        "detections": 11,
+        "representative_detections": [
+          {
+            "file": "77428762_046_8944.jpg",
+            "confidence": 0.940423,
+            "bbox_xyxy": [
+              192.45,
+              9.12,
+              920.0,
+              1341.05
+            ],
+            "crop_wh": [
+              728,
+              1333
+            ],
+            "crop_area_ratio": 0.764354,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "81455352_055_cdb2.jpg",
+            "confidence": 0.894677,
+            "bbox_xyxy": [
+              0.0,
+              46.97,
+              907.1,
+              518.0
+            ],
+            "crop_wh": [
+              908,
+              472
+            ],
+            "crop_area_ratio": 0.899312,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "81455352_063_489c.jpg",
+            "confidence": 0.75831,
+            "bbox_xyxy": [
+              0.0,
+              2.45,
+              902.92,
+              518.0
+            ],
+            "crop_wh": [
+              903,
+              516
+            ],
+            "crop_area_ratio": 0.977732,
+            "crop_status": "context_only"
+          }
+        ]
+      },
+      {
+        "class_id": 13,
+        "name": "location_class",
+        "detections": 0,
+        "representative_detections": []
+      },
+      {
+        "class_id": 14,
+        "name": "location_office",
+        "detections": 1,
+        "representative_detections": [
+          {
+            "file": "80983975_004_991e.jpg",
+            "confidence": 0.539107,
+            "bbox_xyxy": [
+              2.41,
+              31.39,
+              918.29,
+              1381.0
+            ],
+            "crop_wh": [
+              917,
+              1350
+            ],
+            "crop_area_ratio": 0.974365,
+            "crop_status": "context_only"
+          }
+        ]
+      },
+      {
+        "class_id": 15,
+        "name": "location_bathroom",
+        "detections": 9,
+        "representative_detections": [
+          {
+            "file": "93578140_516_1698.jpg",
+            "confidence": 0.90817,
+            "bbox_xyxy": [
+              6.21,
+              0.0,
+              920.0,
+              1378.63
+            ],
+            "crop_wh": [
+              914,
+              1379
+            ],
+            "crop_area_ratio": 0.993478,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "81455352_020_fd77.jpg",
+            "confidence": 0.694871,
+            "bbox_xyxy": [
+              6.3,
+              0.0,
+              909.67,
+              1358.0
+            ],
+            "crop_wh": [
+              904,
+              1358
+            ],
+            "crop_area_ratio": 0.991228,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "93578140_149_08cf.jpg",
+            "confidence": 0.550837,
+            "bbox_xyxy": [
+              0.0,
+              3.43,
+              803.4,
+              578.82
+            ],
+            "crop_wh": [
+              804,
+              576
+            ],
+            "crop_area_ratio": 0.819827,
+            "crop_status": "context_only"
+          }
+        ]
+      },
+      {
+        "class_id": 16,
+        "name": "location_bar",
+        "detections": 0,
+        "representative_detections": []
+      },
+      {
+        "class_id": 17,
+        "name": "location_outdoor",
+        "detections": 15,
+        "representative_detections": [
+          {
+            "file": "41722352_024_6d97.jpg",
+            "confidence": 0.938688,
+            "bbox_xyxy": [
+              8.22,
+              9.47,
+              918.11,
+              614.0
+            ],
+            "crop_wh": [
+              911,
+              605
+            ],
+            "crop_area_ratio": 0.975703,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "81455352_164_abff.jpg",
+            "confidence": 0.873486,
+            "bbox_xyxy": [
+              28.56,
+              0.45,
+              920.0,
+              518.0
+            ],
+            "crop_wh": [
+              892,
+              518
+            ],
+            "crop_area_ratio": 0.969565,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "41722352_057_d94b.jpg",
+            "confidence": 0.827398,
+            "bbox_xyxy": [
+              1.51,
+              21.86,
+              915.96,
+              1380.0
+            ],
+            "crop_wh": [
+              915,
+              1359
+            ],
+            "crop_area_ratio": 0.979431,
+            "crop_status": "context_only"
+          }
+        ]
+      },
+      {
+        "class_id": 18,
+        "name": "location_bed",
+        "detections": 10,
+        "representative_detections": [
+          {
+            "file": "61787864_166_9cfe.jpg",
+            "confidence": 0.953354,
+            "bbox_xyxy": [
+              0.0,
+              0.67,
+              882.69,
+              614.0
+            ],
+            "crop_wh": [
+              883,
+              614
+            ],
+            "crop_area_ratio": 0.959783,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "45449178_133_4576.jpg",
+            "confidence": 0.772021,
+            "bbox_xyxy": [
+              1.53,
+              5.39,
+              915.5,
+              512.38
+            ],
+            "crop_wh": [
+              915,
+              508
+            ],
+            "crop_area_ratio": 0.975365,
+            "crop_status": "context_only"
+          },
+          {
+            "file": "77428762_087_ecd4.jpg",
+            "confidence": 0.628339,
+            "bbox_xyxy": [
+              4.57,
+              2.95,
+              917.69,
+              614.0
+            ],
+            "crop_wh": [
+              914,
+              612
+            ],
+            "crop_area_ratio": 0.990242,
+            "crop_status": "context_only"
+          }
+        ]
+      },
+      {
+        "class_id": 19,
+        "name": "fullbody_shower",
+        "detections": 0,
+        "representative_detections": []
+      },
+      {
+        "class_id": 20,
+        "name": "fullbody_maid",
+        "detections": 4,
+        "representative_detections": [
+          {
+            "file": "81455352_077_2711.jpg",
+            "confidence": 0.610449,
+            "bbox_xyxy": [
+              659.96,
+              36.19,
+              865.97,
+              515.88
+            ],
+            "crop_wh": [
+              207,
+              480
+            ],
+            "crop_area_ratio": 0.208494,
+            "crop_status": "ok",
+            "asset_prediction": "footwear",
+            "asset_confidence": 0.413595,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "61787864_093_ed94.jpg",
+            "confidence": 0.430484,
+            "bbox_xyxy": [
+              122.61,
+              270.5,
+              362.75,
+              614.0
+            ],
+            "crop_wh": [
+              241,
+              344
+            ],
+            "crop_area_ratio": 0.146764,
+            "crop_status": "ok",
+            "asset_prediction": "outerwear",
+            "asset_confidence": 0.342794,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "26461358_035_a29b.jpg",
+            "confidence": 0.348963,
+            "bbox_xyxy": [
+              266.79,
+              149.01,
+              777.12,
+              1380.0
+            ],
+            "crop_wh": [
+              512,
+              1231
+            ],
+            "crop_area_ratio": 0.496434,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_clothed_states",
+            "asset_confidence": 0.875569,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 21,
+        "name": "fullbody_nurse",
+        "detections": 3,
+        "representative_detections": [
+          {
+            "file": "81455352_077_2711.jpg",
+            "confidence": 0.836901,
+            "bbox_xyxy": [
+              252.44,
+              26.51,
+              533.27,
+              518.0
+            ],
+            "crop_wh": [
+              282,
+              492
+            ],
+            "crop_area_ratio": 0.291136,
+            "crop_status": "ok",
+            "asset_prediction": "skirt",
+            "asset_confidence": 0.518506,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_003_920f.jpg",
+            "confidence": 0.463914,
+            "bbox_xyxy": [
+              328.26,
+              340.27,
+              704.81,
+              1345.65
+            ],
+            "crop_wh": [
+              377,
+              1006
+            ],
+            "crop_area_ratio": 0.298726,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.914582,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "81455352_055_cdb2.jpg",
+            "confidence": 0.301396,
+            "bbox_xyxy": [
+              291.07,
+              31.0,
+              688.48,
+              518.0
+            ],
+            "crop_wh": [
+              398,
+              487
+            ],
+            "crop_area_ratio": 0.406719,
+            "crop_status": "ok",
+            "asset_prediction": "sweater",
+            "asset_confidence": 0.699872,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 22,
+        "name": "fullbody_uniform",
+        "detections": 0,
+        "representative_detections": []
+      },
+      {
+        "class_id": 23,
+        "name": "fullbody_athletic",
+        "detections": 0,
+        "representative_detections": []
+      },
+      {
+        "class_id": 24,
+        "name": "fullbody_swim",
+        "detections": 1,
+        "representative_detections": [
+          {
+            "file": "71328784_037_2c7b.jpg",
+            "confidence": 0.890849,
+            "bbox_xyxy": [
+              212.28,
+              6.56,
+              741.72,
+              1371.0
+            ],
+            "crop_wh": [
+              530,
+              1365
+            ],
+            "crop_area_ratio": 0.573566,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.764782,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 25,
+        "name": "fullbody_lingerie",
+        "detections": 2,
+        "representative_detections": [
+          {
+            "file": "80983975_004_991e.jpg",
+            "confidence": 0.726806,
+            "bbox_xyxy": [
+              159.93,
+              212.4,
+              829.47,
+              1381.0
+            ],
+            "crop_wh": [
+              671,
+              1169
+            ],
+            "crop_area_ratio": 0.617384,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_clothed_states",
+            "asset_confidence": 0.423785,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "26461358_010_e9fe.jpg",
+            "confidence": 0.41591,
+            "bbox_xyxy": [
+              190.79,
+              108.41,
+              675.58,
+              1379.34
+            ],
+            "crop_wh": [
+              486,
+              1272
+            ],
+            "crop_area_ratio": 0.486919,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.270165,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 26,
+        "name": "fullbody_work",
+        "detections": 0,
+        "representative_detections": []
+      },
+      {
+        "class_id": 27,
+        "name": "fullbody_casual",
+        "detections": 6,
+        "representative_detections": [
+          {
+            "file": "41722352_052_23b3.jpg",
+            "confidence": 0.786157,
+            "bbox_xyxy": [
+              259.81,
+              153.86,
+              643.96,
+              1232.92
+            ],
+            "crop_wh": [
+              385,
+              1080
+            ],
+            "crop_area_ratio": 0.327505,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_clothed_states",
+            "asset_confidence": 0.87812,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "26461358_003_b527.jpg",
+            "confidence": 0.750796,
+            "bbox_xyxy": [
+              190.48,
+              64.45,
+              701.08,
+              1380.0
+            ],
+            "crop_wh": [
+              512,
+              1316
+            ],
+            "crop_area_ratio": 0.530712,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.632918,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_012_0383.jpg",
+            "confidence": 0.679751,
+            "bbox_xyxy": [
+              273.85,
+              2.32,
+              718.03,
+              1304.18
+            ],
+            "crop_wh": [
+              446,
+              1303
+            ],
+            "crop_area_ratio": 0.458065,
+            "crop_status": "ok",
+            "asset_prediction": "skirt",
+            "asset_confidence": 0.76031,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 28,
+        "name": "accessory_footwear",
+        "detections": 19,
+        "representative_detections": [
+          {
+            "file": "41722352_052_23b3.jpg",
+            "confidence": 0.939699,
+            "bbox_xyxy": [
+              256.47,
+              1011.98,
+              643.44,
+              1243.01
+            ],
+            "crop_wh": [
+              388,
+              233
+            ],
+            "crop_area_ratio": 0.071207,
+            "crop_status": "ok",
+            "asset_prediction": "shirt",
+            "asset_confidence": 0.42408,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_149_08cf.jpg",
+            "confidence": 0.918708,
+            "bbox_xyxy": [
+              385.49,
+              490.89,
+              519.27,
+              608.79
+            ],
+            "crop_wh": [
+              135,
+              119
+            ],
+            "crop_area_ratio": 0.02844,
+            "crop_status": "ok",
+            "asset_prediction": "footwear",
+            "asset_confidence": 0.999513,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_320_3a18.jpg",
+            "confidence": 0.90539,
+            "bbox_xyxy": [
+              216.86,
+              473.43,
+              358.56,
+              610.26
+            ],
+            "crop_wh": [
+              143,
+              138
+            ],
+            "crop_area_ratio": 0.034935,
+            "crop_status": "ok",
+            "asset_prediction": "footwear",
+            "asset_confidence": 0.999601,
+            "suggested_category": "clothing",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 29,
+        "name": "fullbody_topless",
+        "detections": 4,
+        "representative_detections": [
+          {
+            "file": "80983975_013_fc20.jpg",
+            "confidence": 0.987557,
+            "bbox_xyxy": [
+              304.69,
+              182.68,
+              758.9,
+              1381.0
+            ],
+            "crop_wh": [
+              455,
+              1199
+            ],
+            "crop_area_ratio": 0.429387,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_boobs",
+            "asset_confidence": 0.99003,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_038_a2b0.jpg",
+            "confidence": 0.90265,
+            "bbox_xyxy": [
+              131.59,
+              115.21,
+              818.01,
+              1380.0
+            ],
+            "crop_wh": [
+              688,
+              1265
+            ],
+            "crop_area_ratio": 0.685507,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_costume_states",
+            "asset_confidence": 0.548796,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "81455352_020_fd77.jpg",
+            "confidence": 0.742698,
+            "bbox_xyxy": [
+              193.4,
+              15.99,
+              869.07,
+              1358.0
+            ],
+            "crop_wh": [
+              677,
+              1343
+            ],
+            "crop_area_ratio": 0.734125,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.853409,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 30,
+        "name": "fullbody_bottomless",
+        "detections": 7,
+        "representative_detections": [
+          {
+            "file": "93578140_149_08cf.jpg",
+            "confidence": 0.966855,
+            "bbox_xyxy": [
+              368.12,
+              17.91,
+              549.9,
+              591.59
+            ],
+            "crop_wh": [
+              182,
+              575
+            ],
+            "crop_area_ratio": 0.185261,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_boobs",
+            "asset_confidence": 0.490132,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "81455352_063_489c.jpg",
+            "confidence": 0.886583,
+            "bbox_xyxy": [
+              82.55,
+              71.95,
+              648.31,
+              513.97
+            ],
+            "crop_wh": [
+              567,
+              443
+            ],
+            "crop_area_ratio": 0.527071,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.862128,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_046_8944.jpg",
+            "confidence": 0.881856,
+            "bbox_xyxy": [
+              322.55,
+              48.11,
+              734.34,
+              1336.86
+            ],
+            "crop_wh": [
+              413,
+              1289
+            ],
+            "crop_area_ratio": 0.419311,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.988437,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          }
+        ]
+      },
+      {
+        "class_id": 31,
+        "name": "fullbody_bare",
+        "detections": 9,
+        "representative_detections": [
+          {
+            "file": "77428762_075_4d94.jpg",
+            "confidence": 0.922024,
+            "bbox_xyxy": [
+              127.5,
+              66.88,
+              874.81,
+              1359.95
+            ],
+            "crop_wh": [
+              748,
+              1294
+            ],
+            "crop_area_ratio": 0.762376,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.745995,
+            "suggested_category": "others",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "77428762_142_461f.jpg",
+            "confidence": 0.902109,
+            "bbox_xyxy": [
+              279.52,
+              6.77,
+              688.22,
+              612.0
+            ],
+            "crop_wh": [
+              410,
+              606
+            ],
+            "crop_area_ratio": 0.439846,
+            "crop_status": "ok",
+            "asset_prediction": "fullbody_nude_states",
+            "asset_confidence": 0.995811,
+            "suggested_category": "fullbody",
+            "prediction_status": "ok"
+          },
+          {
+            "file": "93578140_516_1698.jpg",
+            "confidence": 0.878702,
+            "bbox_xyxy": [
+              15.28,
+              0.71,
+              913.66,
+              1379.0
+            ],
+            "crop_wh": [
+              899,
+              1379
+            ],
+            "crop_area_ratio": 0.977174,
+            "crop_status": "ok",
+            "asset_prediction": "bodypart_face",
+            "asset_confidence": 0.888363,
+            "suggested_category": "body_images",
+            "prediction_status": "ok"
+          }
+        ]
+      }
+    ],
+    "asset_cnn_prediction_counts": {
+      "bodypart_ass": 6,
+      "bodypart_boobs": 16,
+      "bodypart_face": 48,
+      "bodypart_legs": 6,
+      "bodypart_portrait_clothed": 9,
+      "bodypart_portrait_topless": 14,
+      "bodypart_pussy": 4,
+      "bra": 12,
+      "footwear": 13,
+      "fullbody_clothed_states": 23,
+      "fullbody_costume_states": 14,
+      "fullbody_nude_states": 62,
+      "outerwear": 7,
+      "pants": 5,
+      "panty": 16,
+      "pantyhose": 4,
+      "shirt": 6,
+      "shorts": 4,
+      "skirt": 14,
+      "special_wear": 3,
+      "sweater": 5,
+      "utility_cover": 9
+    },
+    "errors": [],
+    "acceptance_note": "Predictions are unscored model observations. No image was modified, no proposal was accepted, and photoshoot assignment was never invoked."
+  }
+}

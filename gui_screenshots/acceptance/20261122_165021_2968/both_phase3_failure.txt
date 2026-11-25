@@ -1,0 +1,9 @@
+AssertionError: Cum target did not persist as explicitly positive.
+
+Traceback (most recent call last):
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\run_gui_acceptance.py", line 156, in main
+    result = registry[scenario_name](
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\scenarios\phase3.py", line 130, in run
+    raise AssertionError("Cum target did not persist as explicitly positive.")
+AssertionError: Cum target did not persist as explicitly positive.

@@ -1,0 +1,131 @@
+{
+  "run_id": "20261122_140550_16312",
+  "suite": "visual",
+  "app": "both",
+  "headless": true,
+  "status": "FAIL",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_140550_16312",
+  "scenarios": [
+    {
+      "application": "newassetapp",
+      "scenario": "smoke",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 5.556198,
+      "failure_reason": null
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "normal",
+      "status": "FAIL",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.863568,
+      "failure_reason": "AttributeError: 'MainWindow' object has no attribute 'normal_body_cnn_target'"
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "professional",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 3.24931,
+      "failure_reason": null
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "layout",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.987751,
+      "failure_reason": null
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "workflow",
+      "status": "SKIPPED",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.0,
+      "failure_reason": "Scenario 'workflow' is not defined for newassetapp."
+    },
+    {
+      "application": "studio",
+      "scenario": "smoke",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 6.663698,
+      "failure_reason": null
+    },
+    {
+      "application": "studio",
+      "scenario": "normal",
+      "status": "SKIPPED",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.0,
+      "failure_reason": "Scenario 'normal' is not defined for studio."
+    },
+    {
+      "application": "studio",
+      "scenario": "professional",
+      "status": "SKIPPED",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.0,
+      "failure_reason": "Scenario 'professional' is not defined for studio."
+    },
+    {
+      "application": "studio",
+      "scenario": "layout",
+      "status": "SKIPPED",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.0,
+      "failure_reason": "Scenario 'layout' is not defined for studio."
+    },
+    {
+      "application": "studio",
+      "scenario": "workflow",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 7.110313,
+      "failure_reason": null
+    }
+  ]
+}

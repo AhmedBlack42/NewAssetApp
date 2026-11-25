@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "taxonomy_version": "locations-v2-15",
+  "canonical_locations": [
+    "bathroom",
+    "bar",
+    "beach",
+    "cafeteria",
+    "class",
+    "clinic",
+    "coffee_shop",
+    "home",
+    "locker_room",
+    "mall",
+    "office",
+    "park",
+    "pier",
+    "shower",
+    "lounge"
+  ],
+  "yolo_class_mappings": {
+    "location_home": "home",
+    "location_class": "class",
+    "location_office": "office",
+    "location_bathroom": "bathroom",
+    "location_bar": "bar"
+  },
+  "unmapped_yolo_classes": {
+    "location_outdoor": null,
+    "location_bed": null
+  },
+  "automatic_tagging": false
+}

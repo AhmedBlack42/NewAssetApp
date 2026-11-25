@@ -1,0 +1,119 @@
+{
+  "run_id": "20261123_002448_real_samples",
+  "captured_at": "2026-11-23",
+  "application": {
+    "interaction": "Actual NewAssetApp Qt window through Computer Use",
+    "database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\app\\newassetapp.sqlite3",
+    "data_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\app\\data",
+    "output_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\exports",
+    "logs_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\logs"
+  },
+  "database_preflight": {
+    "integrity_check_before": "ok",
+    "source_images": 287,
+    "yolo_detections": 2263,
+    "asset_proposals": 2263,
+    "completed_inference_sources": 287,
+    "failed_inference_sources": 0,
+    "source_paths_missing": 0,
+    "disposable_model_and_tag_assets_available": true
+  },
+  "normal_processing": {
+    "actual_gui_crop_selected": true,
+    "proposal_id": 5,
+    "source_id": 1,
+    "detection_id": 5,
+    "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_002_1fcf.jpg",
+    "detected_class": "fullbody_casual",
+    "stored_bbox_xyxy": [
+      309.8026123046875,
+      9.869476318359375,
+      678.6696166992188,
+      612.57080078125
+    ],
+    "gui_details": "Fullbody; Model evidence: fullbody_casual · suggestion only; Detected region shown; background removal runs during export.",
+    "preview_accessibility_role": "AXImage",
+    "screenshot_capture": "Failed twice; preview pixels were not visually verified.",
+    "fullbody_main_tag_dropdown_visible_labels": [
+      "Choose a main tag",
+      "Clothed",
+      "Underwear",
+      "Bikini",
+      "Lingerie",
+      "Nude",
+      "In Shower",
+      "Maid",
+      "swimsuit",
+      "Nurse",
+      "Uniform"
+    ],
+    "main_tag_committed": false,
+    "classification_saved": false,
+    "classification_reloaded": false,
+    "other_categories_saved": [],
+    "export_attempted": false,
+    "export_files_created": []
+  },
+  "professional_review": {
+    "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_002_1fcf.jpg",
+    "detections_seen": [
+      "Location Home #1",
+      "Person #2",
+      "Pussy Cover Item #3",
+      "Face #4"
+    ],
+    "face_row_selected_in_gui": true,
+    "inspector_still_reported": "Detection #1, Location Home",
+    "classification_task_saved": false,
+    "task_reload_verified": false,
+    "note": "The accessible row highlight changed without a matching Inspector update. This did not distinguish an app defect from an accessibility-action limitation."
+  },
+  "scan_repeat": {
+    "folder": "F:\\My Tools\\New folder\\NewAssetApp\\samples",
+    "gui_action": "Scan Images",
+    "analysis_action_run": false,
+    "gui_progress_percent": 100,
+    "gui_status": "Scan complete · model inference is not connected",
+    "database_after": {
+      "integrity_check": "ok",
+      "source_images": 287,
+      "distinct_source_paths": 287,
+      "yolo_detections": 2263,
+      "asset_proposals": 2263,
+      "duplicate_content_groups": 4,
+      "normal_crop_choices": 0,
+      "classification_task_reviews": 0,
+      "normal_crop_exports": 0,
+      "processing_jobs": 0,
+      "source_paths_missing": 0
+    },
+    "inference_repeated": false,
+    "detections_or_proposals_duplicated": false
+  },
+  "background_removal": {
+    "preflight_reviewed": true,
+    "max_region_pixels": 25000000,
+    "max_region_side_pixels": 12000,
+    "minimum_available_memory_bytes": 2147483648,
+    "model_loaded_or_run": false
+  },
+  "completion_status": {
+    "actual_gui_actions": [
+      "Launched against the isolated database",
+      "Selected a real Normal Processing crop",
+      "Opened the Fullbody main-tag dropdown",
+      "Loaded and navigated a real Professional Review source and detections",
+      "Performed one bounded scan-only repeat"
+    ],
+    "classification_and_export": "Not completed",
+    "professional_task_saves": "Not completed",
+    "remaining_limitations": [
+      "Screenshot capture unavailable",
+      "Dropdown selection did not commit",
+      "Professional Inspector did not visibly follow the selected accessibility row",
+      "Remaining dropdown and action matrix not exercised",
+      "31-versus-32 registry mapping remains unchanged",
+      "Clothing CNN checkpoint remains unavailable"
+    ]
+  }
+}

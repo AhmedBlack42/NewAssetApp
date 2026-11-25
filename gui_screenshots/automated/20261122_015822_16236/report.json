@@ -1,0 +1,21 @@
+{
+  "run_id": "20261122_015822_16236",
+  "suite": "visual",
+  "app": "newassetapp",
+  "headless": true,
+  "status": "FAIL",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_015822_16236",
+  "scenarios": [
+    {
+      "application": "newassetapp",
+      "scenario": "normal",
+      "status": "FAIL",
+      "dimensions": [
+        "1280x720"
+      ],
+      "elapsed_seconds": 3.773683,
+      "failure_reason": "RuntimeError: Internal C++ object (PySide6.QtWidgets.QListWidgetItem) already deleted."
+    }
+  ]
+}

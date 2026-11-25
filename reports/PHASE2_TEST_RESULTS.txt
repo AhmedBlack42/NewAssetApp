@@ -1,0 +1,33 @@
+Phase 2 verification results
+Date: 2026-11-06 (Africa/Cairo)
+Runtime: Python 3.11.9 x64 from Girl Packer's existing verified .venv_girlpacker; no package installs or upgrades.
+
+Command:
+  python -m unittest discover -s tests -v
+
+Result:
+  Ran 30 tests in 5.411s
+  OK (0 failures, 0 errors)
+
+Coverage includes:
+  - Database migration through schema v5; source path/hash provenance; restart persistence.
+  - Manual corrections and category changes preserve original YOLO/CNN snapshots.
+  - New user tags have a database audit record with the selected source hash/path.
+  - Person detections remain unclassified Fullbody candidates and are not training labels.
+  - Active YOLO / CNN result mapping remains reviewable; rejected items are excluded.
+  - Fullbody normal/topless/bottomless mappings and only documented filename compositions.
+  - New, unchanged, changed, and external-folder scans; changed bytes create source history.
+  - YOLO normalized export, multiple detections from one source, explicit empty labels,
+    approved class IDs, source-hash split stability, and ZIP creation.
+  - Asset/Clothing CNN crop exports, task-specific labels, and same-source split integrity.
+
+Additional checks:
+  - validate_tag_library.py: valid=true, errors=[]
+  - Offscreen MainWindow + CorrectionDialog construction and manual-proposal control passed
+    with a temporary synthetic image and database.
+  - Local YOLO and Asset CNN strict loading/inference passed on one synthetic 320x320
+    fixture in CPU mode; it produced zero detections, completed indexing, and marked
+    the matching source hash complete. This is loader/routing evidence only, not accuracy.
+
+No NewAssetApp sample images or production source folder were processed during this phase.
+No model was trained. No Girl Packer source, database, checkpoint, or media file was edited.

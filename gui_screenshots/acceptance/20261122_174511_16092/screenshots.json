@@ -1,0 +1,54 @@
+[
+  {
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_174511_16092\\newassetapp\\1366x768_normal_body_states.png",
+    "name": "1366x768_normal_body_states.png",
+    "app": "newassetapp",
+    "scenario": "phase4_normal_body_states",
+    "width": 1366,
+    "height": 768,
+    "capture_mode": "REAL_APP_QT_WIDGET_CAPTURE",
+    "captured": true,
+    "bytes": 51364,
+    "captured_at": "2026-11-22T17:45:17.014352+00:00",
+    "application": "newassetapp"
+  },
+  {
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_174511_16092\\newassetapp\\1366x768_professional_review.png",
+    "name": "1366x768_professional_review.png",
+    "app": "newassetapp",
+    "scenario": "phase4_professional_review",
+    "width": 1366,
+    "height": 768,
+    "capture_mode": "REAL_APP_QT_WIDGET_CAPTURE",
+    "captured": true,
+    "bytes": 24635,
+    "captured_at": "2026-11-22T17:45:19.909344+00:00",
+    "application": "newassetapp"
+  },
+  {
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_174511_16092\\studio\\1366x768_studio_import.png",
+    "name": "1366x768_studio_import.png",
+    "app": "studio",
+    "scenario": "phase4_studio_import",
+    "width": 1366,
+    "height": 768,
+    "capture_mode": "REAL_APP_QT_WIDGET_CAPTURE",
+    "captured": true,
+    "bytes": 9251,
+    "captured_at": "2026-11-22T17:45:20.874992+00:00",
+    "application": "studio"
+  },
+  {
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_174511_16092\\studio\\1366x768_studio_lifecycle.png",
+    "name": "1366x768_studio_lifecycle.png",
+    "app": "studio",
+    "scenario": "phase4_studio_lifecycle",
+    "width": 1366,
+    "height": 768,
+    "capture_mode": "REAL_APP_QT_WIDGET_CAPTURE",
+    "captured": true,
+    "bytes": 8859,
+    "captured_at": "2026-11-22T17:45:22.105663+00:00",
+    "application": "studio"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "registry_id": "newassetapp_structured_classification",
+  "version": "1.0.0",
+  "filename_grammar": "main[,main2][-subtag[,subtag2]][sequence].webp",
+  "filename_is_authority": false,
+  "body_images": {
+    "main_categories": ["face", "portrait", "tportrait", "boobs", "ass", "pussy", "legs"],
+    "supported_main_subtag_pairs": {
+      "boobs": ["cum"],
+      "ass": ["creampie", "bb"]
+    },
+    "subtags": ["cum", "creampie", "bb", "slut", "conservative", "whore", "u_whore", "park"]
+  },
+  "fullbody": {
+    "states": ["clothed", "topless", "bottomless"],
+    "legacy_cnn_mapping_policy": "fullbody_legacy_state_candidates_v1",
+    "main_categories_source": "data/tags/fullbody_tags.json",
+    "subtags_source": "data/models/fullbody_classification_policy.json"
+  },
+  "clothing": {
+    "cnn_families": ["bra", "dress", "footwear", "lingerie", "outerwear", "pants", "panty", "shirt", "shorts", "skirt", "socks", "top"],
+    "main_categories_source": "data/tags/clothing_tags.json"
+  },
+  "locations": {
+    "canonical_values": ["bathroom", "bar", "beach", "cafeteria", "class", "clinic", "coffee_shop", "home", "locker_room", "mall", "office", "park", "pier", "shower", "lounge"],
+    "suggestions_by_target_yolo_evidence": {
+      "location_beach": ["beach", "pier", "park"],
+      "location_park": ["park", "beach", "pier"],
+      "location_class": ["class", "cafeteria"],
+      "location_bar": ["bar", "coffee_shop", "mall"],
+      "location_home": ["home", "lounge"],
+      "location_office": ["office"],
+      "location_bathroom": ["bathroom", "shower"],
+      "location_clinic": ["clinic"]
+    },
+    "automatic_equivalence": false
+  },
+  "corruption_values": ["slut", "conservative", "whore", "u_whore"],
+  "u_whore_policy": "preserve_distinct_from_ultimate_whore",
+  "validity_values": ["valid", "invalid", "unresolved"],
+  "review_states": ["candidate", "edited_unconfirmed", "confirmed", "rejected"],
+  "exclusion_reasons": ["", "not_human_confirmed", "invalid_classification", "ambiguous_label", "source_provenance_unknown", "stale_source", "other"]
+}

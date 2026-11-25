@@ -1,0 +1,24 @@
+{
+  "isolation": "PASS",
+  "scenario": "phase4_studio_lifecycle",
+  "status": "PASS_REAL_APP_QT",
+  "run_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa",
+  "newassetapp_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\app\\newassetapp.sqlite3",
+  "studio_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\studio\\studio.sqlite3",
+  "synthetic_source": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\sources\\gui_acceptance_fixture.png",
+  "production_databases": [
+    "F:\\My Tools\\New folder\\NewAssetApp\\data\\newassetapp.sqlite3",
+    "F:\\My Tools\\New folder\\NewAssetApp\\TrainingDatasetStudio\\data\\studio.sqlite3"
+  ],
+  "production_database_touched": false,
+  "elapsed_seconds": 2.344,
+  "stage_timing": {
+    "import": 0.656,
+    "dataset_version": 0.344,
+    "validation": 0.078,
+    "finalize": 0.188,
+    "package": 0.296
+  },
+  "version_id": 1,
+  "package_path": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\studio_output\\Phase_4_disposable_dataset_v1_20261122_194841"
+}

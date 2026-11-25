@@ -1,0 +1,12 @@
+test_duplicate_id_is_rejected (test_tag_library_validation.TagLibraryValidationTests.test_duplicate_id_is_rejected) ... ok
+test_extracted_library_passes_validation (test_tag_library_validation.TagLibraryValidationTests.test_extracted_library_passes_validation) ... ok
+test_missing_parent_is_rejected (test_tag_library_validation.TagLibraryValidationTests.test_missing_parent_is_rejected) ... ok
+test_parent_cycle_is_rejected (test_tag_library_validation.TagLibraryValidationTests.test_parent_cycle_is_rejected) ... ok
+test_review_flag_requires_review_record (test_tag_library_validation.TagLibraryValidationTests.test_review_flag_requires_review_record) ... ok
+test_user_additions_are_separate_and_require_explicit_parent (test_tag_library_validation.TagLibraryValidationTests.test_user_additions_are_separate_and_require_explicit_parent) ... ok
+test_wrong_group_is_rejected (test_tag_library_validation.TagLibraryValidationTests.test_wrong_group_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1.002s
+
+OK

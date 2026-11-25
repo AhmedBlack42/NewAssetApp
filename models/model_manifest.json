@@ -1,0 +1,245 @@
+{
+  "schema_version": 1,
+  "models": {
+    "yolo": {
+      "purpose": "Image object detection",
+      "required_for_ai_pipeline": true,
+      "architecture": "Ultralytics YOLO; checkpoint metadata 8.3.204; copied checkpoint strictly loaded and sample-inferred with Ultralytics 8.0.186",
+      "class_count": 32,
+      "input": "H x W x 3 uint8 BGR; Ultralytics native letterbox; boxes mapped to original image coordinates",
+      "class_names": [
+        "person",
+        "face",
+        "portrait_frame",
+        "boobs",
+        "ass",
+        "pussy",
+        "legs",
+        "action_event",
+        "pussy_cover_item",
+        "ass_cover_item",
+        "boobs_cover_item",
+        "leg_cover_item",
+        "location_home",
+        "location_class",
+        "location_office",
+        "location_bathroom",
+        "location_bar",
+        "location_outdoor",
+        "location_bed",
+        "fullbody_shower",
+        "fullbody_maid",
+        "fullbody_nurse",
+        "fullbody_uniform",
+        "fullbody_athletic",
+        "fullbody_swim",
+        "fullbody_lingerie",
+        "fullbody_work",
+        "fullbody_casual",
+        "accessory_footwear",
+        "fullbody_topless",
+        "fullbody_bottomless",
+        "fullbody_bare"
+      ],
+      "runtime_packages": [
+        "ultralytics==8.0.186",
+        "opencv-python==4.8.1.78",
+        "torch==2.0.1",
+        "torchvision==0.15.2"
+      ],
+      "reference_path": "Girl Packer: ai/models/best.pt",
+      "target_path": "models/yolo/best.pt",
+      "source_kind": "copy_existing_project_file",
+      "external_download_url": null,
+      "license": "No separate checkpoint license recorded in the inspected project",
+      "file": {
+        "size_bytes": 22523946,
+        "sha256": "57449664AA24427C703770AE155A361DA252F26BE4840242AAE95F3017DF58EA"
+      }
+    },
+    "asset_classifier": {
+      "purpose": "Historical original 26-class Asset CNN checkpoint, retained unchanged for provenance",
+      "application_role": "legacy_asset_classifier",
+      "original_checkpoint_identity": "asset_classifier",
+      "class_index_semantics": "unchanged; Clothing CNN inference is restricted to YOLO clothing-region IDs 8-11 and broad garment-family outputs",
+      "required_for_ai_pipeline": false,
+      "architecture": "torchvision ResNet-18 state_dict; final linear layer has 26 classes",
+      "input": "RGB, Resize(256), CenterCrop(224), ToTensor, ImageNet mean/std normalization",
+      "class_names": [
+        "bodypart_ass",
+        "bodypart_boobs",
+        "bodypart_face",
+        "bodypart_legs",
+        "bodypart_portrait_clothed",
+        "bodypart_portrait_topless",
+        "bodypart_pussy",
+        "bra",
+        "dress",
+        "footwear",
+        "fullbody_clothed_states",
+        "fullbody_costume_states",
+        "fullbody_nude_states",
+        "outerwear",
+        "pants",
+        "panty",
+        "pantyhose",
+        "shirt",
+        "shorts",
+        "skirt",
+        "socks",
+        "special_wear",
+        "stockings",
+        "sweater",
+        "utility_cover",
+        "vest"
+      ],
+      "runtime_packages": [
+        "torch==2.0.1",
+        "torchvision==0.15.2",
+        "Pillow==10.0.1"
+      ],
+      "reference_path": "Girl Packer: ai/models/asset_classifier.pth",
+      "target_path": "models/asset_classifier/asset_classifier.pth",
+      "source_kind": "copy_existing_project_file",
+      "external_download_url": null,
+      "license": "No separate checkpoint license recorded in the inspected project",
+      "file": {
+        "size_bytes": 44839755,
+        "sha256": "EB1251DADE9293098E327F3E708BF92F0C5FC09C272C6CDDB0F4F04F210AE6D2"
+      },
+      "class_map": {
+        "reference_path": "Girl Packer: ai/models/asset_class_map.json",
+        "target_path": "models/asset_classifier/asset_class_map.json",
+        "size_bytes": 596,
+        "sha256": "6AC9C2276686265F933C37832F909ADA87CC85337B3F16C33134B5DC571DECBE"
+      }
+    },
+    "clothing_classifier": {
+      "purpose": "12-class broad Clothing family classifier",
+      "application_role": "clothing_classifier",
+      "required_for_ai_pipeline": false,
+      "architecture": "ResNet-18, 12 output classes",
+      "class_registry": "data/models/clothing_classifier_registry.json",
+      "class_names": ["bra", "dress", "footwear", "lingerie", "outerwear", "pants", "panty", "shirt", "shorts", "skirt", "socks", "top"],
+      "target_path": "models/clothing_classifier/clothing_classifier_12class.pth",
+      "checkpoint_status": "not_trained_dataset_review_blocked",
+      "training_performed": false
+    },
+    "birefnet_general": {
+      "purpose": "Optional local background removal for general subjects",
+      "required_for_ai_pipeline": false,
+      "architecture": "BiRefNet with Swin Transformer V1 Large backbone; local project inference resizes input to 512 x 512 on CPU and restores the soft mask to source dimensions",
+      "runtime_packages": [
+        "torch==2.0.1",
+        "torchvision==0.15.2",
+        "transformers==4.44.2",
+        "timm==1.0.30",
+        "kornia==0.7.4",
+        "einops==0.8.1",
+        "safetensors==0.8.0",
+        "opencv-python==4.8.1.78",
+        "Pillow==10.0.1"
+      ],
+      "repository": "ZhengPeng7/BiRefNet",
+      "revision": "8b15dd17f7137e1057ccab224047ca276a1272d5",
+      "license": "MIT",
+      "target_directory": "models/birefnet/general",
+      "files": [
+        {
+          "name": "config.json",
+          "size_bytes": 405,
+          "sha256": "C97EA21569DAF66B205491A4635147DD3BC42C7C168B89D7D75B53F67EF548AE"
+        },
+        {
+          "name": "BiRefNet_config.py",
+          "size_bytes": 298,
+          "sha256": "E7B8C2A74F6CEA6A59553D517F71D47F2C1D90E670A13416AF17C25FE2F3DC52"
+        },
+        {
+          "name": "birefnet.py",
+          "size_bytes": 92068,
+          "sha256": "A9566611AA07A6FBB68DDB6AC8E19E62C879A428FBFC2F44EFA53D233F2E302F"
+        },
+        {
+          "name": "README.md",
+          "size_bytes": 9983,
+          "sha256": "DA2827F51F17042CE32E3C0B17277A688254973AF5C555BC8F8A4A522891FFA3"
+        },
+        {
+          "name": "model.safetensors",
+          "size_bytes": 884878856,
+          "sha256": "77277264C0E8C74149D3FF2FADE4FD8176965B7108F3C5FC3B8C9C811EDB4519"
+        }
+      ],
+      "reference_path": "Girl Packer: ai/models/birefnet/general"
+    },
+    "birefnet_portrait": {
+      "purpose": "Optional local portrait background removal",
+      "required_for_ai_pipeline": false,
+      "architecture": "BiRefNet portrait with Swin Transformer V1 Large backbone; local project inference resizes input to 512 x 512 on CPU and restores the soft mask to source dimensions",
+      "runtime_packages": [
+        "torch==2.0.1",
+        "torchvision==0.15.2",
+        "transformers==4.44.2",
+        "timm==1.0.30",
+        "kornia==0.7.4",
+        "einops==0.8.1",
+        "safetensors==0.8.0",
+        "opencv-python==4.8.1.78",
+        "Pillow==10.0.1"
+      ],
+      "repository": "ZhengPeng7/BiRefNet-portrait",
+      "revision": "af9eec4b221a103778489b51413c4778a48cd0a9",
+      "license": "MIT",
+      "target_directory": "models/birefnet/portrait",
+      "files": [
+        {
+          "name": "config.json",
+          "size_bytes": 414,
+          "sha256": "68A27B9F0058E0D81F8B32655C3B5B8D82838C523243A2851B8269DD3F080A0E"
+        },
+        {
+          "name": "BiRefNet_config.py",
+          "size_bytes": 298,
+          "sha256": "E7B8C2A74F6CEA6A59553D517F71D47F2C1D90E670A13416AF17C25FE2F3DC52"
+        },
+        {
+          "name": "birefnet.py",
+          "size_bytes": 92010,
+          "sha256": "7EEB0CE127B9D1E881451CC9F139AB10AC700723632791E54E3D2A4F75D9FDF1"
+        },
+        {
+          "name": "README.md",
+          "size_bytes": 4568,
+          "sha256": "FAD01C7069F04CF7A84483F31882F1A854306AF4E11B53C174414228CF1E4067"
+        },
+        {
+          "name": "model.safetensors",
+          "size_bytes": 884878856,
+          "sha256": "4A4EB3A5469B75F0CCCAEC6772C22FC30E6C12ED429C2C0BA71B43E3D8D97182"
+        }
+      ],
+      "reference_path": "Girl Packer: ai/models/birefnet/portrait"
+    },
+    "realesrgan_x2plus": {
+      "purpose": "Optional conservative image upscaling",
+      "required_for_ai_pipeline": false,
+      "architecture": "RRDBNet x2plus, 23 RRDB blocks, custom implementation based on the official architecture; tiled CPU inference, no GFPGAN/facexlib requirement",
+      "runtime_packages": [
+        "torch==2.0.1",
+        "numpy==1.24.3",
+        "opencv-python==4.8.1.78"
+      ],
+      "repository": "xinntao/Real-ESRGAN",
+      "release": "v0.2.1",
+      "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.1/RealESRGAN_x2plus.pth",
+      "license": "BSD-3-Clause (repository/model release)",
+      "target_path": "models/realesrgan/RealESRGAN_x2plus.pth",
+      "reference_path": "Girl Packer: ai/models/realesrgan/RealESRGAN_x2plus.pth",
+      "file": {
+        "size_bytes": 67061725,
+        "sha256": "49FAFD45F8FD7AA8D31AB2A22D14D91B536C34494A5CFE31EB5D89C2FA266ABB"
+      }
+    }
+  }
+}

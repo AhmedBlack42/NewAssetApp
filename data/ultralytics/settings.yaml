@@ -1,0 +1,16 @@
+settings_version: 0.0.4
+datasets_dir: F:\My Tools\New folder\datasets
+weights_dir: F:\My Tools\New folder\Girl Packer1\weights
+runs_dir: F:\My Tools\New folder\Girl Packer1\runs
+uuid: 6b8ff8f28ba33475c07c3cfca537f7738691611d65129cdb93f65fbdebd481e1
+sync: true
+api_key: ''
+clearml: true
+comet: true
+dvc: true
+hub: true
+mlflow: true
+neptune: true
+raytune: true
+tensorboard: true
+wandb: true

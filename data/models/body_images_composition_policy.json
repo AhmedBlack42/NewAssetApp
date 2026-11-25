@@ -1,0 +1,16 @@
+{
+  "schema_version": 2,
+  "supported_main_subtag_pairs": {
+    "boobs": ["cum"],
+    "ass": ["creampie", "bb"]
+  },
+  "mutually_exclusive_subtags": ["cum", "creampie"],
+  "deprecated_concept": "sub-main",
+  "replacement": "All composition values such as cum, creampie, and bb are ordinary human-selected subtags, constrained by supported_main_subtag_pairs.",
+  "serialization": "{main_tag},{main_tag2}-{sub_tag},{sub_tag2}{sequence}.webp",
+  "legacy_read_support": {
+    "supported_fluid_submain_pairs": ["boobs_cum", "ass_creampie"],
+    "supported_submain_pairs": ["ass_bb"],
+    "purpose": "Read-only compatibility for historical filename metadata; never hydrate or confirm database labels from filenames."
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "tree_root": "train_data",
+  "tree_label": "original_source",
+  "source_inventory": "reports\\PHASE4B_PRE_MIGRATION_INVENTORY.json",
+  "expected_files": 4548,
+  "checked_files": 4548,
+  "missing_files": [],
+  "unexpected_source_files": [],
+  "generated_or_migrated_files_ignored": 5243,
+  "hash_mismatches": [],
+  "verified": true
+}

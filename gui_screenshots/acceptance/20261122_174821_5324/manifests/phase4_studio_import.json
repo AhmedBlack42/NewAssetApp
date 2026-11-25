@@ -1,0 +1,16 @@
+{
+  "isolation": "PASS",
+  "scenario": "phase4_studio_import",
+  "status": "PASS_REAL_APP_QT",
+  "run_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa",
+  "newassetapp_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\app\\newassetapp.sqlite3",
+  "studio_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\studio\\studio.sqlite3",
+  "synthetic_source": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\sources\\gui_acceptance_fixture.png",
+  "production_databases": [
+    "F:\\My Tools\\New folder\\NewAssetApp\\data\\newassetapp.sqlite3",
+    "F:\\My Tools\\New folder\\NewAssetApp\\TrainingDatasetStudio\\data\\studio.sqlite3"
+  ],
+  "production_database_touched": false,
+  "elapsed_seconds": 1.718,
+  "accepted_records": 2
+}

@@ -1,0 +1,3078 @@
+{
+  "schema_version": 1,
+  "source": "extract_clothing_tags.txt",
+  "mapping_rule": "Map only exact source covered_parts values boobs, legs, ass, pussy. No garment category, visual appearance, or inferred region is used.",
+  "body_part_to_yolo_group": {
+    "boobs": "boobs_cover",
+    "legs": "legs_cover",
+    "ass": "ass_cover",
+    "pussy": "pussy_cover"
+  },
+  "entries": [
+    {
+      "record_id": "gameclothing-item|lower|cheerleader_skirt",
+      "source_identifier": "cheerleader skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L6-L19",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|scheerleader_skirt",
+      "source_identifier": "scheerleader skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L23-L35",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|upper|cheerleader_top",
+      "source_identifier": "cheerleader_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L39-L53",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|scheerleader_top",
+      "source_identifier": "scheerleader_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L57-L71",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|cheer_bloomers",
+      "source_identifier": "cheer_bloomers",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L75-L87",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|upper|school_shirt_slut",
+      "source_identifier": "school_shirt_slut",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L93-L106",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|lower|school_skirt_slut",
+      "source_identifier": "school_skirt_slut",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L110-L121",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|bra|lingerie_topsp",
+      "source_identifier": "lingerie_topsp",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L161-L173",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|socks|lingerie_legsp",
+      "source_identifier": "lingerie_legsp",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L176-L188",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|panties|lingerie_botsp",
+      "source_identifier": "lingerie_botsp",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L192-L204",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|upper|lingerie_bd",
+      "source_identifier": "lingerie_bd",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L210-L223",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|lingerie_legbd",
+      "source_identifier": "lingerie_legbd",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L227-L239",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_princess",
+      "source_identifier": "sexy_princess",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L248-L262",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|leather_stockings",
+      "source_identifier": "leather_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L284-L296",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|latex_stockings",
+      "source_identifier": "latex_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L316-L328",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|outer|uniform_sweater",
+      "source_identifier": "uniform_sweater",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L353-L364",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "upper",
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sundress",
+      "source_identifier": "sundress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L384-L396",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|short_dress",
+      "source_identifier": "short_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L400-L412",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sheer_dress",
+      "source_identifier": "sheer_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L416-L428",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|school_shirt",
+      "source_identifier": "school_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L434-L445",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|blouse",
+      "source_identifier": "blouse",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L449-L460",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sleeveless_shirt",
+      "source_identifier": "sleeveless_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L464-L475",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|halter_top",
+      "source_identifier": "halter_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L479-L490",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|strapless_top",
+      "source_identifier": "strapless_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L494-L506",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_corset",
+      "source_identifier": "sexy_corset",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L510-L522",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sheer_top",
+      "source_identifier": "sheer_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L526-L537",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sheer_corset",
+      "source_identifier": "sheer_corset",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L541-L553",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|lower|casual_leggings",
+      "source_identifier": "casual_leggings",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L559-L570",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|skinny_jeans",
+      "source_identifier": "skinny_jeans",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L574-L586",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|casual_skirt",
+      "source_identifier": "casual_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L592-L603",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|school_skirt",
+      "source_identifier": "school_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L607-L618",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|denim_skirt",
+      "source_identifier": "denim_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L622-L634",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|leather_skirt",
+      "source_identifier": "leather_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L638-L650",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|mini_skirt",
+      "source_identifier": "mini_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L654-L664",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|lower|short_skirt",
+      "source_identifier": "short_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L668-L678",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|lower|athletic_shorts",
+      "source_identifier": "athletic_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L684-L695",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|jean_shorts",
+      "source_identifier": "jean_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L699-L711",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|short_shorts",
+      "source_identifier": "short_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L715-L726",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|sheer_shorts",
+      "source_identifier": "sheer_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L730-L741",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|bra|ordinary_bra",
+      "source_identifier": "ordinary_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L747-L758",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|athletic_bra",
+      "source_identifier": "athletic_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L762-L773",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|lacy_bra",
+      "source_identifier": "lacy_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L777-L788",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|sheer_bra",
+      "source_identifier": "sheer_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L792-L803",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|lacy_panties",
+      "source_identifier": "lacy_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L809-L820",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|sheer_panties",
+      "source_identifier": "sheer_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L824-L834",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|socks|ankle_socks",
+      "source_identifier": "ankle_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L840-L851",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|socks|knee_socks",
+      "source_identifier": "knee_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L855-L866",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|thigh_stockings",
+      "source_identifier": "thigh_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L872-L883",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|uniform_flats",
+      "source_identifier": "uniform_flats",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L902-L914",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "socks",
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "socks",
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|tennis_shoe",
+      "source_identifier": "tennis_shoe",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L918-L930",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "socks",
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "socks",
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_pump",
+      "source_identifier": "high_heel_pump",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L934-L945",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_anklestrap",
+      "source_identifier": "high_heel_anklestrap",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L949-L960",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_opentoe",
+      "source_identifier": "high_heel_opentoe",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L964-L975",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_laceup",
+      "source_identifier": "high_heel_laceup",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L979-L990",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_platform",
+      "source_identifier": "high_heel_platform",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L994-L1005",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|outer|none",
+      "source_identifier": "none",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1016-L1027",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|outer|hoodie",
+      "source_identifier": "hoodie",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1028-L1039",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "upper",
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|outer|jacket",
+      "source_identifier": "jacket",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1040-L1051",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "upper",
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|outer|leather_jacket",
+      "source_identifier": "leather_jacket",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1052-L1063",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "upper",
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|none",
+      "source_identifier": "none",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1067-L1078",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|upper|uniform_shirt",
+      "source_identifier": "uniform_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1079-L1090",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|t_shirt",
+      "source_identifier": "t_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1091-L1102",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|tank_top",
+      "source_identifier": "tank_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1103-L1114",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|dress",
+      "source_identifier": "dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1115-L1127",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|crop_top",
+      "source_identifier": "crop_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1128-L1139",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|onepiece_swimsuit",
+      "source_identifier": "onepiece_swimsuit",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1140-L1152",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover",
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        },
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|leotard",
+      "source_identifier": "leotard",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1153-L1164",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover",
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        },
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|mini_dress",
+      "source_identifier": "mini_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1165-L1177",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|tube_top",
+      "source_identifier": "tube_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1178-L1188",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|corset_top",
+      "source_identifier": "corset_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1189-L1200",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|leather_corset_top",
+      "source_identifier": "leather_corset_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1201-L1212",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|transparent_top",
+      "source_identifier": "transparent_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1213-L1224",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_maid_top",
+      "source_identifier": "sexy_maid_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1225-L1245",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|latex_dress",
+      "source_identifier": "latex_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1246-L1258",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_nurse_dress",
+      "source_identifier": "sexy_nurse_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1259-L1274",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "bra",
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|bra|none",
+      "source_identifier": "none",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1280-L1291",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|bra|plain_bra",
+      "source_identifier": "plain_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1292-L1303",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|sports_bra",
+      "source_identifier": "sports_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1304-L1314",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs",
+        "athletic"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "athletic"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|bra|strapless_bra",
+      "source_identifier": "strapless_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1315-L1325",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|bikini_top",
+      "source_identifier": "bikini_top",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1326-L1339",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|lace_bra",
+      "source_identifier": "lace_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1340-L1351",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|transparent_bra",
+      "source_identifier": "transparent_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1352-L1363",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|micro_bikini_top",
+      "source_identifier": "micro_bikini_top",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1364-L1385",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|bra|open_cup_bra",
+      "source_identifier": "open_cup_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1386-L1396",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|bra|peekaboo_bikini_top",
+      "source_identifier": "peekaboo_bikini_top",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1397-L1417",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|bra|sexy_nurse_bra",
+      "source_identifier": "sexy_nurse_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1418-L1431",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "boobs"
+      ],
+      "yolo_coverage_groups": [
+        "boobs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "boobs",
+          "yolo_group": "boobs_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|lower|none",
+      "source_identifier": "none",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1434-L1445",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|lower|jeans",
+      "source_identifier": "jeans",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1446-L1457",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass",
+        "legs"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover",
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        },
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|uniform_skirt",
+      "source_identifier": "uniform_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1458-L1469",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|leggings",
+      "source_identifier": "leggings",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1470-L1481",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass",
+        "legs"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover",
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        },
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|casual_shorts",
+      "source_identifier": "casual_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1482-L1493",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|denim_shorts",
+      "source_identifier": "denim_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1494-L1505",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|denim_micro_shorts",
+      "source_identifier": "denim_micro_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1506-L1517",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|booty_shorts",
+      "source_identifier": "booty_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1518-L1529",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|lower|micro_uniform_skirt",
+      "source_identifier": "micro_uniform_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1530-L1540",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|lower|micro_skirt",
+      "source_identifier": "micro_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1541-L1551",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|lower|sexy_maid_skirt",
+      "source_identifier": "sexy_maid_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1552-L1573",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|panties|none",
+      "source_identifier": "none",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1576-L1587",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|panties|brief_panties",
+      "source_identifier": "brief_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1588-L1599",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|plain_panties",
+      "source_identifier": "plain_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1600-L1611",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|high_cut_panties",
+      "source_identifier": "high_cut_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1612-L1623",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|high_leg_panties",
+      "source_identifier": "high_leg_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1624-L1635",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|bikini_bottom",
+      "source_identifier": "bikini_bottom",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1636-L1655",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|lace_panties",
+      "source_identifier": "lace_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1656-L1667",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|thong",
+      "source_identifier": "thong",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1668-L1679",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|g_string",
+      "source_identifier": "g_string",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1680-L1691",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|micro_bikini_bottom",
+      "source_identifier": "micro_bikini_bottom",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1692-L1713",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|transparent_panties",
+      "source_identifier": "transparent_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1714-L1725",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|assless_panties",
+      "source_identifier": "assless_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1726-L1737",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|crotchless_panties",
+      "source_identifier": "crotchless_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1738-L1749",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|crotchless_butterfly_panties",
+      "source_identifier": "crotchless_butterfly_panties",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1750-L1761",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|panties|peekaboo_bikini_bottom",
+      "source_identifier": "peekaboo_bikini_bottom",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1762-L1785",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|panties|sexy_nurse_thong",
+      "source_identifier": "sexy_nurse_thong",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1786-L1799",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussy",
+        "ass"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        }
+      ],
+      "unmapped_source_parts": [],
+      "status": "explicit_source_mapping"
+    },
+    {
+      "record_id": "gameclothing-item|socks|none",
+      "source_identifier": "none",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1802-L1813",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|socks|short_socks",
+      "source_identifier": "short_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1814-L1825",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|socks|calf_socks",
+      "source_identifier": "calf_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1826-L1837",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|socks|uniform_stockings",
+      "source_identifier": "uniform_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1838-L1849",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|pantyhose",
+      "source_identifier": "pantyhose",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1850-L1866",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "panties",
+        "pussy",
+        "ass",
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "pussy_cover",
+        "ass_cover",
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "pussy",
+          "yolo_group": "pussy_cover"
+        },
+        {
+          "source_part": "ass",
+          "yolo_group": "ass_cover"
+        },
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "panties",
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|transparent_stockings",
+      "source_identifier": "transparent_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1867-L1885",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|socks|fishnet_stockings",
+      "source_identifier": "fishnet_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1886-L1904",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "legs",
+        "feet"
+      ],
+      "yolo_coverage_groups": [
+        "legs_cover"
+      ],
+      "mapping_evidence": [
+        {
+          "source_part": "legs",
+          "yolo_group": "legs_cover"
+        }
+      ],
+      "unmapped_source_parts": [
+        "feet"
+      ],
+      "status": "explicit_mapping_with_unmapped_parts"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|none",
+      "source_identifier": "none",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1907-L1918",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|sneakers",
+      "source_identifier": "sneakers",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1919-L1931",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "socks",
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "socks",
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|clogs",
+      "source_identifier": "clogs",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1932-L1944",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "socks",
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "socks",
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|flip_flops",
+      "source_identifier": "flip_flops",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1945-L1958",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "socks"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "socks"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|shoes|heels",
+      "source_identifier": "heels",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1959-L1971",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "socks",
+        "feet"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "socks",
+        "feet"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|none",
+      "source_identifier": "none",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L1974-L1985",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|buttplug",
+      "source_identifier": "buttplug",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L1986-L1998",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "asshole"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "asshole"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|tail_buttplug",
+      "source_identifier": "tail_buttplug",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L1999-L2014",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "asshole"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "asshole"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|vibrating_buttplug",
+      "source_identifier": "vibrating_buttplug",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L2015-L2030",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "asshole"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "asshole"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|none",
+      "source_identifier": "none",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2033-L2044",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|pussyplug",
+      "source_identifier": "pussyplug",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2045-L2057",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussyhole"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "pussyhole"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|pussyweights",
+      "source_identifier": "pussyweights",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2058-L2069",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|weighted_pussyplug",
+      "source_identifier": "weighted_pussyplug",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2070-L2082",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussyhole"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "pussyhole"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|pussyclamp",
+      "source_identifier": "pussyclamp",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2083-L2094",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|vibrating_pussyplug",
+      "source_identifier": "vibrating_pussyplug",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2095-L2110",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "pussyhole"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "pussyhole"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|none",
+      "source_identifier": "none",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2113-L2124",
+      "source_field": null,
+      "explicit_covered_parts": null,
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [],
+      "status": "source_field_missing"
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|pasties",
+      "source_identifier": "pasties",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2125-L2137",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "nipple"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "nipple"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|pasties_tassels",
+      "source_identifier": "pasties_tassels",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2138-L2150",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "nipple"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "nipple"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|nippleclamp",
+      "source_identifier": "nippleclamp",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2151-L2163",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "nipple"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "nipple"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|vibrating_nippleclamp",
+      "source_identifier": "vibrating_nippleclamp",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2164-L2179",
+      "source_field": "covered_parts",
+      "explicit_covered_parts": [
+        "nipple"
+      ],
+      "yolo_coverage_groups": [],
+      "mapping_evidence": [],
+      "unmapped_source_parts": [
+        "nipple"
+      ],
+      "status": "source_parts_do_not_name_supported_body_regions"
+    }
+  ]
+}

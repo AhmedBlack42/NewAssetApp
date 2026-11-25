@@ -1,0 +1,442 @@
+{
+  "audit_date": "2026-11-05",
+  "inventory_method": "Read installed .dist-info/METADATA files because the environment Python launcher cannot start; packages were not imported",
+  "project": "F:\\My Tools\\New folder\\Girl Packer1",
+  "environment_path": "F:\\My Tools\\New folder\\Girl Packer1\\.venv_girlpacker",
+  "configured_python": {
+    "base_executable_available": false,
+    "configured_base": "C:\\Users\\asker\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "architecture": "64-bit AMD64 per prior project diagnostics; current runtime cannot be executed",
+    "version": "3.11.9",
+    "venv_python_command_error": "No Python at \"C:\\Users\\asker\\AppData\\Local\\Programs\\Python\\Python311\\python.exe\""
+  },
+  "pip": {
+    "executable_check": "blocked because the configured Python runtime is unavailable",
+    "pip_check": "not run; runtime unavailable",
+    "metadata_version": "26.2.1"
+  },
+  "runtime_import_tests": {
+    "status": "blocked",
+    "details": "Cannot run OpenCV, PySide6, Ultralytics, Torch, torchvision, Transformers, safetensors, Kornia, timm, or model imports in the configured environment until its base Python 3.11 executable is restored."
+  },
+  "cuda": {
+    "dedicated_memory_mib": 512,
+    "recommended_torch_variant": "CPU",
+    "driver": "392.68",
+    "current_torch_cuda_query": "unavailable because venv Python cannot start",
+    "reason": "The available NVIDIA driver is below CUDA 11.x Windows compatibility requirements; GPU memory is also only 512 MiB.",
+    "nvidia_gpu": "NVIDIA NVS 4200M"
+  },
+  "static_conflicts": [
+    "opencv-python 4.8.1.78 and opencv-python-headless 4.11.0.86 both install the cv2 namespace; do not carry both into NewAssetApp.",
+    "Ultralytics metadata is 8.0.186, while the registered YOLO checkpoint metadata is 8.3.204; NewAssetApp pins the checkpoint-matching version and still requires a real load check."
+  ],
+  "historical_reference": "docs/IMAGE_MODEL_INSTALLATION_REPORT.md records earlier successful CPU model smoke checks and imports on 2026-10-21; these are historical and do not establish current venv health.",
+  "package_count": 101,
+  "packages": [
+    {
+      "name": "albumentations",
+      "version": "1.3.1"
+    },
+    {
+      "name": "annotated-doc",
+      "version": "0.0.5"
+    },
+    {
+      "name": "anyio",
+      "version": "4.14.2"
+    },
+    {
+      "name": "beautifulsoup4",
+      "version": "4.15.0"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.10.19"
+    },
+    {
+      "name": "charset-normalizer",
+      "version": "3.5.2"
+    },
+    {
+      "name": "click",
+      "version": "8.2.1"
+    },
+    {
+      "name": "cloudpickle",
+      "version": "3.1.2"
+    },
+    {
+      "name": "colorama",
+      "version": "0.4.6"
+    },
+    {
+      "name": "contourpy",
+      "version": "1.3.2"
+    },
+    {
+      "name": "cycler",
+      "version": "0.12.1"
+    },
+    {
+      "name": "easydict",
+      "version": "1.13"
+    },
+    {
+      "name": "einops",
+      "version": "0.8.1"
+    },
+    {
+      "name": "filelock",
+      "version": "3.13.1"
+    },
+    {
+      "name": "flet",
+      "version": "1.0.4"
+    },
+    {
+      "name": "fonttools",
+      "version": "4.67.0"
+    },
+    {
+      "name": "fsspec",
+      "version": "2026.9.0"
+    },
+    {
+      "name": "gdown",
+      "version": "6.4.2"
+    },
+    {
+      "name": "h11",
+      "version": "0.16.0"
+    },
+    {
+      "name": "hf-xet",
+      "version": "1.7.0"
+    },
+    {
+      "name": "httpcore",
+      "version": "1.0.9"
+    },
+    {
+      "name": "httpx",
+      "version": "0.28.1"
+    },
+    {
+      "name": "huggingface_hub",
+      "version": "0.36.2"
+    },
+    {
+      "name": "idna",
+      "version": "3.20"
+    },
+    {
+      "name": "ImageHash",
+      "version": "4.3.1"
+    },
+    {
+      "name": "ImageIO",
+      "version": "2.38.1"
+    },
+    {
+      "name": "iniconfig",
+      "version": "2.3.1"
+    },
+    {
+      "name": "Jinja2",
+      "version": "3.1.2"
+    },
+    {
+      "name": "joblib",
+      "version": "1.6.0"
+    },
+    {
+      "name": "kiwisolver",
+      "version": "1.5.1"
+    },
+    {
+      "name": "kornia",
+      "version": "0.7.4"
+    },
+    {
+      "name": "kornia_rs",
+      "version": "0.2.0"
+    },
+    {
+      "name": "lazy-loader",
+      "version": "0.6"
+    },
+    {
+      "name": "loguru",
+      "version": "0.7.2"
+    },
+    {
+      "name": "markdown-it-py",
+      "version": "4.2.0"
+    },
+    {
+      "name": "MarkupSafe",
+      "version": "2.1.3"
+    },
+    {
+      "name": "matplotlib",
+      "version": "3.10.9"
+    },
+    {
+      "name": "mdurl",
+      "version": "0.1.2"
+    },
+    {
+      "name": "mpmath",
+      "version": "1.3.0"
+    },
+    {
+      "name": "msgpack",
+      "version": "1.2.3"
+    },
+    {
+      "name": "networkx",
+      "version": "3.6.1"
+    },
+    {
+      "name": "numpy",
+      "version": "1.24.3"
+    },
+    {
+      "name": "oauthlib",
+      "version": "4.0.0"
+    },
+    {
+      "name": "opencv-python",
+      "version": "4.8.1.78"
+    },
+    {
+      "name": "opencv-python-headless",
+      "version": "4.11.0.86"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3"
+    },
+    {
+      "name": "pandas",
+      "version": "2.3.3"
+    },
+    {
+      "name": "Pillow",
+      "version": "10.0.1"
+    },
+    {
+      "name": "pip",
+      "version": "26.2.1"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.13.5"
+    },
+    {
+      "name": "pluggy",
+      "version": "1.7.0"
+    },
+    {
+      "name": "protobuf",
+      "version": "3.20.3"
+    },
+    {
+      "name": "psutil",
+      "version": "7.2.2"
+    },
+    {
+      "name": "py-cpuinfo",
+      "version": "9.0.0"
+    },
+    {
+      "name": "Pygments",
+      "version": "2.21.0"
+    },
+    {
+      "name": "pyparsing",
+      "version": "3.3.3"
+    },
+    {
+      "name": "PySide6",
+      "version": "6.6.1"
+    },
+    {
+      "name": "PySide6-Addons",
+      "version": "6.6.1"
+    },
+    {
+      "name": "PySide6-Essentials",
+      "version": "6.6.1"
+    },
+    {
+      "name": "PySocks",
+      "version": "1.7.1"
+    },
+    {
+      "name": "pytest",
+      "version": "9.1.1"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0"
+    },
+    {
+      "name": "python-vlc",
+      "version": "3.0.21203"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.5"
+    },
+    {
+      "name": "PyWavelets",
+      "version": "1.8.0"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.1"
+    },
+    {
+      "name": "QtAwesome",
+      "version": "1.3.1"
+    },
+    {
+      "name": "QtPy",
+      "version": "2.4.3"
+    },
+    {
+      "name": "qudida",
+      "version": "0.0.4"
+    },
+    {
+      "name": "regex",
+      "version": "2026.9.29"
+    },
+    {
+      "name": "repath",
+      "version": "0.9.0"
+    },
+    {
+      "name": "requests",
+      "version": "2.31.0"
+    },
+    {
+      "name": "rich",
+      "version": "15.0.0"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.8.0"
+    },
+    {
+      "name": "scenedetect",
+      "version": "0.6.7.1"
+    },
+    {
+      "name": "scikit-image",
+      "version": "0.24.0"
+    },
+    {
+      "name": "scikit-learn",
+      "version": "1.3.0"
+    },
+    {
+      "name": "scipy",
+      "version": "1.15.3"
+    },
+    {
+      "name": "seaborn",
+      "version": "0.13.2"
+    },
+    {
+      "name": "setuptools",
+      "version": "65.5.0"
+    },
+    {
+      "name": "shellingham",
+      "version": "1.5.4"
+    },
+    {
+      "name": "shiboken6",
+      "version": "6.6.1"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0"
+    },
+    {
+      "name": "soupsieve",
+      "version": "3.0.3"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    },
+    {
+      "name": "threadpoolctl",
+      "version": "3.7.0"
+    },
+    {
+      "name": "tifffile",
+      "version": "2026.3.3"
+    },
+    {
+      "name": "timm",
+      "version": "1.0.30"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.19.1"
+    },
+    {
+      "name": "torch",
+      "version": "2.0.1"
+    },
+    {
+      "name": "torchvision",
+      "version": "0.15.2"
+    },
+    {
+      "name": "tqdm",
+      "version": "4.70.1"
+    },
+    {
+      "name": "transformers",
+      "version": "4.44.2"
+    },
+    {
+      "name": "transparent-background",
+      "version": "1.3.2"
+    },
+    {
+      "name": "typer",
+      "version": "0.27.3"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.8.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.5"
+    },
+    {
+      "name": "ultralytics",
+      "version": "8.0.186"
+    },
+    {
+      "name": "urllib3",
+      "version": "2.8.0"
+    },
+    {
+      "name": "wget",
+      "version": "3.2"
+    },
+    {
+      "name": "win32_setctime",
+      "version": "1.2.0"
+    }
+  ]
+}

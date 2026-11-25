@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "status": "one_shared_five_head_cnn_plus_separate_clothing_cnn",
+  "models": {
+    "yolo_detector": {
+      "task": "object_detection",
+      "checkpoint": "models/yolo/best.pt",
+      "source_manifest": "models/model_manifest.json#/models/yolo",
+      "class_count": 32,
+      "class_names": "models/model_manifest.json#/models/yolo/class_names",
+      "training_performed": false
+    },
+    "unified_body_images_fullbody_cnn": {
+      "task": "shared_body_images_fullbody_portrait_arousal_corruption_classification",
+      "version": "v2_five_head_shared_backbone_untrained",
+      "registry": "data/models/unified_body_images_fullbody/class_registry.json",
+      "checkpoint": "models/unified_body_images_fullbody/asset_classifier_initialization_26class.pth",
+      "checkpoint_status": "initialization_only_untrained",
+      "output_groups": {
+        "body_images": 2,
+        "fullbody": 5,
+        "portrait": 2,
+        "arousal": 2,
+        "corruption": 4
+      },
+      "total_output_logits": 15,
+      "checkpoint_status": "architecture_defined_training_required",
+      "one_model_identity": true,
+      "training_performed": false
+    },
+    "clothing_classifier": {
+      "task": "broad_clothing_family_classification",
+      "version": "clothing-broad-v2-12class",
+      "registry": "data/models/clothing_classifier_registry.json",
+      "checkpoint": "models/clothing_classifier/clothing_classifier_12class.pth",
+      "checkpoint_status": "not_trained_dataset_review_blocked",
+      "class_count": 12,
+      "taxonomy_version": "clothing-broad-v2-12class",
+      "training_performed": false
+    }
+  },
+  "retired_model_identities": {
+    "portrait_classifier_v1": {
+      "status": "superseded_by_unified_model",
+      "checkpoint_preserved": "models/portrait_classifier/asset_classifier_26class_initialization.pth"
+    },
+    "fullbody_state_v1": {
+      "status": "superseded_by_unified_model"
+    },
+    "asset_cnn_clothing_baseline": {
+      "status": "renamed_application_role_clothing_classifier",
+      "original_checkpoint_id_preserved": "asset_classifier"
+    }
+  }
+}

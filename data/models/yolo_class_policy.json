@@ -1,0 +1,654 @@
+{
+  "schema_version": 3,
+  "policy_id": "newasset_yolo_approved_target_registry_v1",
+  "source_checkpoint": "newassetapp_yolo_detector_v1",
+  "original_class_map_preserved": true,
+  "active_classes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "person_fallback_class_id": 0,
+  "photoshoot_assignment_allowed": false,
+  "classes": [
+    {
+      "class_id": 0,
+      "name": "person",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "person_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 1,
+      "name": "face",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "body_region_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 2,
+      "name": "portrait_frame",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "body_region_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 3,
+      "name": "boobs",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "body_region_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 4,
+      "name": "ass",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "body_region_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 5,
+      "name": "pussy",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "body_region_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 6,
+      "name": "legs",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "body_region_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 7,
+      "name": "boobs_cover_item",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "cover_item_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 8,
+      "name": "pussy_cover_item",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "cover_item_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 9,
+      "name": "ass_cover_item",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "cover_item_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 10,
+      "name": "leg_cover_item",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "cover_item_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 11,
+      "name": "accessory_footwear",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "cover_item_detection",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 12,
+      "name": "fullbody_shower",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 13,
+      "name": "fullbody_maid",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 14,
+      "name": "fullbody_nurse",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 15,
+      "name": "fullbody_uniform",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 16,
+      "name": "fullbody_athletic",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 17,
+      "name": "fullbody_swimsuit",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 18,
+      "name": "fullbody_bikini",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 19,
+      "name": "fullbody_work",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 20,
+      "name": "fullbody_clothed",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 21,
+      "name": "fullbody_bare",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 22,
+      "name": "fullbody_underwear",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "fullbody_detection_evidence",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 23,
+      "name": "location_class",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 24,
+      "name": "location_office",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 25,
+      "name": "location_bathroom",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 26,
+      "name": "location_bar",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 27,
+      "name": "location_park",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 28,
+      "name": "location_beach",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 29,
+      "name": "location_clinic",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    },
+    {
+      "class_id": 30,
+      "name": "location_home",
+      "status": "active",
+      "reason": "Exact identity from the approved TrainingDatasetStudio YOLO registry.",
+      "purpose": "context_detection_review_only",
+      "training_status": "human_confirmed_only",
+      "legacy_compatibility_only": false
+    }
+  ],
+  "historical_32_class_checkpoint": {
+    "source_checkpoint": "models/yolo/best.pt",
+    "original_class_map_preserved": true,
+    "active_classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "classes": [
+      {
+        "class_id": 0,
+        "name": "person",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "legacy_fullbody_review_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 1,
+        "name": "face",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "face_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 2,
+        "name": "portrait_frame",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "portrait_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 3,
+        "name": "boobs",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "body_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 4,
+        "name": "ass",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "body_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 5,
+        "name": "pussy",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "body_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 6,
+        "name": "legs",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "body_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 7,
+        "name": "action_event",
+        "status": "active",
+        "reason": "Retained as detector evidence; action/event semantics are review-only in image workflow.",
+        "purpose": "action_event_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 8,
+        "name": "pussy_cover_item",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "cover_item_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 9,
+        "name": "ass_cover_item",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "cover_item_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 10,
+        "name": "boobs_cover_item",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "cover_item_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 11,
+        "name": "leg_cover_item",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "cover_item_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 12,
+        "name": "location_home",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 13,
+        "name": "location_class",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 14,
+        "name": "location_office",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 15,
+        "name": "location_bathroom",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 16,
+        "name": "location_bar",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 17,
+        "name": "location_outdoor",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 18,
+        "name": "location_bed",
+        "status": "active",
+        "reason": "Retained as original detector evidence and surfaced for human review; never auto-assigned as an asset or photoshoot.",
+        "purpose": "context_detection_review_only",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 19,
+        "name": "fullbody_shower",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 20,
+        "name": "fullbody_maid",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 21,
+        "name": "fullbody_nurse",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 22,
+        "name": "fullbody_uniform",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 23,
+        "name": "fullbody_athletic",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 24,
+        "name": "fullbody_swim",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 25,
+        "name": "fullbody_lingerie",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 26,
+        "name": "fullbody_work",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 27,
+        "name": "fullbody_casual",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 28,
+        "name": "accessory_footwear",
+        "status": "active",
+        "reason": "Preserved checkpoint class available for human review; training eligibility requires explicit confirmation.",
+        "purpose": "footwear_region_detection",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 29,
+        "name": "fullbody_topless",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 30,
+        "name": "fullbody_bottomless",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      },
+      {
+        "class_id": 31,
+        "name": "fullbody_bare",
+        "status": "active",
+        "reason": "YOLO Fullbody candidate requiring human verification; does not confirm type or state.",
+        "purpose": "fullbody_type_or_state_candidate",
+        "training_status": "human_confirmed_only",
+        "legacy_compatibility_only": false
+      }
+    ],
+    "status": "historical_compatibility_only",
+    "reason": "Historical detections remain readable but are not the active target registry."
+  },
+  "registry_id": "newassetapp_yolo_detector_v1",
+  "registry_version": 1
+}

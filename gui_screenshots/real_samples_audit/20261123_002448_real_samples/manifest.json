@@ -1,0 +1,2056 @@
+{
+  "run_id": "20261123_002448_real_samples",
+  "isolation_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples",
+  "database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\app\\newassetapp.sqlite3",
+  "output": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\exports",
+  "logs": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_real_samples_20261123_002448_real_samples\\logs",
+  "checkpoints": [
+    {
+      "step": "folder_selected",
+      "elapsed": 0.0,
+      "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples"
+    },
+    {
+      "step": "scan_completed",
+      "elapsed": 9.562,
+      "status_text": "Verified 287 / 287 · 287 new/changed · 0 unchanged · 4 duplicate(s) · 0 error(s)",
+      "status_bar": "Scan complete · model inference is not connected"
+    },
+    {
+      "step": "analysis_invoked",
+      "elapsed": 9.734
+    },
+    {
+      "step": "analysis_completed",
+      "elapsed": 464.843,
+      "progress": "Analyzed 287 / 287 · 0 error(s)",
+      "status_bar": "Analysis complete · detections and CNN outputs remain review candidates"
+    }
+  ],
+  "scan_db": {
+    "source_count": 287,
+    "detection_count": 0,
+    "proposal_count": 0
+  },
+  "analysis_db": {
+    "source_count": 287,
+    "detection_count": 2263,
+    "proposal_count": 2263,
+    "class_counts": [
+      {
+        "class_name": "person",
+        "c": 381
+      },
+      {
+        "class_name": "face",
+        "c": 286
+      },
+      {
+        "class_name": "portrait_frame",
+        "c": 231
+      },
+      {
+        "class_name": "pussy_cover_item",
+        "c": 141
+      },
+      {
+        "class_name": "boobs_cover_item",
+        "c": 115
+      },
+      {
+        "class_name": "accessory_footwear",
+        "c": 113
+      },
+      {
+        "class_name": "location_home",
+        "c": 107
+      },
+      {
+        "class_name": "legs",
+        "c": 106
+      },
+      {
+        "class_name": "boobs",
+        "c": 105
+      },
+      {
+        "class_name": "action_event",
+        "c": 81
+      },
+      {
+        "class_name": "fullbody_bottomless",
+        "c": 68
+      },
+      {
+        "class_name": "location_outdoor",
+        "c": 68
+      },
+      {
+        "class_name": "fullbody_bare",
+        "c": 58
+      },
+      {
+        "class_name": "ass_cover_item",
+        "c": 56
+      },
+      {
+        "class_name": "fullbody_topless",
+        "c": 55
+      },
+      {
+        "class_name": "location_bed",
+        "c": 51
+      },
+      {
+        "class_name": "location_bathroom",
+        "c": 47
+      },
+      {
+        "class_name": "fullbody_casual",
+        "c": 38
+      },
+      {
+        "class_name": "pussy",
+        "c": 36
+      },
+      {
+        "class_name": "ass",
+        "c": 32
+      },
+      {
+        "class_name": "fullbody_swim",
+        "c": 21
+      },
+      {
+        "class_name": "fullbody_nurse",
+        "c": 13
+      },
+      {
+        "class_name": "fullbody_lingerie",
+        "c": 12
+      },
+      {
+        "class_name": "fullbody_shower",
+        "c": 8
+      },
+      {
+        "class_name": "fullbody_maid",
+        "c": 7
+      },
+      {
+        "class_name": "location_office",
+        "c": 7
+      },
+      {
+        "class_name": "leg_cover_item",
+        "c": 6
+      },
+      {
+        "class_name": "fullbody_uniform",
+        "c": 5
+      },
+      {
+        "class_name": "fullbody_athletic",
+        "c": 4
+      },
+      {
+        "class_name": "location_class",
+        "c": 4
+      },
+      {
+        "class_name": "fullbody_work",
+        "c": 1
+      }
+    ],
+    "not_done": [
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_002_1fcf.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_004_f518.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_008_cc00.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_016_de3c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_019_bb58.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_026_9fe9.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_027_37a9.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_034_b6d8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_040_655e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\13715059_003_957a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_045_b6bc.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_049_8555.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_058_1e63.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_081_5c2f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_092_fe40.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_110_1f18.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_155_853e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_158_f8a2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\16453880_180_db88.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\19958866_017_9e32.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\22757255_009_2684.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\22757255_017_dda1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\25612293_003_9977.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\25612293_007_67e8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\25612293_017_63aa.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\25612293_068_9173.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\25612293_098_e67e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\26461358_003_b527.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\26461358_010_e9fe.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\26461358_030_5066.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\26461358_035_a29b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\28849622_013_62fe.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\28849622_019_c2b2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\28849622_075_c547.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\35898500_002_1b4e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\35898500_015_b302.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\35898500_016_0439.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\35898500_036_f5cf.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\35898500_090_3f1c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\39457216_001_3fc4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\39457216_007_2aa2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\39457216_024_c165.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\39457216_025_43ef.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\39457216_142_dc1e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_002_1fa9.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_014_a344.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_041_7aab.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_045_740e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_073_a7a8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41148888_208_67c6.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41722352_024_6d97.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41722352_052_23b3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\41722352_057_d94b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\45449178_002_0171.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\45449178_133_4576.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\45449178_146_2ad9.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\46543923_010_cac0.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\46543923_050_853d.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\46543923_100_f3a2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\46543923_179_774e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\48172069_002_b54e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\48172069_032_51f8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\48172069_038_62de.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\48172069_103_ab09.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\48172069_124_d4db.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\48172069_163_8db1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\49886494_002_d33e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\49886494_011_0455.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\49886494_028_09c4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\49886494_034_8f62.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\49886494_075_08df.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\49886494_142_9eb6.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\50068818_006_1bb1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\50068818_007_1bb1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\50068818_011_ba87.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\51808757_005_8bd2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\51808757_025_ca58.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\51808757_043_172a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\51808757_082_9b2f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\55388835_008_ae45.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\55388835_035_65bc.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\55388835_037_70ea.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\55388835_047_badd.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_002_3b37.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_007_4100.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_011_4a99.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_015_088d.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_019_580c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_023_7d3a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_028_9363.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_034_0690.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_037_eb70.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_047_bb76.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_053_83e3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_058_46e8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_070_0238.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_073_6803.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_078_3a67.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_084_70b9.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_090_5e0c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_093_4421.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57482599_098_3b59.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57521166_001_d068.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57521166_009_41f1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57521166_023_acfb.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57521166_029_c9e3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\57521166_089_310b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_005_6383.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_020_d24b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_024_ba87.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_036_5cc6.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_047_4f7e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_050_9475.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_054_dd87.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\58728281_059_a680.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\59224813_009_e275.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\59224813_033_6179.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\59224813_037_4896.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\59224813_065_8b0c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\59224813_080_8f7d.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\61787864_093_ed94.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\61787864_166_9cfe.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\61787864_179_639f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_001_d9d0.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_003_fe39.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_007_10ab.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_011_543c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_012_5350.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_015_905a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_016_fe2e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_017_aa26.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\62989821_020_b24c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\70750369_001_6bf1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\70750369_003_9718.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\70750369_004_ed98.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\70750369_006_d84b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\70750369_008_f7fd.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\71328784_006_2eeb.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\71328784_037_2c7b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\71328784_092_48fe.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_004_ad15.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_007_9f57.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_009_95c4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_016_edee.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_019_b40d.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_028_49f8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\73806023_040_4ba2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74484826_001_8a17.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74484826_004_5bd3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74484826_013_cbd1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74484826_015_617e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_004_02c4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_022_5643.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_029_0482.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_033_f9dc.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_052_7c6a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_141_063c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_147_f2e2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\74533384_154_d0eb.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_001_21ed.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_002_af67.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_005_4fde.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_006_4fde.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_007_69fa.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_010_2bea.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_013_9637.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\76487192_016_b832.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77287640_003_a90f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77287640_011_9ba6.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_003_920f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_013_f28c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_038_a2b0.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_046_8944.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_075_4d94.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_078_689e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_087_ecd4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\77428762_142_461f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_015_3cca.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_032_0c59.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_039_d970.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_046_8716.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_049_4466.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_059_726b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\78650184_124_84ea.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80685192_003_ba63.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80685192_015_c8d8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80685192_026_0183.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80685192_060_d830.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80685192_062_8fbf.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80685192_086_31b5.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80983975_004_991e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80983975_013_fc20.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80983975_026_bc48.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_006_5643.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_014_b537.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_025_a395.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_031_9b1e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_037_917e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_043_c234.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_052_49e3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_101_e2e3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81210191_108_95fd.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81375288_029_4b87.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81375288_095_3c8d.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81375288_206_3c46.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81375288_313_00c7.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81375288_546_a41b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_009_66eb.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_013_106d.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_020_fd77.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_028_c6b5.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_039_7c81.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_046_edf1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_055_cdb2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_063_489c (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_063_489c.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_077_2711 (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_077_2711.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_092_1ca4 (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_092_1ca4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_098_228a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_104_915e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_114_f95a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_118_bcda.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_149_188f.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\81455352_164_abff.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_020_2bb2.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_025_8c79.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_041_f1a3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_050_aa9a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_070_ce5e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_083_8442.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_142_043b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\83465291_155_d668.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_003_9a9e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_006_e6f4.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_009_7207.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_012_76ad.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_013_2d3a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_014_f94b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\86567685_016_618b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88150748_002_df0e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88150748_004_3c56.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88150748_005_3c56.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88150748_006_4a16.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88150748_020_1fa0.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_011_88bb.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_015_7bf5.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_029_ed2a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_037_efbf.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_050_1629.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_065_df83.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_082_8256.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_087_4328.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_094_b662.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\88554441_103_870e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_010_94a6.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_020_3d0b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_053_f387.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_060_5904.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_085_95da.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_125_abf1.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\89028536_137_57fa.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\90636312_004_348e.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\90636312_006_567b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\90636312_037_2a39.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_012_0383 (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_054_b0ca.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_107_7781.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_149_08cf (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_166_9372 (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_320_3a18.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93578140_516_1698.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93598058_003_6bed (1).jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93598058_003_6bed.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93598058_006_20e8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93598058_012_27f7.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93904313_018_1460.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93904313_040_5a3a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93904313_060_7f47.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93904313_066_1eef.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\93904313_076_922b.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\95326431_001_70f3.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\95326431_053_0278.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\95326431_427_258a.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\95326431_450_b2b8.jpg",
+        "inference_status": "completed"
+      },
+      {
+        "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\96423004_043_5b0c.jpg",
+        "inference_status": "completed"
+      }
+    ]
+  },
+  "inventory": {
+    "before_analysis": [
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "All detections",
+            "data": "all"
+          },
+          {
+            "text": "Fullbody",
+            "data": "fullbody"
+          },
+          {
+            "text": "Body Images",
+            "data": "body_images"
+          },
+          {
+            "text": "Clothing",
+            "data": "clothing"
+          },
+          {
+            "text": "Needs Review",
+            "data": "unreviewed"
+          },
+          {
+            "text": "Model Verified",
+            "data": "model_verified"
+          },
+          {
+            "text": "Human Reviewed",
+            "data": "reviewed"
+          },
+          {
+            "text": "Corrected",
+            "data": "corrected"
+          },
+          {
+            "text": "Invalid",
+            "data": "invalid"
+          }
+        ],
+        "current": "All detections",
+        "current_data": "all"
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "All boxes",
+            "data": "all"
+          },
+          {
+            "text": "Selected box",
+            "data": "selected"
+          },
+          {
+            "text": "Hide boxes",
+            "data": "hidden"
+          }
+        ],
+        "current": "All boxes",
+        "current_data": "all"
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": false,
+        "items": [
+          {
+            "text": "All statuses",
+            "data": null
+          },
+          {
+            "text": "Pending review",
+            "data": null
+          },
+          {
+            "text": "Accepted",
+            "data": null
+          },
+          {
+            "text": "Rejected",
+            "data": null
+          }
+        ],
+        "current": "All statuses",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "All suggestions",
+            "data": null
+          },
+          {
+            "text": "Fullbody",
+            "data": "fullbody"
+          },
+          {
+            "text": "Body Images",
+            "data": "body_images"
+          },
+          {
+            "text": "Clothing",
+            "data": "clothing"
+          },
+          {
+            "text": "Invalid",
+            "data": "invalid"
+          },
+          {
+            "text": "Choose category",
+            "data": "needs_category"
+          }
+        ],
+        "current": "All suggestions",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Fullbody",
+            "data": "fullbody"
+          },
+          {
+            "text": "Body Images",
+            "data": "body_images"
+          },
+          {
+            "text": "Clothing",
+            "data": "clothing"
+          },
+          {
+            "text": "Invalid · wrong result",
+            "data": "invalid"
+          }
+        ],
+        "current": "Fullbody",
+        "current_data": "fullbody"
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Choose broad group",
+            "data": null
+          },
+          {
+            "text": "Bra",
+            "data": "bra"
+          },
+          {
+            "text": "Dress",
+            "data": "dress"
+          },
+          {
+            "text": "Footwear",
+            "data": "footwear"
+          },
+          {
+            "text": "Lingerie",
+            "data": "lingerie"
+          },
+          {
+            "text": "Outerwear",
+            "data": "outerwear"
+          },
+          {
+            "text": "Pants",
+            "data": "pants"
+          },
+          {
+            "text": "Panty",
+            "data": "panty"
+          },
+          {
+            "text": "Shirt",
+            "data": "shirt"
+          },
+          {
+            "text": "Shorts",
+            "data": "shorts"
+          },
+          {
+            "text": "Skirt",
+            "data": "skirt"
+          },
+          {
+            "text": "Socks",
+            "data": "socks"
+          },
+          {
+            "text": "Top",
+            "data": "top"
+          }
+        ],
+        "current": "Choose broad group",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Choose cover area",
+            "data": null
+          }
+        ],
+        "current": "Choose cover area",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Choose state",
+            "data": null
+          },
+          {
+            "text": "Clothed",
+            "data": "clothed"
+          },
+          {
+            "text": "Topless",
+            "data": "topless"
+          },
+          {
+            "text": "Bottomless",
+            "data": "bottomless"
+          }
+        ],
+        "current": "Choose state",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Use confirmed Fullbody state",
+            "data": null
+          },
+          {
+            "text": "clothed",
+            "data": "clothed"
+          },
+          {
+            "text": "topless",
+            "data": "topless"
+          },
+          {
+            "text": "bottomless",
+            "data": "bottomless"
+          },
+          {
+            "text": "bra",
+            "data": "bra"
+          },
+          {
+            "text": "panty",
+            "data": "panty"
+          }
+        ],
+        "current": "Use confirmed Fullbody state",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "No Arousal target",
+            "data": null
+          },
+          {
+            "text": "Aroused",
+            "data": "aroused"
+          },
+          {
+            "text": "Edging",
+            "data": "edging"
+          }
+        ],
+        "current": "No Arousal target",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "No Corruption CNN target",
+            "data": null
+          },
+          {
+            "text": "Conservative",
+            "data": "conservative"
+          },
+          {
+            "text": "Slut",
+            "data": "slut"
+          },
+          {
+            "text": "Whore",
+            "data": "whore"
+          },
+          {
+            "text": "Ultimate Whore · u_whore",
+            "data": "u_whore"
+          }
+        ],
+        "current": "No Corruption CNN target",
+        "current_data": null
+      }
+    ],
+    "after_analysis": [
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "All detections",
+            "data": "all"
+          },
+          {
+            "text": "Fullbody",
+            "data": "fullbody"
+          },
+          {
+            "text": "Body Images",
+            "data": "body_images"
+          },
+          {
+            "text": "Clothing",
+            "data": "clothing"
+          },
+          {
+            "text": "Needs Review",
+            "data": "unreviewed"
+          },
+          {
+            "text": "Model Verified",
+            "data": "model_verified"
+          },
+          {
+            "text": "Human Reviewed",
+            "data": "reviewed"
+          },
+          {
+            "text": "Corrected",
+            "data": "corrected"
+          },
+          {
+            "text": "Invalid",
+            "data": "invalid"
+          }
+        ],
+        "current": "All detections",
+        "current_data": "all"
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "All boxes",
+            "data": "all"
+          },
+          {
+            "text": "Selected box",
+            "data": "selected"
+          },
+          {
+            "text": "Hide boxes",
+            "data": "hidden"
+          }
+        ],
+        "current": "All boxes",
+        "current_data": "all"
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": false,
+        "items": [
+          {
+            "text": "All statuses",
+            "data": null
+          },
+          {
+            "text": "Pending review",
+            "data": null
+          },
+          {
+            "text": "Accepted",
+            "data": null
+          },
+          {
+            "text": "Rejected",
+            "data": null
+          }
+        ],
+        "current": "All statuses",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "All suggestions",
+            "data": null
+          },
+          {
+            "text": "Fullbody",
+            "data": "fullbody"
+          },
+          {
+            "text": "Body Images",
+            "data": "body_images"
+          },
+          {
+            "text": "Clothing",
+            "data": "clothing"
+          },
+          {
+            "text": "Invalid",
+            "data": "invalid"
+          },
+          {
+            "text": "Choose category",
+            "data": "needs_category"
+          }
+        ],
+        "current": "All suggestions",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Fullbody",
+            "data": "fullbody"
+          },
+          {
+            "text": "Body Images",
+            "data": "body_images"
+          },
+          {
+            "text": "Clothing",
+            "data": "clothing"
+          },
+          {
+            "text": "Invalid · wrong result",
+            "data": "invalid"
+          }
+        ],
+        "current": "Fullbody",
+        "current_data": "fullbody"
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [],
+        "current": "",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Choose broad group",
+            "data": null
+          },
+          {
+            "text": "Bra",
+            "data": "bra"
+          },
+          {
+            "text": "Dress",
+            "data": "dress"
+          },
+          {
+            "text": "Footwear",
+            "data": "footwear"
+          },
+          {
+            "text": "Lingerie",
+            "data": "lingerie"
+          },
+          {
+            "text": "Outerwear",
+            "data": "outerwear"
+          },
+          {
+            "text": "Pants",
+            "data": "pants"
+          },
+          {
+            "text": "Panty",
+            "data": "panty"
+          },
+          {
+            "text": "Shirt",
+            "data": "shirt"
+          },
+          {
+            "text": "Shorts",
+            "data": "shorts"
+          },
+          {
+            "text": "Skirt",
+            "data": "skirt"
+          },
+          {
+            "text": "Socks",
+            "data": "socks"
+          },
+          {
+            "text": "Top",
+            "data": "top"
+          }
+        ],
+        "current": "Choose broad group",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Choose cover area",
+            "data": null
+          }
+        ],
+        "current": "Choose cover area",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": false,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Choose state",
+            "data": null
+          },
+          {
+            "text": "Clothed",
+            "data": "clothed"
+          },
+          {
+            "text": "Topless",
+            "data": "topless"
+          },
+          {
+            "text": "Bottomless",
+            "data": "bottomless"
+          }
+        ],
+        "current": "Choose state",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "Use confirmed Fullbody state",
+            "data": null
+          },
+          {
+            "text": "clothed",
+            "data": "clothed"
+          },
+          {
+            "text": "topless",
+            "data": "topless"
+          },
+          {
+            "text": "bottomless",
+            "data": "bottomless"
+          },
+          {
+            "text": "bra",
+            "data": "bra"
+          },
+          {
+            "text": "panty",
+            "data": "panty"
+          }
+        ],
+        "current": "Use confirmed Fullbody state",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "No Arousal target",
+            "data": null
+          },
+          {
+            "text": "Aroused",
+            "data": "aroused"
+          },
+          {
+            "text": "Edging",
+            "data": "edging"
+          }
+        ],
+        "current": "No Arousal target",
+        "current_data": null
+      },
+      {
+        "name": "<none>",
+        "visible": true,
+        "enabled": true,
+        "items": [
+          {
+            "text": "No Corruption CNN target",
+            "data": null
+          },
+          {
+            "text": "Conservative",
+            "data": "conservative"
+          },
+          {
+            "text": "Slut",
+            "data": "slut"
+          },
+          {
+            "text": "Whore",
+            "data": "whore"
+          },
+          {
+            "text": "Ultimate Whore · u_whore",
+            "data": "u_whore"
+          }
+        ],
+        "current": "No Corruption CNN target",
+        "current_data": null
+      }
+    ]
+  },
+  "screenshots": [
+    "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\real_samples_audit\\20261123_002448_real_samples\\1366x768_real_samples_after_scan.png",
+    "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\real_samples_audit\\20261123_002448_real_samples\\1366x768_real_samples_after_analysis.png",
+    "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\real_samples_audit\\20261123_002448_real_samples\\1366x768_real_samples_professional.png",
+    "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\real_samples_audit\\20261123_002448_real_samples\\1366x768_real_samples_normal.png"
+  ],
+  "headless_qt": true,
+  "headed_desktop": false
+}

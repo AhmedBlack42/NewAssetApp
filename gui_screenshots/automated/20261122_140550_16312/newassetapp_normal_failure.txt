@@ -1,0 +1,10 @@
+AttributeError: 'MainWindow' object has no attribute 'normal_body_cnn_target'
+
+Traceback (most recent call last):
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\run_gui_acceptance.py", line 143, in main
+    result = registry[scenario_name](
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\scenarios\newassetapp_normal.py", line 49, in run
+    window.normal_body_cnn_target.setCurrentIndex(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'MainWindow' object has no attribute 'normal_body_cnn_target'

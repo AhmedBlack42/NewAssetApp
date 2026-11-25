@@ -1,0 +1,14 @@
+{
+  "bra": 0,
+  "dress": 1,
+  "footwear": 2,
+  "lingerie": 3,
+  "outerwear": 4,
+  "pants": 5,
+  "panty": 6,
+  "shirt": 7,
+  "shorts": 8,
+  "skirt": 9,
+  "socks": 10,
+  "top": 11
+}

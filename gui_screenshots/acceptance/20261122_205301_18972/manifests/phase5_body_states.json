@@ -1,0 +1,138 @@
+{
+  "isolation": "PASS",
+  "scenario": "phase5_body_states",
+  "status": "PASS_REAL_APP_QT",
+  "run_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_h5bbb3us",
+  "newassetapp_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_h5bbb3us\\app\\newassetapp.sqlite3",
+  "synthetic_source": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_h5bbb3us\\sources\\gui_acceptance_fixture.png",
+  "production_database_touched": false,
+  "elapsed_seconds": 44.969,
+  "states": [
+    {
+      "fixture_id": "pending_pending",
+      "detection_id": 1,
+      "cum": null,
+      "accessory": null,
+      "completed": false,
+      "target_mask": {
+        "cum": {
+          "target": null,
+          "evaluated": false
+        },
+        "accessory": {
+          "target": null,
+          "evaluated": false
+        },
+        "completed": false
+      }
+    },
+    {
+      "fixture_id": "true_true",
+      "detection_id": 2,
+      "cum": true,
+      "accessory": true,
+      "completed": true,
+      "target_mask": {
+        "cum": {
+          "target": true,
+          "evaluated": true
+        },
+        "accessory": {
+          "target": true,
+          "evaluated": true
+        },
+        "completed": true
+      }
+    },
+    {
+      "fixture_id": "true_false",
+      "detection_id": 3,
+      "cum": true,
+      "accessory": false,
+      "completed": true,
+      "target_mask": {
+        "cum": {
+          "target": true,
+          "evaluated": true
+        },
+        "accessory": {
+          "target": false,
+          "evaluated": true
+        },
+        "completed": true
+      }
+    },
+    {
+      "fixture_id": "false_true",
+      "detection_id": 4,
+      "cum": false,
+      "accessory": true,
+      "completed": true,
+      "target_mask": {
+        "cum": {
+          "target": false,
+          "evaluated": true
+        },
+        "accessory": {
+          "target": true,
+          "evaluated": true
+        },
+        "completed": true
+      }
+    },
+    {
+      "fixture_id": "false_false",
+      "detection_id": 5,
+      "cum": false,
+      "accessory": false,
+      "completed": true,
+      "target_mask": {
+        "cum": {
+          "target": false,
+          "evaluated": true
+        },
+        "accessory": {
+          "target": false,
+          "evaluated": true
+        },
+        "completed": true
+      }
+    },
+    {
+      "fixture_id": "cum_partial",
+      "detection_id": 6,
+      "cum": true,
+      "accessory": null,
+      "completed": false,
+      "target_mask": {
+        "cum": {
+          "target": true,
+          "evaluated": true
+        },
+        "accessory": {
+          "target": null,
+          "evaluated": false
+        },
+        "completed": false
+      }
+    },
+    {
+      "fixture_id": "accessory_partial",
+      "detection_id": 7,
+      "cum": null,
+      "accessory": true,
+      "completed": false,
+      "target_mask": {
+        "cum": {
+          "target": null,
+          "evaluated": false
+        },
+        "accessory": {
+          "target": true,
+          "evaluated": true
+        },
+        "completed": false
+      }
+    }
+  ]
+}

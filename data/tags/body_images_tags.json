@@ -1,0 +1,895 @@
+{
+  "schema_version": 1,
+  "group": "body_images",
+  "title": "Body Images tags",
+  "description": "Guide body-part tags and named subtags, preserving the current bodyparts map.",
+  "source_files": [
+    "docs/girlpack_Guide.md",
+    "database/asset_tags/bodyparts.json",
+    "database/vid_tags.json"
+  ],
+  "entries": [
+    {
+      "id": "context|body_images|face|face",
+      "name": "face",
+      "display_name": "face",
+      "group": "body_images",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "UI grouping; selectable values are the mapped body-image tags.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.face",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "face"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "body_images|face|face",
+      "name": "Face",
+      "display_name": "Face",
+      "group": "body_images",
+      "parent_id": "context|body_images|face|face",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [
+        "face1.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.face[\"Face\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "face"
+      ],
+      "serialized_value": "face",
+      "source_key": "Face"
+    },
+    {
+      "id": "context|body_images|portrait|portrait",
+      "name": "portrait",
+      "display_name": "portrait",
+      "group": "body_images",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "UI grouping; selectable values are the mapped body-image tags.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.portrait",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "portrait"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "body_images|portrait|portrait",
+      "name": "Clothed Portrait",
+      "display_name": "Clothed Portrait",
+      "group": "body_images",
+      "parent_id": "context|body_images|portrait|portrait",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.portrait[\"Clothed Portrait\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "portrait"
+      ],
+      "serialized_value": "portrait",
+      "source_key": "Clothed Portrait"
+    },
+    {
+      "id": "body_images|portrait|tportrait",
+      "name": "Topless Portrait",
+      "display_name": "Topless Portrait",
+      "group": "body_images",
+      "parent_id": "context|body_images|portrait|portrait",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.portrait[\"Topless Portrait\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "portrait"
+      ],
+      "serialized_value": "tportrait",
+      "source_key": "Topless Portrait"
+    },
+    {
+      "id": "context|body_images|upper_body|upper_body",
+      "name": "upper_body",
+      "display_name": "upper_body",
+      "group": "body_images",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "UI grouping; selectable values are the mapped body-image tags.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.upper_body",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "upper_body"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "body_images|upper_body|boobs",
+      "name": "Boobs",
+      "display_name": "Boobs",
+      "group": "body_images",
+      "parent_id": "context|body_images|upper_body|upper_body",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [
+        "boobs1.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.upper_body[\"Boobs\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "upper_body"
+      ],
+      "serialized_value": "boobs",
+      "source_key": "Boobs"
+    },
+    {
+      "id": "context|body_images|lower_body|lower_body",
+      "name": "lower_body",
+      "display_name": "lower_body",
+      "group": "body_images",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "UI grouping; selectable values are the mapped body-image tags.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.lower_body",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "lower_body"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "body_images|lower_body|pussy",
+      "name": "Pussy",
+      "display_name": "Pussy",
+      "group": "body_images",
+      "parent_id": "context|body_images|lower_body|lower_body",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [
+        "pussy1.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.lower_body[\"Pussy\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "lower_body"
+      ],
+      "serialized_value": "pussy",
+      "source_key": "Pussy"
+    },
+    {
+      "id": "body_images|lower_body|ass",
+      "name": "Ass",
+      "display_name": "Ass",
+      "group": "body_images",
+      "parent_id": "context|body_images|lower_body|lower_body",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [
+        "ass1.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.lower_body[\"Ass\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "lower_body"
+      ],
+      "serialized_value": "ass",
+      "source_key": "Ass"
+    },
+    {
+      "id": "context|body_images|limbs|limbs",
+      "name": "limbs",
+      "display_name": "limbs",
+      "group": "body_images",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "UI grouping; selectable values are the mapped body-image tags.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.limbs",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "limbs"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "body_images|limbs|legs",
+      "name": "Legs",
+      "display_name": "Legs",
+      "group": "body_images",
+      "parent_id": "context|body_images|limbs|limbs",
+      "tag_type": "main",
+      "description": "Body Image base type represented in the guide and active Image Workshop map.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/bodyparts.json",
+      "source_reference": "$.limbs[\"Legs\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "limbs"
+      ],
+      "serialized_value": "legs",
+      "source_key": "Legs"
+    },
+    {
+      "id": "context|body_images|subtags|Guide-supported subtags",
+      "name": "Guide-supported subtags",
+      "display_name": "Guide-supported subtags",
+      "group": "body_images",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "Subtag vocabulary named in the guide; valid combinations are not fully specified.",
+      "examples": [],
+      "separators": [],
+      "source": "docs/girlpack_Guide.md",
+      "source_reference": "Body_images update",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "subtags"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "body_images|subtags/fluids|fluids",
+      "name": "fluids",
+      "display_name": "fluids",
+      "group": "body_images",
+      "parent_id": "context|body_images|subtags|Guide-supported subtags",
+      "tag_type": "metadata",
+      "description": "Subtag context group, not itself a tag.",
+      "examples": [],
+      "separators": [],
+      "source": "docs/girlpack_Guide.md",
+      "source_reference": "Body_images update",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "subtags",
+        "fluids"
+      ],
+      "node_kind": "subtag_context"
+    },
+    {
+      "id": "body_images|subtags/corruption_level|corruption_level",
+      "name": "corruption_level",
+      "display_name": "corruption_level",
+      "group": "body_images",
+      "parent_id": "context|body_images|subtags|Guide-supported subtags",
+      "tag_type": "metadata",
+      "description": "Subtag context group, not itself a tag.",
+      "examples": [],
+      "separators": [],
+      "source": "docs/girlpack_Guide.md",
+      "source_reference": "Body_images update",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "subtags",
+        "corruption_level"
+      ],
+      "node_kind": "subtag_context"
+    },
+    {
+      "id": "body_images|subtags/location_tags|location_tags",
+      "name": "location_tags",
+      "display_name": "location_tags",
+      "group": "body_images",
+      "parent_id": "context|body_images|subtags|Guide-supported subtags",
+      "tag_type": "metadata",
+      "description": "Subtag context group, not itself a tag.",
+      "examples": [],
+      "separators": [],
+      "source": "docs/girlpack_Guide.md",
+      "source_reference": "Body_images update",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "node_kind": "subtag_context"
+    },
+    {
+      "id": "body_images|subtags/fluids|cum",
+      "name": "cum",
+      "display_name": "cum",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/fluids|fluids",
+      "tag_type": "subtag",
+      "description": "Explicitly named Body Images subtag.",
+      "examples": [
+        "face-cum.webp"
+      ],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md",
+      "source_reference": "Body_images update; face-cum.webp example and subtag paragraph",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "fluids"
+      ],
+      "serialized_value": "cum",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/fluids|creampie",
+      "name": "creampie",
+      "display_name": "creampie",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/fluids|fluids",
+      "tag_type": "subtag",
+      "description": "Explicitly named Body Images subtag.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md",
+      "source_reference": "Body_images update; face-cum.webp example and subtag paragraph",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "fluids"
+      ],
+      "serialized_value": "creampie",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/corruption_level|conservative",
+      "name": "Conservative",
+      "display_name": "Conservative",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/corruption_level|corruption_level",
+      "tag_type": "subtag",
+      "description": "Guide display spelling mapped to the exact original video-tag implementation token.",
+      "examples": [
+        "face-conservative.webp"
+      ],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Vid Tags > Corruption Levels; $.corruption_level",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "corruption_level"
+      ],
+      "serialized_value": "conservative",
+      "guide_spelling": "Conservative",
+      "implementation_value": "conservative",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/corruption_level|slut",
+      "name": "Slut",
+      "display_name": "Slut",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/corruption_level|corruption_level",
+      "tag_type": "subtag",
+      "description": "Guide corruption-level subtag; implementation value retained separately.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Vid Tags > Corruption Levels; $.corruption_level",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "corruption_level"
+      ],
+      "serialized_value": "slut",
+      "guide_spelling": "Slut",
+      "implementation_value": "slut",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/corruption_level|whore",
+      "name": "Whore",
+      "display_name": "Whore",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/corruption_level|corruption_level",
+      "tag_type": "subtag",
+      "description": "Guide corruption-level subtag; implementation value retained separately.",
+      "examples": [
+        "face-whore.webp"
+      ],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Vid Tags > Corruption Levels; $.corruption_level",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "corruption_level"
+      ],
+      "serialized_value": "whore",
+      "guide_spelling": "Whore",
+      "implementation_value": "whore",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/corruption_level|u_whore",
+      "name": "Ultimate_whore",
+      "display_name": "Ultimate_whore",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/corruption_level|corruption_level",
+      "tag_type": "subtag",
+      "description": "Guide corruption-level subtag; implementation value retained separately.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Vid Tags > Corruption Levels; $.corruption_level",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "corruption_level"
+      ],
+      "serialized_value": "u_whore",
+      "guide_spelling": "Ultimate_whore",
+      "implementation_value": "u_whore",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|bathroom",
+      "name": "Bathroom",
+      "display_name": "Bathroom",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Bathroom\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "bathroom",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|bar",
+      "name": "Bar",
+      "display_name": "Bar",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Bar\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "bar",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|beach",
+      "name": "Beach",
+      "display_name": "Beach",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Beach\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "beach",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|cafeteria",
+      "name": "Cafeteria",
+      "display_name": "Cafeteria",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Cafeteria\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "cafeteria",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|class",
+      "name": "Class",
+      "display_name": "Class",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Class\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "class",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|clinic",
+      "name": "Clinic",
+      "display_name": "Clinic",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Clinic\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "clinic",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|coffee_shop",
+      "name": "Coffee Shop",
+      "display_name": "Coffee Shop",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Coffee Shop\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "coffee_shop",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|home",
+      "name": "Home",
+      "display_name": "Home",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Home\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "home",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|locker_room",
+      "name": "Locker Room",
+      "display_name": "Locker Room",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Locker Room\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "locker_room",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|mall",
+      "name": "Mall",
+      "display_name": "Mall",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Mall\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "mall",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|office",
+      "name": "Office",
+      "display_name": "Office",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Office\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "office",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|park",
+      "name": "Park",
+      "display_name": "Park",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Park\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "park",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|pier",
+      "name": "Pier",
+      "display_name": "Pier",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Pier\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "pier",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|shower",
+      "name": "Shower",
+      "display_name": "Shower",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Shower\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "shower",
+      "combination_rules": "not fully specified"
+    },
+    {
+      "id": "body_images|subtags/location_tags|lounge",
+      "name": "Lounge",
+      "display_name": "Lounge",
+      "group": "body_images",
+      "parent_id": "body_images|subtags/location_tags|location_tags",
+      "tag_type": "subtag",
+      "description": "Location subtag vocabulary reused by the guide; no automatic visual assignment.",
+      "examples": [],
+      "separators": [
+        "-",
+        ","
+      ],
+      "source": "docs/girlpack_Guide.md; database/vid_tags.json",
+      "source_reference": "Body_images update; Locations; $.location_tags[\"Lounge\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "subtags",
+        "location_tags"
+      ],
+      "serialized_value": "lounge",
+      "combination_rules": "not fully specified"
+    }
+  ],
+  "combination_policy": "Do not automatically combine until review questions establish valid combinations.",
+  "notes": [
+    "Number suffixes such as ass1 are image-set identifiers, not tags.",
+    "Guide dimension/transparent-background rules are attributes, not tags."
+  ]
+}

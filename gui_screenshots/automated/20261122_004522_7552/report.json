@@ -1,0 +1,83 @@
+{
+  "run_id": "20261122_004522_7552",
+  "suite": "visual",
+  "app": "both",
+  "headless": true,
+  "status": "PASS",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_004522_7552",
+  "scenarios": [
+    {
+      "application": "newassetapp",
+      "scenario": "smoke",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 1.466793,
+      "failure_reason": null
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "normal",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 1.034267,
+      "failure_reason": null
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "professional",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.848696,
+      "failure_reason": null
+    },
+    {
+      "application": "newassetapp",
+      "scenario": "layout",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 0.763515,
+      "failure_reason": null
+    },
+    {
+      "application": "studio",
+      "scenario": "smoke",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 3.631602,
+      "failure_reason": null
+    },
+    {
+      "application": "studio",
+      "scenario": "workflow",
+      "status": "PASS",
+      "dimensions": [
+        "1280x720",
+        "1366x768",
+        "1920x1080"
+      ],
+      "elapsed_seconds": 3.609947,
+      "failure_reason": null
+    }
+  ]
+}

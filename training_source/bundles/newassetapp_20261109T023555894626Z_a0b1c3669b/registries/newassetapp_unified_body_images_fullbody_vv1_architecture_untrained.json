@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "model_id": "unified_body_images_fullbody_cnn",
+  "version": "v1_architecture_untrained",
+  "model_identity_count": 1,
+  "checkpoint_identity": "unified_body_images_fullbody_v1",
+  "checkpoint_path": "models/unified_body_images_fullbody/asset_classifier_initialization_26class.pth",
+  "checkpoint_status": "initialization_only_untrained",
+  "source_checkpoint": "models/asset_classifier/asset_classifier.pth",
+  "source_checkpoint_sha256": "EB1251DADE9293098E327F3E708BF92F0C5FC09C272C6CDDB0F4F04F210AE6D2",
+  "architecture": "one ResNet-18 model identity with task-context-selected Body Images (4 logits) and Fullbody State (3 logits) output heads; one unified training pipeline/checkpoint",
+  "backbone_reuse": [
+    "conv1",
+    "bn1",
+    "layer1",
+    "layer2",
+    "layer3",
+    "layer4"
+  ],
+  "reinitialized_heads": {
+    "body_images": {
+      "input_features": 512,
+      "output_count": 4
+    },
+    "fullbody_state": {
+      "input_features": 512,
+      "output_count": 3
+    }
+  },
+  "total_grouped_output_logits": 7,
+  "original_asset_class_registry_count": 26,
+  "output_groups": {
+    "body_images": {
+      "class_count": 4,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "portrait",
+          "original_class_id": 4,
+          "original_class_name": "bodypart_portrait_clothed",
+          "canonical_application_mapping": "portrait",
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "explicit_source_class_mapping"
+        },
+        {
+          "class_id": 1,
+          "class_name": "tportrait",
+          "original_class_id": 5,
+          "original_class_name": "bodypart_portrait_topless",
+          "canonical_application_mapping": "tportrait",
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "explicit_source_class_mapping"
+        },
+        {
+          "class_id": 2,
+          "class_name": "bodypart_cum",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": null,
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "added_evidence_class_requires_labels"
+        },
+        {
+          "class_id": 3,
+          "class_name": "bodypart_acc",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": null,
+          "task": "body_images",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "added_evidence_class_requires_labels"
+        }
+      ],
+      "class_names_file": "train_data/unified_body_images_fullbody/classes/body_images_classes.txt"
+    },
+    "fullbody_state": {
+      "class_count": 3,
+      "classes": [
+        {
+          "class_id": 0,
+          "class_name": "clothed",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": "clothed",
+          "task": "fullbody_state",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "new_state_class_not_mapped_from_legacy_asset_cnn"
+        },
+        {
+          "class_id": 1,
+          "class_name": "topless",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": "topless",
+          "task": "fullbody_state",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "new_state_class_not_mapped_from_legacy_asset_cnn"
+        },
+        {
+          "class_id": 2,
+          "class_name": "bottomless",
+          "original_class_id": null,
+          "original_class_name": null,
+          "canonical_application_mapping": "bottomless",
+          "task": "fullbody_state",
+          "trainable": true,
+          "human_review_required": true,
+          "mapping_status": "new_state_class_not_mapped_from_legacy_asset_cnn"
+        }
+      ],
+      "class_names_file": "train_data/unified_body_images_fullbody/classes/fullbody_state_classes.txt"
+    }
+  },
+  "legacy_fullbody_classes": [
+    {
+      "original_class_id": 10,
+      "original_class_name": "fullbody_clothed_states",
+      "revised_mapping": null,
+      "status": "provenance_only_no_equivalence_to_three_state_head"
+    },
+    {
+      "original_class_id": 11,
+      "original_class_name": "fullbody_costume_states",
+      "revised_mapping": null,
+      "status": "provenance_only_no_equivalence_to_three_state_head"
+    },
+    {
+      "original_class_id": 12,
+      "original_class_name": "fullbody_nude_states",
+      "revised_mapping": null,
+      "status": "provenance_only_no_equivalence_to_three_state_head"
+    }
+  ],
+  "training_performed": false,
+  "review_policy": "AI outputs are proposals; human confirmation required; Body Images and Fullbody examples remain task-labeled within one dataset."
+}

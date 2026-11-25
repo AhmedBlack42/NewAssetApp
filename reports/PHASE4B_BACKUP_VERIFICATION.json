@@ -1,0 +1,9 @@
+{
+  "backup_root": "reports\\backups\\train_data_pre_phase4b_20261107",
+  "source_inventory": "reports\\PHASE4B_PRE_MIGRATION_INVENTORY.json",
+  "expected_files": 4548,
+  "checked_files": 4548,
+  "missing_files": [],
+  "hash_mismatches": [],
+  "verified": true
+}

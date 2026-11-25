@@ -1,0 +1,15 @@
+[
+  {
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_020421_9188\\newassetapp\\1280x720_normal_processing.png",
+    "name": "1280x720_normal_processing.png",
+    "app": "newassetapp",
+    "scenario": "normal_processing",
+    "width": 1280,
+    "height": 720,
+    "capture_mode": "headless_qt_widget_grab",
+    "captured": true,
+    "bytes": 44030,
+    "captured_at": "2026-11-22T02:04:24.230760+00:00",
+    "application": "newassetapp"
+  }
+]

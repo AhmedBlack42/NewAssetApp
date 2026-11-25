@@ -1,0 +1,160 @@
+{
+  "run_id": "20261123_002448_real_samples",
+  "source_path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\80983975_013_fc20.jpg",
+  "source_id": 192,
+  "detection_id": 1496,
+  "legacy_guard": {
+    "detection_id": 1496,
+    "class_name": "fullbody_topless",
+    "combo_current": "Choose approved target class",
+    "combo_data": null,
+    "save_enabled": false,
+    "tooltip": "No approved 31-class registry value matches this legacy YOLO detection. Do not infer or silently remap the class."
+  },
+  "normal_row": {
+    "_draft_corruption_states": [],
+    "asset_type": null,
+    "bbox_xyxy": [
+      0.0,
+      11.414894104003906,
+      908.5584106445312,
+      614.0
+    ],
+    "body_image_main_tag": null,
+    "category": "fullbody",
+    "chosen_category": "fullbody",
+    "cnn_class_name": null,
+    "cnn_confidence": null,
+    "cnn_suggestion_stale": 0,
+    "content_sha256": "36298d317ea82364c2d8b478b56595ee07bd8d9dec9efcbe5e71c3f84a5c35b5",
+    "detection_id": 1,
+    "height": 614,
+    "id": 1,
+    "normal_arousal_cnn_target": null,
+    "normal_body_images_accessory_evaluated": true,
+    "normal_body_images_accessory_target": false,
+    "normal_body_images_cnn_target": null,
+    "normal_body_images_completed": false,
+    "normal_body_images_cum_evaluated": true,
+    "normal_body_images_cum_target": false,
+    "normal_clothing_broad_family": null,
+    "normal_clothing_cover_area": null,
+    "normal_confirmed": 0,
+    "normal_corruption_cnn_target": null,
+    "normal_export_status": null,
+    "normal_fullbody_cnn_target": null,
+    "normal_fullbody_state": null,
+    "normal_is_invalid": 0,
+    "normal_location_value": null,
+    "normal_main_tag": null,
+    "normal_subtags": [],
+    "normal_taxonomy_version": null,
+    "path": "F:\\My Tools\\New folder\\NewAssetApp\\samples\\10963092_002_1fcf.jpg",
+    "proposal_confidence": 0.8955870866775513,
+    "proposed_category": "others",
+    "source_id": 1,
+    "width": 920,
+    "x1": 0.0,
+    "x2": 908.5584106445312,
+    "y1": 11.414894104003906,
+    "y2": 614.0,
+    "yolo_class_id": 12,
+    "yolo_class_name": "location_home",
+    "yolo_confidence": 0.8955870866775513,
+    "yolo_model_digest": "57449664aa24427c703770ae155a361da252f26be4840242aae95f3017df58ea",
+    "yolo_model_id": "legacy_yolo",
+    "yolo_original_class_id": 12,
+    "yolo_original_class_name": "location_home"
+  },
+  "normal_options": {
+    "category": {
+      "current": "Fullbody",
+      "data": "fullbody",
+      "items": [
+        {
+          "text": "Fullbody",
+          "data": "fullbody"
+        },
+        {
+          "text": "Body Images",
+          "data": "body_images"
+        },
+        {
+          "text": "Clothing",
+          "data": "clothing"
+        },
+        {
+          "text": "Invalid · wrong result",
+          "data": "invalid"
+        }
+      ]
+    },
+    "main_tag": {
+      "current": "Choose a main tag",
+      "data": null,
+      "items": [
+        {
+          "text": "Choose a main tag",
+          "data": null
+        },
+        {
+          "text": "Clothed",
+          "data": "clothed"
+        },
+        {
+          "text": "Underwear",
+          "data": "underwear"
+        },
+        {
+          "text": "Bikini",
+          "data": "bikini"
+        },
+        {
+          "text": "Lingerie",
+          "data": "lingerie"
+        },
+        {
+          "text": "Nude",
+          "data": "bare"
+        },
+        {
+          "text": "In Shower",
+          "data": "shower"
+        },
+        {
+          "text": "Maid",
+          "data": "maid"
+        },
+        {
+          "text": "swimsuit",
+          "data": "swimsuit"
+        },
+        {
+          "text": "bikini",
+          "data": "bikini"
+        },
+        {
+          "text": "Nurse",
+          "data": "nurse"
+        },
+        {
+          "text": "Uniform",
+          "data": "uniform"
+        },
+        {
+          "text": "Work",
+          "data": "work"
+        },
+        {
+          "text": "Cosplay",
+          "data": "cosplay"
+        }
+      ]
+    },
+    "confirm_enabled": false
+  },
+  "screenshots": [
+    "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\real_samples_audit\\20261123_002448_real_samples\\1366x768_real_sample_legacy_fullbody_guard.png",
+    "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\real_samples_audit\\20261123_002448_real_samples\\1366x768_real_sample_normal_crop.png"
+  ]
+}

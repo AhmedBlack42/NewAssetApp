@@ -1,0 +1,21 @@
+{
+  "run_id": "20261122_023100_12216",
+  "suite": "visual",
+  "app": "studio",
+  "headless": true,
+  "status": "PASS",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_023100_12216",
+  "scenarios": [
+    {
+      "application": "studio",
+      "scenario": "workflow",
+      "status": "PASS",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 3.429297,
+      "failure_reason": null
+    }
+  ]
+}

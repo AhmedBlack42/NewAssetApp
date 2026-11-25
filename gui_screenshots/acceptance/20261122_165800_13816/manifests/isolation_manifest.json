@@ -1,0 +1,11 @@
+{
+  "isolation": "PASS",
+  "run_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u",
+  "newassetapp_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u\\app\\newassetapp.sqlite3",
+  "newassetapp_data": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u\\app\\data",
+  "newassetapp_output": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u\\studio_output",
+  "studio_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u\\studio\\studio.sqlite3",
+  "studio_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u\\studio",
+  "production_database_touched": false,
+  "synthetic_source": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_iaiqo95u\\sources\\gui_acceptance_fixture.png"
+}

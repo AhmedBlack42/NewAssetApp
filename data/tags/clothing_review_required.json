@@ -1,0 +1,1213 @@
+{
+  "schema_version": 1,
+  "source": "extract_clothing_tags.txt",
+  "summary": "Source-derived coverage mappings left unresolved where covered_parts is absent or does not exactly name a supported YOLO body region.",
+  "entries": [
+    {
+      "record_id": "gameclothing-item|lower|cheerleader_skirt",
+      "source_identifier": "cheerleader skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L6-L19",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|scheerleader_skirt",
+      "source_identifier": "scheerleader skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L23-L35",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|cheerleader_top",
+      "source_identifier": "cheerleader_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L39-L53",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|school_skirt_slut",
+      "source_identifier": "school_skirt_slut",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L110-L121",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|lingerie_legsp",
+      "source_identifier": "lingerie_legsp",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L176-L188",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|lingerie_bd",
+      "source_identifier": "lingerie_bd",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L210-L223",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|lingerie_legbd",
+      "source_identifier": "lingerie_legbd",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L227-L239",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_princess",
+      "source_identifier": "sexy_princess",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L248-L262",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|leather_stockings",
+      "source_identifier": "leather_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L284-L296",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|latex_stockings",
+      "source_identifier": "latex_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L316-L328",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|outer|uniform_sweater",
+      "source_identifier": "uniform_sweater",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L353-L364",
+      "exact_source_value": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sundress",
+      "source_identifier": "sundress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L384-L396",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|short_dress",
+      "source_identifier": "short_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L400-L412",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sheer_dress",
+      "source_identifier": "sheer_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L416-L428",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|school_shirt",
+      "source_identifier": "school_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L434-L445",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|blouse",
+      "source_identifier": "blouse",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L449-L460",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sleeveless_shirt",
+      "source_identifier": "sleeveless_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L464-L475",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|halter_top",
+      "source_identifier": "halter_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L479-L490",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sheer_top",
+      "source_identifier": "sheer_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L526-L537",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|casual_leggings",
+      "source_identifier": "casual_leggings",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L559-L570",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|skinny_jeans",
+      "source_identifier": "skinny_jeans",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L574-L586",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|casual_skirt",
+      "source_identifier": "casual_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L592-L603",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|school_skirt",
+      "source_identifier": "school_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L607-L618",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|denim_skirt",
+      "source_identifier": "denim_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L622-L634",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|leather_skirt",
+      "source_identifier": "leather_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L638-L650",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|mini_skirt",
+      "source_identifier": "mini_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L654-L664",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|short_skirt",
+      "source_identifier": "short_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L668-L678",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|athletic_shorts",
+      "source_identifier": "athletic_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L684-L695",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|jean_shorts",
+      "source_identifier": "jean_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L699-L711",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|short_shorts",
+      "source_identifier": "short_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L715-L726",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|sheer_shorts",
+      "source_identifier": "sheer_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L730-L741",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|ankle_socks",
+      "source_identifier": "ankle_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L840-L851",
+      "exact_source_value": [
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|knee_socks",
+      "source_identifier": "knee_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L855-L866",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|thigh_stockings",
+      "source_identifier": "thigh_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L872-L883",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|uniform_flats",
+      "source_identifier": "uniform_flats",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L902-L914",
+      "exact_source_value": [
+        "socks",
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|tennis_shoe",
+      "source_identifier": "tennis_shoe",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L918-L930",
+      "exact_source_value": [
+        "socks",
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_pump",
+      "source_identifier": "high_heel_pump",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L934-L945",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_anklestrap",
+      "source_identifier": "high_heel_anklestrap",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L949-L960",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_opentoe",
+      "source_identifier": "high_heel_opentoe",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L964-L975",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_laceup",
+      "source_identifier": "high_heel_laceup",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L979-L990",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|high_heel_platform",
+      "source_identifier": "high_heel_platform",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L994-L1005",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|outer|none",
+      "source_identifier": "none",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1016-L1027",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|outer|hoodie",
+      "source_identifier": "hoodie",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1028-L1039",
+      "exact_source_value": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|outer|jacket",
+      "source_identifier": "jacket",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1040-L1051",
+      "exact_source_value": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|outer|leather_jacket",
+      "source_identifier": "leather_jacket",
+      "source_category": "outer",
+      "source_reference": "extract_clothing_tags.txt:L1052-L1063",
+      "exact_source_value": [
+        "upper",
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|none",
+      "source_identifier": "none",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1067-L1078",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|uniform_shirt",
+      "source_identifier": "uniform_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1079-L1090",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|t_shirt",
+      "source_identifier": "t_shirt",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1091-L1102",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|tank_top",
+      "source_identifier": "tank_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1103-L1114",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|dress",
+      "source_identifier": "dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1115-L1127",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|crop_top",
+      "source_identifier": "crop_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1128-L1139",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|onepiece_swimsuit",
+      "source_identifier": "onepiece_swimsuit",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1140-L1152",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|leotard",
+      "source_identifier": "leotard",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1153-L1164",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|mini_dress",
+      "source_identifier": "mini_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1165-L1177",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|tube_top",
+      "source_identifier": "tube_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1178-L1188",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|corset_top",
+      "source_identifier": "corset_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1189-L1200",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|leather_corset_top",
+      "source_identifier": "leather_corset_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1201-L1212",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|transparent_top",
+      "source_identifier": "transparent_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1213-L1224",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_maid_top",
+      "source_identifier": "sexy_maid_top",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1225-L1245",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|latex_dress",
+      "source_identifier": "latex_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1246-L1258",
+      "exact_source_value": [
+        "boobs",
+        "bra"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|upper|sexy_nurse_dress",
+      "source_identifier": "sexy_nurse_dress",
+      "source_category": "upper",
+      "source_reference": "extract_clothing_tags.txt:L1259-L1274",
+      "exact_source_value": [
+        "boobs",
+        "bra",
+        "panties"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|bra|none",
+      "source_identifier": "none",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1280-L1291",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|bra|sports_bra",
+      "source_identifier": "sports_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1304-L1314",
+      "exact_source_value": [
+        "boobs",
+        "athletic"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|bra|open_cup_bra",
+      "source_identifier": "open_cup_bra",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1386-L1396",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|bra|peekaboo_bikini_top",
+      "source_identifier": "peekaboo_bikini_top",
+      "source_category": "bra",
+      "source_reference": "extract_clothing_tags.txt:L1397-L1417",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|none",
+      "source_identifier": "none",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1434-L1445",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|jeans",
+      "source_identifier": "jeans",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1446-L1457",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass",
+        "legs"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|uniform_skirt",
+      "source_identifier": "uniform_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1458-L1469",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|leggings",
+      "source_identifier": "leggings",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1470-L1481",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass",
+        "legs"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|casual_shorts",
+      "source_identifier": "casual_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1482-L1493",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|denim_shorts",
+      "source_identifier": "denim_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1494-L1505",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|denim_micro_shorts",
+      "source_identifier": "denim_micro_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1506-L1517",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|booty_shorts",
+      "source_identifier": "booty_shorts",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1518-L1529",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|micro_uniform_skirt",
+      "source_identifier": "micro_uniform_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1530-L1540",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|micro_skirt",
+      "source_identifier": "micro_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1541-L1551",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|lower|sexy_maid_skirt",
+      "source_identifier": "sexy_maid_skirt",
+      "source_category": "lower",
+      "source_reference": "extract_clothing_tags.txt:L1552-L1573",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|panties|none",
+      "source_identifier": "none",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1576-L1587",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|panties|peekaboo_bikini_bottom",
+      "source_identifier": "peekaboo_bikini_bottom",
+      "source_category": "panties",
+      "source_reference": "extract_clothing_tags.txt:L1762-L1785",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|none",
+      "source_identifier": "none",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1802-L1813",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|short_socks",
+      "source_identifier": "short_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1814-L1825",
+      "exact_source_value": [
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|calf_socks",
+      "source_identifier": "calf_socks",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1826-L1837",
+      "exact_source_value": [
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|uniform_stockings",
+      "source_identifier": "uniform_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1838-L1849",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|pantyhose",
+      "source_identifier": "pantyhose",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1850-L1866",
+      "exact_source_value": [
+        "panties",
+        "pussy",
+        "ass",
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|transparent_stockings",
+      "source_identifier": "transparent_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1867-L1885",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|socks|fishnet_stockings",
+      "source_identifier": "fishnet_stockings",
+      "source_category": "socks",
+      "source_reference": "extract_clothing_tags.txt:L1886-L1904",
+      "exact_source_value": [
+        "legs",
+        "feet"
+      ],
+      "reason": "Some source covered_parts values map literally to a requested YOLO body region and others do not.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|none",
+      "source_identifier": "none",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1907-L1918",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|sneakers",
+      "source_identifier": "sneakers",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1919-L1931",
+      "exact_source_value": [
+        "socks",
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|clogs",
+      "source_identifier": "clogs",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1932-L1944",
+      "exact_source_value": [
+        "socks",
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|flip_flops",
+      "source_identifier": "flip_flops",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1945-L1958",
+      "exact_source_value": [
+        "socks"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|shoes|heels",
+      "source_identifier": "heels",
+      "source_category": "shoes",
+      "source_reference": "extract_clothing_tags.txt:L1959-L1971",
+      "exact_source_value": [
+        "socks",
+        "feet"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|none",
+      "source_identifier": "none",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L1974-L1985",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|buttplug",
+      "source_identifier": "buttplug",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L1986-L1998",
+      "exact_source_value": [
+        "asshole"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|tail_buttplug",
+      "source_identifier": "tail_buttplug",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L1999-L2014",
+      "exact_source_value": [
+        "asshole"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|buttplug|vibrating_buttplug",
+      "source_identifier": "vibrating_buttplug",
+      "source_category": "buttplug",
+      "source_reference": "extract_clothing_tags.txt:L2015-L2030",
+      "exact_source_value": [
+        "asshole"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|none",
+      "source_identifier": "none",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2033-L2044",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|pussyplug",
+      "source_identifier": "pussyplug",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2045-L2057",
+      "exact_source_value": [
+        "pussyhole"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|pussyweights",
+      "source_identifier": "pussyweights",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2058-L2069",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|weighted_pussyplug",
+      "source_identifier": "weighted_pussyplug",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2070-L2082",
+      "exact_source_value": [
+        "pussyhole"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|pussyclamp",
+      "source_identifier": "pussyclamp",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2083-L2094",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|pussy_acc|vibrating_pussyplug",
+      "source_identifier": "vibrating_pussyplug",
+      "source_category": "pussy_acc",
+      "source_reference": "extract_clothing_tags.txt:L2095-L2110",
+      "exact_source_value": [
+        "pussyhole"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|none",
+      "source_identifier": "none",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2113-L2124",
+      "exact_source_value": null,
+      "reason": "The source record has no covered_parts field; coverage must not be inferred from category or appearance.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|pasties",
+      "source_identifier": "pasties",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2125-L2137",
+      "exact_source_value": [
+        "nipple"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|pasties_tassels",
+      "source_identifier": "pasties_tassels",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2138-L2150",
+      "exact_source_value": [
+        "nipple"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|nippleclamp",
+      "source_identifier": "nippleclamp",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2151-L2163",
+      "exact_source_value": [
+        "nipple"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    },
+    {
+      "record_id": "gameclothing-item|nipple_acc|vibrating_nippleclamp",
+      "source_identifier": "vibrating_nippleclamp",
+      "source_category": "nipple_acc",
+      "source_reference": "extract_clothing_tags.txt:L2164-L2179",
+      "exact_source_value": [
+        "nipple"
+      ],
+      "reason": "The source covered_parts values do not explicitly name one of the four YOLO body regions.",
+      "decision_needed": "Whether an additional source rule exists for these values; do not infer a YOLO coverage class yet."
+    }
+  ]
+}

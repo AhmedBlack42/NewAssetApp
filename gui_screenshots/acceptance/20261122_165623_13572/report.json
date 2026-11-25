@@ -1,0 +1,21 @@
+{
+  "run_id": "20261122_165623_13572",
+  "suite": "smoke",
+  "app": "both",
+  "headless": true,
+  "status": "FAIL",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\acceptance\\20261122_165623_13572",
+  "scenarios": [
+    {
+      "application": "both",
+      "scenario": "phase3",
+      "status": "FAIL",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 1.268401,
+      "failure_reason": "AssertionError: Cum target did not persist as explicitly positive. status='Classification confirmed · 1 task-specific training example(s) recorded' reloaded={'id': 3, 'source_id': 1, 'detection_id': 3, 'proposed_category': 'body_images', 'asset_type': 'boobs', 'proposal_confidence': 0.8300000000000001, 'path': 'C:\\\\Users\\\\asker\\\\AppData\\\\Local\\\\Temp\\\\newassetapp_gui_acceptance_zn63zyt_\\\\sources\\\\gui_acceptance_fixture.png', 'content_sha256': 'bfff613bbdd7f35fbf12ef28f08049da1fa65d8c4ef56ae927245a0b4a55ece4', 'width': 920, 'height': 1200, 'yolo_class_id': 3, 'yolo_class_name': 'boobs', 'yolo_original_class_id': 3, 'yolo_original_class_name': 'boobs', 'yolo_model_id': 'gui-fixture', 'yolo_model_digest': 'disposable-fixture', 'yolo_confidence': 0.8300000000000001, 'x1': 240.0, 'y1': 320.0, 'x2': 480.0, 'y2': 560.0, 'cnn_class_name': None, 'cnn_confidence': None, 'chosen_category': 'body_images', 'body_image_main_tag': 'boobs', 'normal_main_tag': 'boobs', 'normal_fullbody_state': None, 'normal_location_value': None, 'normal_clothing_broad_family': None, 'normal_clothing_cover_area': None, 'normal_body_images_cnn_target': None, 'normal_body_images_cum_target': 1, 'normal_body_images_cum_evaluated': 1, 'normal_body_images_accessory_target': 0, 'normal_body_images_accessory_evaluated': 1, 'normal_body_images_completed': 1, 'normal_fullbody_cnn_target': None, 'normal_arousal_cnn_target': None, 'normal_corruption_cnn_target': None, 'normal_taxonomy_version': '1.0.0', 'normal_is_invalid': 0, 'normal_confirmed': 1, 'normal_export_status': None, 'cnn_suggestion_stale': 0, 'bbox_xyxy': [240.0, 320.0, 480.0, 560.0], 'normal_subtags': [], 'category': 'body_images'}"
+    }
+  ]
+}

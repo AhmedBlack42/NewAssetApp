@@ -1,0 +1,21 @@
+{
+  "run_id": "20261122_022853_8164",
+  "suite": "visual",
+  "app": "studio",
+  "headless": true,
+  "status": "FAIL",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_022853_8164",
+  "scenarios": [
+    {
+      "application": "studio",
+      "scenario": "workflow",
+      "status": "FAIL",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 6.225623,
+      "failure_reason": "FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\\\Users\\\\asker\\\\AppData\\\\Local\\\\Temp\\\\newassetapp_gui_acceptance_jtcerf_w\\\\studio_output\\\\.colab_package_r8hhefqc'"
+    }
+  ]
+}

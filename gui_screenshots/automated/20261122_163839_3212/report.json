@@ -1,0 +1,31 @@
+{
+  "run_id": "20261122_163839_3212",
+  "suite": "smoke",
+  "app": "both",
+  "headless": true,
+  "status": "PASS",
+  "temporary_workspace": null,
+  "run_root": "F:\\My Tools\\New folder\\NewAssetApp\\gui_screenshots\\automated\\20261122_163839_3212",
+  "scenarios": [
+    {
+      "application": "newassetapp",
+      "scenario": "smoke",
+      "status": "PASS",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 0.628126,
+      "failure_reason": null
+    },
+    {
+      "application": "studio",
+      "scenario": "smoke",
+      "status": "PASS",
+      "dimensions": [
+        "1366x768"
+      ],
+      "elapsed_seconds": 0.59213,
+      "failure_reason": null
+    }
+  ]
+}

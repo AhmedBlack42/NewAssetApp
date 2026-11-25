@@ -1,0 +1,552 @@
+{
+  "schema_version": 1,
+  "group": "fullbody",
+  "title": "Fullbody tags",
+  "description": "Guide states with the active UI mapping and explicitly supported compositions. Distinct from standalone Clothing.",
+  "source_files": [
+    "docs/girlpack_Guide.md",
+    "database/asset_tags/fullbody.json",
+    "database/asset_tags/fullbody_compositions.json",
+    "utils/fullbody_tags.py"
+  ],
+  "entries": [
+    {
+      "id": "context|fullbody|clothed_states|clothed_states",
+      "name": "clothed_states",
+      "display_name": "clothed_states",
+      "group": "fullbody",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "Source UI grouping, not a separate tag.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.clothed_states",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "clothed_states"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "fullbody|clothed_states|clothed",
+      "name": "Clothed",
+      "display_name": "Clothed",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|clothed_states|clothed_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [
+        "clothed.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.clothed_states[\"Clothed\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "clothed_states"
+      ],
+      "serialized_value": "clothed",
+      "source_key": "Clothed"
+    },
+    {
+      "id": "fullbody|clothed_states|underwear",
+      "name": "Underwear",
+      "display_name": "Underwear",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|clothed_states|clothed_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [
+        "underwear.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.clothed_states[\"Underwear\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "clothed_states"
+      ],
+      "serialized_value": "underwear",
+      "source_key": "Underwear"
+    },
+    {
+      "id": "fullbody|clothed_states|bikini",
+      "name": "Bikini",
+      "display_name": "Bikini",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|clothed_states|clothed_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [
+        "bikini.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.clothed_states[\"Bikini\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "clothed_states"
+      ],
+      "serialized_value": "bikini",
+      "source_key": "Bikini"
+    },
+    {
+      "id": "fullbody|clothed_states|atheletic",
+      "name": "Atheletic",
+      "display_name": "Atheletic",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|clothed_states|clothed_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.clothed_states[\"Atheletic\"]",
+      "confidence": "uncertain",
+      "requires_review": true,
+      "selectable": true,
+      "context_path": [
+        "clothed_states"
+      ],
+      "serialized_value": "atheletic",
+      "source_key": "Atheletic"
+    },
+    {
+      "id": "fullbody|clothed_states|athletic",
+      "name": "Athletic",
+      "display_name": "Athletic",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|clothed_states|clothed_states",
+      "tag_type": "main",
+      "description": "Approved human-facing Final Tag for the YOLO fullbody_athletic detection class.",
+      "examples": [],
+      "separators": [],
+      "source": "TrainingDatasetStudio/registries/yolo_detector_v1.json",
+      "source_reference": "$.classes[16]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "clothed_states"
+      ],
+      "serialized_value": "athletic",
+      "source_key": "Athletic"
+    },
+    {
+      "id": "fullbody|clothed_states|lingerie",
+      "name": "Lingerie",
+      "display_name": "Lingerie",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|clothed_states|clothed_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.clothed_states[\"Lingerie\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "clothed_states"
+      ],
+      "serialized_value": "lingerie",
+      "source_key": "Lingerie"
+    },
+    {
+      "id": "context|fullbody|nude_states|nude_states",
+      "name": "nude_states",
+      "display_name": "nude_states",
+      "group": "fullbody",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "Source UI grouping, not a separate tag.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.nude_states",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "nude_states"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "fullbody|nude_states|topless",
+      "name": "Topless",
+      "display_name": "Topless",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|nude_states|nude_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [
+        "topless.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.nude_states[\"Topless\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "nude_states"
+      ],
+      "serialized_value": "topless",
+      "source_key": "Topless"
+    },
+    {
+      "id": "fullbody|nude_states|bare",
+      "name": "Nude",
+      "display_name": "Nude",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|nude_states|nude_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [
+        "bare.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.nude_states[\"Nude\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "nude_states"
+      ],
+      "serialized_value": "bare",
+      "source_key": "Nude"
+    },
+    {
+      "id": "fullbody|nude_states|bottomless",
+      "name": "Bottomless",
+      "display_name": "Bottomless",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|nude_states|nude_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.nude_states[\"Bottomless\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "nude_states"
+      ],
+      "serialized_value": "bottomless",
+      "source_key": "Bottomless"
+    },
+    {
+      "id": "fullbody|nude_states|shower",
+      "name": "In Shower",
+      "display_name": "In Shower",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|nude_states|nude_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.nude_states[\"In Shower\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "nude_states"
+      ],
+      "serialized_value": "shower",
+      "source_key": "In Shower"
+    },
+    {
+      "id": "context|fullbody|costume_states|costume_states",
+      "name": "costume_states",
+      "display_name": "costume_states",
+      "group": "fullbody",
+      "parent_id": null,
+      "tag_type": "metadata",
+      "description": "Source UI grouping, not a separate tag.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": false,
+      "context_path": [
+        "costume_states"
+      ],
+      "node_kind": "taxonomy_context"
+    },
+    {
+      "id": "fullbody|costume_states|maid",
+      "name": "Maid",
+      "display_name": "Maid",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"Maid\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "maid",
+      "source_key": "Maid"
+    },
+    {
+      "id": "fullbody|costume_states|swimsuit",
+      "name": "swimsuit",
+      "display_name": "swimsuit",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"swimsuit\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "swimsuit",
+      "source_key": "swimsuit"
+    },
+    {
+      "id": "fullbody|costume_states|bikini",
+      "name": "bikini",
+      "display_name": "bikini",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [
+        "bikini.webp"
+      ],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"bikini\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "bikini",
+      "source_key": "bikini"
+    },
+    {
+      "id": "fullbody|costume_states|nurse",
+      "name": "Nurse",
+      "display_name": "Nurse",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"Nurse\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "nurse",
+      "source_key": "Nurse"
+    },
+    {
+      "id": "fullbody|costume_states|uniform",
+      "name": "Uniform",
+      "display_name": "Uniform",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"Uniform\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "uniform",
+      "source_key": "Uniform"
+    },
+    {
+      "id": "fullbody|costume_states|work",
+      "name": "Work",
+      "display_name": "Work",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"Work\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "work",
+      "source_key": "Work"
+    },
+    {
+      "id": "fullbody|costume_states|cosplay",
+      "name": "Cosplay",
+      "display_name": "Cosplay",
+      "group": "fullbody",
+      "parent_id": "context|fullbody|costume_states|costume_states",
+      "tag_type": "main",
+      "description": "Guide Fullbody state label with exact active UI map value.",
+      "examples": [],
+      "separators": [],
+      "source": "database/asset_tags/fullbody.json",
+      "source_reference": "$.costume_states[\"Cosplay\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "costume_states"
+      ],
+      "serialized_value": "cosplay",
+      "source_key": "Cosplay"
+    },
+    {
+      "id": "fullbody|compositions|clothed_topless",
+      "name": "Clothed Topless",
+      "display_name": "Clothed Topless",
+      "group": "fullbody",
+      "parent_id": "fullbody|clothed_states|clothed",
+      "tag_type": "compound",
+      "description": "Explicitly allowlisted Fullbody base and coverage composition.",
+      "examples": [
+        "clothed_topless.webp"
+      ],
+      "separators": [
+        "_"
+      ],
+      "source": "database/asset_tags/fullbody_compositions.json",
+      "source_reference": "$.compositions[\"Clothed Topless\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "compositions"
+      ],
+      "serialized_value": "clothed_topless",
+      "base_value": "clothed",
+      "extension": "topless"
+    },
+    {
+      "id": "fullbody|compositions|clothed_bottomless",
+      "name": "Clothed Bottomless",
+      "display_name": "Clothed Bottomless",
+      "group": "fullbody",
+      "parent_id": "fullbody|clothed_states|clothed",
+      "tag_type": "compound",
+      "description": "Explicitly allowlisted Fullbody base and coverage composition.",
+      "examples": [
+        "clothed-bottomless.webp",
+        "clothed-bottomless,conservative.webp"
+      ],
+      "separators": [
+        "_"
+      ],
+      "source": "database/asset_tags/fullbody_compositions.json",
+      "source_reference": "$.compositions[\"Clothed Bottomless\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "compositions"
+      ],
+      "serialized_value": "clothed_bottomless",
+      "base_value": "clothed",
+      "extension": "bottomless"
+    },
+    {
+      "id": "fullbody|compositions|bikini_bottomless",
+      "name": "Bikini Bottomless",
+      "display_name": "Bikini Bottomless",
+      "group": "fullbody",
+      "parent_id": "fullbody|clothed_states|bikini",
+      "tag_type": "compound",
+      "description": "Explicitly allowlisted Fullbody base and coverage composition.",
+      "examples": [
+        "bikini_bottomless.webp"
+      ],
+      "separators": [
+        "_"
+      ],
+      "source": "database/asset_tags/fullbody_compositions.json",
+      "source_reference": "$.compositions[\"Bikini Bottomless\"]",
+      "confidence": "confirmed",
+      "requires_review": false,
+      "selectable": true,
+      "context_path": [
+        "compositions"
+      ],
+      "serialized_value": "bikini_bottomless",
+      "base_value": "bikini",
+      "extension": "bottomless"
+    },
+    {
+      "id": "fullbody|legacy_read_aliases|clothed-bottomless",
+      "name": "clothed-bottomless",
+      "display_name": "clothed-bottomless",
+      "group": "fullbody",
+      "parent_id": "fullbody|compositions|clothed_bottomless",
+      "tag_type": "compound",
+      "description": "Read-only legacy alias; parser accepts it without rewriting stored data.",
+      "examples": [
+        "clothed-bottomless.webp"
+      ],
+      "separators": [
+        "-"
+      ],
+      "source": "database/asset_tags/fullbody_compositions.json",
+      "source_reference": "$.legacy_read_aliases[\"clothed-bottomless\"]",
+      "confidence": "uncertain",
+      "requires_review": true,
+      "selectable": false,
+      "context_path": [
+        "legacy_read_aliases"
+      ],
+      "serialized_value": "clothed-bottomless",
+      "canonical_target": "clothed_bottomless",
+      "alias_policy": "read_only"
+    }
+  ],
+  "combination_policy": "Only the source allowlist of three compositions is supported; do not generate arbitrary combinations.",
+  "notes": [
+    "Source spellings and exact serialized values are preserved."
+  ]
+}

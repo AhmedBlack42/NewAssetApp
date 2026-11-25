@@ -1,0 +1,9 @@
+AssertionError: Real task-card mismatch for person: expected=['arousal', 'corruption'] actual=['arousal', 'body_images', 'corruption', 'portrait']
+
+Traceback (most recent call last):
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\run_gui_acceptance.py", line 187, in main
+    result = registry[scenario_name](
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\scenarios\phase5.py", line 133, in run_professional_task_cards
+    raise AssertionError(
+AssertionError: Real task-card mismatch for person: expected=['arousal', 'corruption'] actual=['arousal', 'body_images', 'corruption', 'portrait']

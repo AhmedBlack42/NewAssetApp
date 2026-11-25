@@ -1,0 +1,15 @@
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_jtcerf_w\\studio_output\\.colab_package_r8hhefqc'
+
+Traceback (most recent call last):
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\run_gui_acceptance.py", line 143, in main
+    result = registry[scenario_name](
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\My Tools\New folder\NewAssetApp\scripts\gui_acceptance\scenarios\studio_workflow.py", line 65, in run
+    package_result = window.datasets.export_colab(int(version_id), package_root)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "F:\My Tools\New folder\NewAssetApp\TrainingDatasetStudio\studio\datasets.py", line 292, in export_colab
+    staging = Path(tempfile.mkdtemp(prefix=".colab_package_", dir=destination.parent))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\asker\AppData\Local\Programs\Python\Python311\Lib\tempfile.py", line 385, in mkdtemp
+    _os.mkdir(file, 0o700)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_jtcerf_w\\studio_output\\.colab_package_r8hhefqc'

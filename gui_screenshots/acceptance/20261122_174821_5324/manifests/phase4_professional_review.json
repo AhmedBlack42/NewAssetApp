@@ -1,0 +1,44 @@
+{
+  "isolation": "PASS",
+  "scenario": "phase4_professional_review",
+  "status": "PARTIAL",
+  "run_root": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa",
+  "newassetapp_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\app\\newassetapp.sqlite3",
+  "studio_database": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\studio\\studio.sqlite3",
+  "synthetic_source": "C:\\Users\\asker\\AppData\\Local\\Temp\\newassetapp_gui_acceptance_yi68pjfa\\sources\\gui_acceptance_fixture.png",
+  "production_databases": [
+    "F:\\My Tools\\New folder\\NewAssetApp\\data\\newassetapp.sqlite3",
+    "F:\\My Tools\\New folder\\NewAssetApp\\TrainingDatasetStudio\\data\\studio.sqlite3"
+  ],
+  "production_database_touched": false,
+  "elapsed_seconds": 6.125,
+  "selected_rows": [
+    {
+      "detection_id": 1,
+      "class_name": "face",
+      "bbox_xyxy": [
+        60.0,
+        80.0,
+        220.0,
+        300.0
+      ]
+    },
+    {
+      "detection_id": 2,
+      "class_name": "portrait_frame",
+      "bbox_xyxy": [
+        180.0,
+        60.0,
+        380.0,
+        330.0
+      ]
+    }
+  ],
+  "task_results": [
+    {
+      "head": "corruption",
+      "action": "confirmed"
+    }
+  ],
+  "limitation": "Correction dialog was opened and canceled; real Inspector class/bbox and task controls were exercised."
+}

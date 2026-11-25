@@ -1,0 +1,7 @@
+Application: TrainingDatasetStudio
+Window: TrainingDatasetStudio 0.1.0
+Window size: 1370x749
+Live database: C:\Users\asker\AppData\Local\Temp\newassetapp_acceptance_phase2_20261122_174826\studio\data\studio.sqlite3
+Status: Headed window opened in isolated mode.
+Navigation: nine labels visible; live page switching could not be reliably completed.
+Screenshot: unavailable from the desktop automation backend.
